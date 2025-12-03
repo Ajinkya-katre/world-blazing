@@ -1,12 +1,13 @@
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
-  IconBrandGithub,
-  IconBrandX,
-  IconExchange,
   IconHome,
-  IconNewSection,
-  IconTerminal2,
+  IconInfoCircle,
+  IconBook,
+  IconBriefcase,
+  IconNews,
+  IconUsers,
+  IconMail,
 } from "@tabler/icons-react";
 
 export default function FloatingDockDemo() {
@@ -16,64 +17,57 @@ export default function FloatingDockDemo() {
       icon: (
         <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/",
     },
 
     {
-      title: "Products",
+      title: "About US",
       icon: (
-        <IconTerminal2 className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconInfoCircle className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/about-us",
     },
     {
-      title: "Components",
+      title: "Courses",
       icon: (
-        <IconNewSection className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconBook className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/courses",
     },
     {
-      title: "Aceternity UI",
+      title: "Services",
       icon: (
-        <img
-          src="https://assets.aceternity.com/logo-dark.png"
-          width={20}
-          height={20}
-          alt="Aceternity Logo"
-        />
+        <IconBriefcase className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/services",
     },
     {
-      title: "Changelog",
+      title: "Blog",
       icon: (
-        <IconExchange className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconNews className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/blog",
     },
 
     {
-      title: "Twitter",
+      title: "Placements",
       icon: (
-        <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconUsers className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/placements",
     },
     {
-      title: "GitHub",
+      title: "Contact Us",
       icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
+        <IconMail className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "#",
+      href: "/contact-us",
     },
   ];
   return (
-    <div className="flex items-center justify-center h-[25rem] w-full">
-      <FloatingDock
-        mobileClassName="translate-y-20" // only for demo, remove for production
-        items={links}
-      />
-    </div>
+    <FloatingDock
+      mobileClassName="translate-y-15"
+      items={links}
+    />
   );
 }
