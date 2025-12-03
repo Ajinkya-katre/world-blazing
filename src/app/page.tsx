@@ -1,8 +1,9 @@
-import { MacbookScrollDemo } from "@/components/mackbook-scroll-demo";
-import Image from "next/image";
+import { HeroSection } from "@/components/hero-section";
 
-export default function Home() {
+export default function Page() {
   return (
-     <MacbookScrollDemo />
+    <>
+      <HeroSection />
+    </>
   );
 }
