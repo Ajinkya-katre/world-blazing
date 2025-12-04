@@ -5,6 +5,7 @@ import "./globals.css";
 import FloatingDockDemo from "@/components/floating-dock-demo";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { ThemeToggle } from "@/components/theme-toggle";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const lato = Lato({
   subsets: ["latin"],
@@ -58,6 +59,7 @@ export default function RootLayout({
           </div>
           {children}
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
