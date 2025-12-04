@@ -129,28 +129,6 @@ export function HeroSection() {
             ))}
           </motion.div>
 
-          {/* Scroll Indicator */}
-          <motion.div
-            variants={itemVariants}
-            className="mt-20 flex justify-center"
-          >
-            <motion.div
-              animate={HERO_ANIMATION_CONFIG.scroll.animate}
-              transition={HERO_ANIMATION_CONFIG.scroll.transition}
-              className="flex flex-col items-center gap-2"
-            >
-              <span className="text-sm text-neutral-600 dark:text-neutral-400">
-                {HERO_SECTION_CONTENT.scroll.text}
-              </span>
-              <motion.div className="w-6 h-10 border-2 border-neutral-400 dark:border-neutral-600 rounded-full flex justify-center p-2">
-                <motion.div
-                  animate={HERO_ANIMATION_CONFIG.scrollDot.animate}
-                  transition={HERO_ANIMATION_CONFIG.scrollDot.transition}
-                  className="w-1 h-2 bg-neutral-400 dark:bg-neutral-600 rounded-full"
-                />
-              </motion.div>
-            </motion.div>
-          </motion.div>
         </motion.div>
       </div>
     </div>

@@ -1,29 +1,17 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import Link from 'next/link';
 import { IconArrowRight } from '@tabler/icons-react';
 import { BLOG_POSTS } from '@/constants/blog-data';
 
-const blogPosts = Array.isArray(BLOG_POSTS) ? BLOG_POSTS : [];
+const blogPosts = BLOG_POSTS;
 
-console.log('Blog posts:', blogPosts);
-
-export function Blog() {
-  if (!blogPosts.length) {
-    return (
-      <div className="py-20">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold">Blog</h2>
-          <p>No posts found.</p>
-        </div>
-      </div>
-    );
-  }
-
+export function BlogSection() {
   return (
     <div className="py-20 bg-white dark:bg-neutral-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <div className="mb-16">
           <h2 className="text-5xl sm:text-6xl font-bold mb-6 text-neutral-900 dark:text-white">
             Blog
@@ -33,11 +21,15 @@ export function Blog() {
           </p>
         </div>
 
+       
+
+        {/* More Posts Grid */}
         <div>
           <h3 className="text-3xl font-bold mb-12 text-neutral-900 dark:text-white">
             More Posts
           </h3>
 
+          {/* Search Bar */}
           <div className="mb-12">
             <input
               type="text"
@@ -46,28 +38,48 @@ export function Blog() {
             />
           </div>
 
+          {/* Blog Posts Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.slice(1).map((post) => (
-              <Link key={post.id ?? post.slug} href={`/blog/${post.slug}`} aria-label={`Read ${post.title}`}>
+              <Link key={post.id} href={`/blog/${post.slug}`}>
                 <motion.div
-                  whileHover={{ y: -6 }}
+                  whileHover={{ y: -10 }}
                   className="group cursor-pointer h-full flex flex-col rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden hover:shadow-lg transition-shadow"
                 >
-                  <motion.div whileHover={{ scale: 1.03 }} className="relative h-48 overflow-hidden">
-                    {/* You can change to Next/Image, but this basic <img> works without config */}
-                    <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
+                  {/* Image */}
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    className="relative h-48 overflow-hidden"
+                  >
+                    <img
+                      src={post.image}
+                      alt={post.title}
+                      className="w-full h-full object-cover"
+                    />
                   </motion.div>
 
+                  {/* Content */}
                   <div className="p-6 flex flex-col flex-1">
                     <div className="flex items-center gap-2 mb-4">
                       <span>👤</span>
-                      <span className="text-sm text-neutral-600 dark:text-neutral-400">{post.author}</span>
+                      <span className="text-sm text-neutral-600 dark:text-neutral-400">
+                        {post.author}
+                      </span>
                     </div>
-                    <h4 className="text-xl font-bold mb-3 text-neutral-900 dark:text-white">{post.title}</h4>
-                    <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-6 flex-1">{post.description}</p>
+                    <h4 className="text-xl font-bold mb-3 text-neutral-900 dark:text-white">
+                      {post.title}
+                    </h4>
+                    <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-6 flex-1">
+                      {post.description}
+                    </p>
                     <div className="flex items-center justify-between">
-                      <span className="text-xs text-neutral-500 dark:text-neutral-500">{post.date}</span>
-                      <motion.div whileHover={{ x: 5 }} className="text-blue-600 dark:text-blue-400">
+                      <span className="text-xs text-neutral-500 dark:text-neutral-500">
+                        {post.date}
+                      </span>
+                      <motion.div
+                        whileHover={{ x: 5 }}
+                        className="text-blue-600 dark:text-blue-400"
+                      >
                         <IconArrowRight className="w-5 h-5" />
                       </motion.div>
                     </div>
@@ -81,5 +93,3 @@ export function Blog() {
     </div>
   );
 }
-
-export default Blog;

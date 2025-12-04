@@ -1,11 +1,6 @@
 "use client";
-import {
-  useMotionValueEvent,
-  useScroll,
-  useTransform,
-  motion,
-} from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
+import { motion, useScroll, useTransform } from "motion/react";
 
 interface TimelineEntry {
   title: string;
@@ -13,40 +8,64 @@ interface TimelineEntry {
 }
 
 export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [height, setHeight] = useState(0);
+  const ref = useRef<HTMLDivElement | null>(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
+  const [height, setHeight] = useState<number>(0);
 
+  // measure function
+  const measure = () => {
+    const el = ref.current;
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    // use scrollHeight so absolute content height is correct even if overflow hidden
+    setHeight(el.scrollHeight || Math.ceil(rect.height));
+  };
+
+  // use ResizeObserver to re-measure when content layout changes (images load, fonts, etc)
   useEffect(() => {
-    if (ref.current) {
-      const rect = ref.current.getBoundingClientRect();
-      setHeight(rect.height);
-    }
-  }, [ref]);
+    measure();
+    if (!ref.current) return;
 
+    const ro = new ResizeObserver(() => {
+      // small timeout to coalesce layout changes
+      window.requestAnimationFrame(measure);
+    });
+
+    ro.observe(ref.current);
+
+    // also watch window resize
+    const onResize = () => {
+      // measure on next frame
+      window.requestAnimationFrame(measure);
+    };
+    window.addEventListener("resize", onResize);
+
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", onResize);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [ref.current]);
+
+  // GOOD: useScroll offset with correct string format.
+  // If you want the line animation to progress while the timeline is scrolled through viewport:
+  // - "start end" means when top of target hits bottom of viewport
+  // - "end start" means when bottom of target hits top of viewport
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 10%", "end 50%"],
+    // tweak these to get the timing you like (try "start end", "start center", or "center end")
+    offset: ["start end", "end start"],
   });
 
+  // transform from 0..1 to 0..height px
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
-  const opacityTransform = useTransform(scrollYProgress, [0, 0.1], [0, 1]);
+  const opacityTransform = useTransform(scrollYProgress, [0, 0.05], [0, 1]);
 
   return (
     <div
       className="w-full bg-white dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}
     >
-      <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
-        <h2 className="text-lg md:text-4xl mb-4 text-black dark:text-white max-w-4xl">
-          Changelog from my journey
-        </h2>
-        <p className="text-neutral-700 dark:text-neutral-300 text-sm md:text-base max-w-sm">
-          I&apos;ve been working on Aceternity for the past 2 years. Here&apos;s
-          a timeline of my journey.
-        </p>
-      </div>
-
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
           <div
@@ -70,6 +89,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             </div>
           </div>
         ))}
+
+        {/* vertical line container */}
         <div
           style={{
             height: height + "px",
