@@ -1,0 +1,74 @@
+[
+  {
+    "id": "rahul-fullstack-tcs",
+    "name": "Rahul Patil",
+    "course": "Full Stack Web Development",
+    "company": "TCS",
+    "role": "Full Stack Developer",
+    "packageLPA": 6.5,
+    "location": "Pune",
+    "year": 2024,
+    "photo": "/placements/rahul.jpg",
+    "highlight": "Built 3 full-stack projects during course and cracked multiple interviews."
+  },
+  {
+    "id": "sneha-python-capgemini",
+    "name": "Sneha Kulkarni",
+    "course": "Python Programming",
+    "company": "Capgemini",
+    "role": "Python Developer",
+    "packageLPA": 5.2,
+    "location": "Hyderabad",
+    "year": 2024,
+    "photo": "/placements/sneha.jpg",
+    "highlight": "Transitioned from non-IT background to developer role in 7 months."
+  },
+  {
+    "id": "vikas-testing-cognizant",
+    "name": "Vikas More",
+    "course": "Software Testing",
+    "company": "Cognizant",
+    "role": "QA Engineer",
+    "packageLPA": 4.8,
+    "location": "Pune",
+    "year": 2023,
+    "photo": "/placements/vikas.jpg",
+    "highlight": "Excelled in manual & automation testing, cleared interview in first attempt."
+  },
+  {
+    "id": "pooja-data-analytics-infosys",
+    "name": "Pooja Jadhav",
+    "course": "Data Analytics",
+    "company": "Infosys",
+    "role": "Data Analyst",
+    "packageLPA": 6.2,
+    "location": "Bangalore",
+    "year": 2024,
+    "photo": "/placements/pooja.jpg",
+    "highlight": "Strong portfolio with dashboards and real-world datasets impressed recruiters."
+  },
+  {
+    "id": "amit-digitalmarketing-startup",
+    "name": "Amit Deshmukh",
+    "course": "Digital Marketing",
+    "company": "SaaS Startup",
+    "role": "Digital Marketing Executive",
+    "packageLPA": 4.2,
+    "location": "Pune",
+    "year": 2023,
+    "photo": "/placements/amit.jpg",
+    "highlight": "Specialised in performance marketing and SEO for tech products."
+  },
+  {
+    "id": "komal-fullstack-product",
+    "name": "Komal Shinde",
+    "course": "Full Stack Web Development",
+    "company": "Product-based Company",
+    "role": "Frontend Engineer",
+    "packageLPA": 7.8,
+    "location": "Bangalore",
+    "year": 2025,
+    "photo": "/placements/komal.jpg",
+    "highlight": "Highest package from recent batch with strong React & TypeScript skills."
+  }
+]

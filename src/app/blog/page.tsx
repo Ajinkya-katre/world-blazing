@@ -7,8 +7,6 @@ import { BLOG_POSTS } from '@/constants/blog-data';
 
 const blogPosts = Array.isArray(BLOG_POSTS) ? BLOG_POSTS : [];
 
-console.log('Blog posts:', blogPosts);
-
 export function Blog() {
   if (!blogPosts.length) {
     return (
@@ -22,7 +20,7 @@ export function Blog() {
   }
 
   return (
-    <div className="py-20 bg-white dark:bg-neutral-950">
+    <div className="py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
           <h2 className="text-5xl sm:text-6xl font-bold mb-6 text-neutral-900 dark:text-white">
