@@ -1,10 +1,20 @@
-export default function Courses() {
+import type { Metadata } from "next";
+import coursesData from "@/constants/courses.json";
+import type { Course } from "@/lib/interface/courses";
+import { CoursesSection } from "@/components/courses-section";
+
+export const metadata: Metadata = {
+  title: "Courses • World Blazing Computer Institute",
+  description:
+    "Browse all job-oriented IT courses at World Blazing Computer Institute in Hadapsar Pune – Full Stack, Python, Software Testing, Data Analytics and more.",
+};
+
+export default function CoursesPage() {
+  const courses = coursesData as Course[];
+
   return (
-    <div className="max-w-7xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold mb-6">Courses</h1>
-      <p className="text-gray-600 dark:text-gray-400">
-        Explore our comprehensive courses.
-      </p>
-    </div>
+    <main className="min-h-screen pt-8 pb-16">
+      <CoursesSection courses={courses} />
+    </main>
   );
 }

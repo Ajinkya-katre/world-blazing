@@ -9,22 +9,19 @@ export default function BlogPost() {
     const slug = params.slug as string;
     const result = getBlogPostBySlug(slug);
 
-
     // Next.js sometimes serializes server values as strings
     let post = result;
     if (typeof result === "string") {
         post = JSON.parse(result);
     }
 
-    console.log("Parsed post object:", post);
-
     if (!post) {
         notFound();
     }
 
     return (
-        <div className="bg-white dark:bg-neutral-950 min-h-screen">
-            <div className="sticky top-0 z-40 bg-white dark:bg-neutral-950 border-b border-neutral-200 dark:border-neutral-800">
+        <div className=" min-h-screen">
+            <div className="sticky top-0 z-0 bg-white dark:bg-neutral-950 border-b border-neutral-200 dark:border-neutral-800">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                     <Link href="/blog" className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline">
                         <IconArrowLeft className="w-5 h-5" />

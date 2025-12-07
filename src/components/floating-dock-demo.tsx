@@ -35,13 +35,6 @@ export default function FloatingDockDemo() {
       href: "/courses",
     },
     {
-      title: "Services",
-      icon: (
-        <IconBriefcase className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "/services",
-    },
-    {
       title: "Blog",
       icon: (
         <IconNews className="h-full w-full text-neutral-500 dark:text-neutral-300" />

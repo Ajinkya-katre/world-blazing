@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "full-stack-web-development",
+    "title": "Full Stack Web Development",
+    "shortDescription": "Learn HTML, CSS, JavaScript, React, Node.js and build real-world web apps.",
+    "category": "Web Development",
+    "level": "Beginner to Advanced",
+    "duration": "6 Months",
+    "mode": "Offline + Online",
+    "badge": "Most Popular",
+    "children": [
+      { "title": "Frontend (HTML, CSS, JS, React)" },
+      { "title": "Backend (Node.js, Express, MongoDB)" },
+      { "title": "Deployment & Git" }
+    ]
+  },
+  {
+    "slug": "python-programming",
+    "title": "Python Programming",
+    "shortDescription": "Master Python from basics to OOP, file handling, and project building.",
+    "category": "Programming",
+    "level": "Beginner",
+    "duration": "3 Months",
+    "mode": "Offline + Online",
+    "badge": "Beginner Friendly",
+    "children": [
+      { "title": "Python Basics" },
+      { "title": "OOP in Python" },
+      { "title": "Mini Projects" }
+    ]
+  },
+  {
+    "slug": "software-testing",
+    "title": "Software Testing (Manual + Automation)",
+    "shortDescription": "Learn manual testing concepts, test cases, and automation basics.",
+    "category": "Testing",
+    "level": "Beginner to Intermediate",
+    "duration": "4 Months",
+    "mode": "Offline + Online",
+    "badge": "Job Oriented",
+    "children": [
+      { "title": "Manual Testing Fundamentals" },
+      { "title": "Test Cases & Bug Reporting" },
+      { "title": "Automation Introduction" }
+    ]
+  }
+]

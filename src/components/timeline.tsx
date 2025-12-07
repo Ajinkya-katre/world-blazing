@@ -140,14 +140,14 @@ export function TimelineDemo() {
           </h2>
           <p className="mb-8  text-xm md:text-base">
             To meet industry trends, we added advanced courses like:
+            <br />
+            This was a major milestone in transforming the institute into a career-oriented IT training hub.
+          </p>
             <ul className="list-disc list-inside">
               <li>Python Programming</li>
               <li>Full-Stack Web Development</li>
               <li>Data Science & Analytics</li>
             </ul>
-
-            This was a major milestone in transforming the institute into a career-oriented IT training hub.
-          </p>
           {/* <div className="grid grid-cols-2 gap-4">
             <img
               src="https://assets.aceternity.com/pro/hero-sections.png"
@@ -205,18 +205,17 @@ export function TimelineDemo() {
             Expanding Course Categories & Strengthening Placement Support
           </h2>
           <p className="mb-8  text-xm md:text-base">
-            We introduced structured programs for:
+            We introduced structured programs for
 
-            <ul className="list-disc list-inside">
+            Our placement guidance improved with resume building, interview practice, and career counseling.
+          </p>
+           <ul className="list-disc list-inside">
               <li>Full Stack Web development</li>
               <li>Software Testing</li>
               <li>Data analytics</li>
               <li>Digital Marketing</li>
               <li>Data Science</li>
             </ul>
-
-            Our placement guidance improved with resume building, interview practice, and career counseling.
-          </p>
           {/* <div className="grid grid-cols-2 gap-4">
             <img
               src="https://assets.aceternity.com/pro/hero-sections.png"
@@ -260,8 +259,11 @@ export function TimelineDemo() {
           <p className="mb-8  text-xm md:text-base">
             Today, World Blazing Computer Solution proudly serves students, professionals, job seekers, and complete beginners across Pune and beyond.
 
+            Our journey continues as we train the next generation of developers, programmers, and IT professionals.
             We are now recognized for:
 
+          </p>
+          
             <ul className="list-disc list-inside">
               <li>Small batches & personal attention</li>
               <li>Practical, hands-on teaching</li>
@@ -269,9 +271,6 @@ export function TimelineDemo() {
               <li>Flexible offline + online learning options</li>
               <li>Strong student satisfaction & trust</li>
             </ul>
-
-            Our journey continues as we train the next generation of developers, programmers, and IT professionals.
-          </p>
           {/* <div className="grid grid-cols-2 gap-4">
             <img
               src="https://assets.aceternity.com/pro/hero-sections.png"
