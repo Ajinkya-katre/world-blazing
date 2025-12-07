@@ -1,19 +1,22 @@
-import type { Metadata } from "next";
+"use client";
+
+import { useState } from "react";
+import DemoBookingModal from "@/components/floating-book-your-demo";
+import CoursesSection from "@/components/courses-section";
 import coursesData from "@/constants/courses.json";
 import type { Course } from "@/lib/interface/courses";
-import { CoursesSection } from "@/components/courses-section";
-
-export const metadata: Metadata = {
-  title: "Courses • World Blazing Computer Institute",
-  description:
-    "Browse all job-oriented IT courses at World Blazing Computer Institute in Hadapsar Pune – Full Stack, Python, Software Testing, Data Analytics and more.",
-};
 
 export default function CoursesPage() {
   const courses = coursesData as Course[];
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
-    <main className="min-h-screen pt-8 pb-16">
+    <main className="min-h-screen pt-20 pb-16 px-4">
+
+      <DemoBookingModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+      />
       <CoursesSection courses={courses} />
     </main>
   );

@@ -98,19 +98,6 @@ const ContactUsSection = () => {
             </div>
           </div>
 
-          {/* Why contact us – clarity for students */}
-          <div className="space-y-2">
-            <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-              What can we help you with?
-            </p>
-            <ul className="space-y-1 text-sm text-neutral-600 dark:text-neutral-300 list-disc list-inside">
-              <li>Choosing the right course based on your background</li>
-              <li>Understanding fees, EMI options and batch timings</li>
-              <li>Booking a free demo session or counseling</li>
-              <li>Placement assistance and career guidance queries</li>
-            </ul>
-          </div>
-
           {/* Map (responsive) */}
           <div className="mt-4">
             <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400 mb-2">
@@ -126,6 +113,20 @@ const ContactUsSection = () => {
               />
             </div>
           </div>
+
+          {/* Why contact us – clarity for students */}
+          <div className="space-y-2">
+            <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+              What can we help you with?
+            </p>
+            <ul className="space-y-1 text-sm text-neutral-600 dark:text-neutral-300 list-disc list-inside">
+              <li>Choosing the right course based on your background</li>
+              <li>Understanding fees, EMI options and batch timings</li>
+              <li>Booking a free demo session or counseling</li>
+              <li>Placement assistance and career guidance queries</li>
+            </ul>
+          </div>
+
         </div>
 
         {/* RIGHT SECTION — FORM */}

@@ -10,7 +10,7 @@ interface CoursesSectionProps {
   className?: string;
 }
 
-export function CoursesSection({
+export default function CoursesSection({
   courses = coursesData as Course[],
   className,
 }: CoursesSectionProps) {

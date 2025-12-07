@@ -135,7 +135,7 @@ function FeaturedPlacementCard({ placement }: { placement: Placement }) {
 
       {/* Left - photo */}
       <div className="relative shrink-0 flex items-center gap-4 md:gap-5">
-        <div className="relative h-16 w-16 md:h-20 md:w-20 rounded-2xl overflow-hidden border border-white/40 shadow-lg bg-white/5">
+        {/* <div className="relative h-16 w-16 md:h-20 md:w-20 rounded-2xl overflow-hidden border border-white/40 shadow-lg bg-white/5">
           <Image
             src={placement.photo}
             alt={placement.name}
@@ -143,7 +143,7 @@ function FeaturedPlacementCard({ placement }: { placement: Placement }) {
             sizes="80px"
             className="object-cover"
           />
-        </div>
+        </div> */}
         <div>
           <p className="text-xs uppercase tracking-wide text-white/80">
             Featured Placement
@@ -187,9 +187,9 @@ function FeaturedPlacementCard({ placement }: { placement: Placement }) {
 
 function PlacementCard({ placement }: { placement: Placement }) {
   return (
-    <div className="group rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-900/70 backdrop-blur-sm p-4 flex gap-4 hover:-translate-y-1 hover:shadow-lg transition-all">
+    <div className="group rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-900/70 backdrop-blur-sm p-7 flex gap-4 hover:-translate-y-1 hover:shadow-lg transition-all">
       {/* photo */}
-      <div className="relative h-14 w-14 rounded-2xl overflow-hidden bg-neutral-200 dark:bg-neutral-800 shrink-0">
+      {/* <div className="relative h-14 w-14 rounded-2xl overflow-hidden bg-neutral-200 dark:bg-neutral-800 shrink-0">
         <Image
           src={placement.photo}
           alt={placement.name}
@@ -197,7 +197,7 @@ function PlacementCard({ placement }: { placement: Placement }) {
           sizes="56px"
           className="object-cover"
         />
-      </div>
+      </div> */}
 
       <div className="flex-1 flex flex-col gap-1">
         <div className="flex items-center justify-between gap-2">
@@ -225,24 +225,6 @@ function PlacementCard({ placement }: { placement: Placement }) {
 
         <div className="mt-2 flex items-center justify-between text-[10px] text-neutral-500 dark:text-neutral-400">
           <span>Batch {placement.year}</span>
-          <span className="inline-flex items-center gap-1 group-hover:text-indigo-500 dark:group-hover:text-indigo-300 transition-colors">
-            View success story
-            <svg
-              className="h-3 w-3"
-              viewBox="0 0 16 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path
-                d="M5 11L11 5M7 5h4v4"
-                stroke="currentColor"
-                strokeWidth="1.4"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </span>
         </div>
       </div>
     </div>

@@ -13,7 +13,7 @@ export default function Page() {
       <CoursesPage />
       <section className="py-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="mb-6 text-5xl text-center font-bold text-neutral-800 dark:text-neutral-200">
-          Testimonials
+          Meet Your Trainers
         </h2>
         <AnimatedTestimonialsDemo />
       </section>

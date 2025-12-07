@@ -11,5 +11,23 @@ export interface Course {
   duration: string;
   mode: string;
   badge?: string;
-  children?: CourseChild[];
+
+  // NEW FIELDS
+  image?: string;            // e.g. "/images/courses/full-stack.jpg"
+
+  modules?: string[];        // detailed roadmap steps
+  tools?: string[];          // tech/tools used in the course
+
+  certification?: string;    // certification text
+
+  jobRoles?: string[];       // possible roles after course
+  emiOptions?: string;       // EMI info text
+  salaryRange?: string;      // salary band description
+
+  whoCanJoin?: string[];     // target audience bullet points
+
+  children?: CourseChild[];  // small “includes” list (existing)
+  
+  // Optional: if you want to add pricing later
+  // price?: string;
 }
