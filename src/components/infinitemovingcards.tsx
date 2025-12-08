@@ -84,7 +84,7 @@ export default function InfiniteMovingCards({
       <div
         ref={containerRef}
         className={cn(
-          "relative overflow-hidden rounded-2xl bg-white/60 dark:bg-neutral-900/40",
+          "relative overflow-hidden rounded-2xl ",
           "shadow-sm",
           hoverPause ? "group" : ""
         )}

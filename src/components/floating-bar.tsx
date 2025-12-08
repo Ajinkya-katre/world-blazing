@@ -20,7 +20,7 @@ export default function FloatingContactBar() {
   )}`;
 
   return (
-    <div className="fixed bottom-4 right-4 z-40 flex flex-col gap-2 md:gap-3 md:flex-col">
+    <div className="fixed bottom-4 right-4 z-1 flex flex-col gap-2 md:gap-3 md:flex-col">
       {/* Book Free Demo */}
       <Link
         href="/contact-us?type=demo"

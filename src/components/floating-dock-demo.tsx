@@ -1,10 +1,8 @@
-import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
 import {
   IconHome,
   IconInfoCircle,
   IconBook,
-  IconBriefcase,
   IconNews,
   IconUsers,
   IconMail,

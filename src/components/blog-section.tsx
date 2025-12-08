@@ -21,8 +21,6 @@ export function BlogSection() {
           </p>
         </div>
 
-       
-
         {/* More Posts Grid */}
         <div>
           <h3 className="text-3xl font-bold mb-12 text-neutral-900 dark:text-white">
