@@ -1,5 +1,3 @@
-// src/components/home/faq-section.tsx
-
 import { cn } from "@/lib/utils";
 
 const faqs = [

@@ -60,9 +60,9 @@ const ContactUsSection = () => {
               <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
                 Call / WhatsApp
               </p>
-              <p className="mt-1 text-sm font-medium text-neutral-900 dark:text-neutral-50">
-                082379 78163
-              </p>
+              <a className="mt-1 text-sm font-medium text-neutral-900 dark:text-neutral-50">
+                +91 8459816185
+              </a>
               <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
                 Mon – Sat, 9:00 AM to 8:00 PM
               </p>
@@ -74,7 +74,7 @@ const ContactUsSection = () => {
                 Email
               </p>
               <p className="mt-1 text-sm font-medium text-neutral-900 dark:text-neutral-50 break-all">
-                info@worldblazing.com
+                worldblazinginstitute@gmail.com
               </p>
               <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
                 Share your queries, our team usually replies within 24 hours.
