@@ -1,42 +1,32 @@
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 
 export function AnimatedTestimonialsDemo() {
-  const testimonials = [
-    {
-      quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-  ];
+ const testimonials = [
+  {
+    quote:
+      "Monika makes complex data topics feel simple and practical. She guides students from basic Excel and Python all the way to real-world dashboards and data projects, with a strong focus on how analytics is used in companies.",
+    name: "Monika Waikar",
+    designation:
+      "Lead Trainer – Data Science & Data Analytics | Practical, project-focused teaching",
+    src: "/monika.png"
+  },
+  {
+    quote:
+      "Ajinkya focuses on writing clean code, understanding real project structure and building full-stack apps the way companies expect. Students learn how frontend, backend, databases and deployment all connect in one real product.",
+    name: "Ajinkya Katre",
+    designation:
+      "Full Stack & MERN Stack Trainer | Web development, projects & career guidance",
+    src: "/ak.jpg"
+  },
+  {
+    quote:
+      "Rohit connects digital marketing theory with live campaign examples. From SEO to Meta and Google Ads, he shows students exactly how brands generate leads, track performance and run result-oriented campaigns.",
+    name: "Rohit Agarwal",
+    designation:
+      "Digital Marketing Trainer | SEO, Ads & Performance Marketing",
+    src: "https://images.unsplash.com/photo-1525130413817-d45c1d127c42?q=80&w=1200&auto=format&fit=crop"
+  }
+];
+
   return <AnimatedTestimonials testimonials={testimonials} />;
 }

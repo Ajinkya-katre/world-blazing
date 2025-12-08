@@ -6,6 +6,7 @@ import FloatingDockDemo from "@/components/floating-dock-demo";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import FloatingContactBar from "@/components/floating-bar";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -106,6 +107,7 @@ export default function RootLayout({
             <FloatingDockDemo />
           </div>
           {children}
+          {/* <FloatingContactBar /> */}
         </ThemeProvider>
         <SpeedInsights />
       </body>

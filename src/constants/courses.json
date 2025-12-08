@@ -2,46 +2,478 @@
   {
     "slug": "full-stack-web-development",
     "title": "Full Stack Web Development",
-    "shortDescription": "Learn HTML, CSS, JavaScript, React, Node.js and build real-world web apps.",
+    "shortDescription": "Learn HTML, CSS, JavaScript, React, Node.js and build real-world web apps from scratch using industry best practices.",
     "category": "Web Development",
     "level": "Beginner to Advanced",
     "duration": "6 Months",
     "mode": "Offline + Online",
     "badge": "Most Popular",
+    "image": "/full-stack-development.png",
+    "modules": [
+      "Web basics: HTML, CSS, responsive layouts",
+      "Modern JavaScript (ES6+), DOM, API calls",
+      "Frontend with React and component-based architecture",
+      "State management, routing and form handling",
+      "Backend with Node.js, Express and REST APIs",
+      "Databases with MongoDB / PostgreSQL",
+      "Authentication (JWT), security basics and validation",
+      "Deployment on cloud platforms (Vercel / Render / AWS basics)",
+      "Git & GitHub, teamwork and project workflow",
+      "Capstone project: end-to-end full stack web application"
+    ],
+    "tools": [
+      "VS Code",
+      "Git & GitHub",
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB / PostgreSQL",
+      "Postman",
+      "Vercel / Render / AWS basics"
+    ],
+    "certification": "World Blazing Full Stack Web Developer Certification",
+    "jobRoles": [
+      "Full Stack Web Developer",
+      "Frontend Developer (React)",
+      "Backend Developer (Node.js)",
+      "Junior Software Engineer"
+    ],
+    "emiOptions": "Flexible monthly EMI plans available after registration.",
+    "salaryRange": "Typical fresher packages range from ₹3.0 LPA – ₹6.5 LPA depending on skills and company.",
+    "whoCanJoin": [
+      "Students from any stream who want to get into IT",
+      "Diploma / Engineering students looking for job-oriented training",
+      "Working professionals who want to switch to development",
+      "Beginners with basic computer knowledge and strong interest"
+    ],
     "children": [
-      { "title": "Frontend (HTML, CSS, JS, React)" },
-      { "title": "Backend (Node.js, Express, MongoDB)" },
-      { "title": "Deployment & Git" }
+      { "title": "Frontend (HTML, CSS, JavaScript, React)" },
+      { "title": "Backend (Node.js, Express, REST APIs)" },
+      { "title": "Databases & Deployment (MongoDB / SQL, Git, Cloud)" }
     ]
   },
   {
     "slug": "python-programming",
     "title": "Python Programming",
-    "shortDescription": "Master Python from basics to OOP, file handling, and project building.",
+    "shortDescription": "Master Python from basics to OOP, file handling and small projects. Strong base for data, automation and backend.",
     "category": "Programming",
     "level": "Beginner",
     "duration": "3 Months",
     "mode": "Offline + Online",
     "badge": "Beginner Friendly",
+    "image": "/python.png",
+    "modules": [
+      "Introduction to Python, setup and IDEs",
+      "Variables, data types, operators and input / output",
+      "Control flow: conditions, loops and functions",
+      "Data structures: lists, tuples, sets, dictionaries",
+      "File handling and error handling",
+      "Object-Oriented Programming in Python",
+      "Modules, packages and virtual environments",
+      "Working with CSV/Excel, JSON and APIs",
+      "Mini projects: automation scripts and small console apps"
+    ],
+    "tools": [
+      "Python",
+      "VS Code / PyCharm",
+      "Pip & Virtualenv",
+      "Jupyter Notebook (for practice)"
+    ],
+    "certification": "World Blazing Python Programming Certification",
+    "jobRoles": [
+      "Python Developer (Entry level)",
+      "Automation / Scripting Developer",
+      "Support Engineer with Python skills",
+      "Strong base for Data Science & Backend roles"
+    ],
+    "emiOptions": "Easy monthly instalments for students and job seekers.",
+    "salaryRange": "Python-based fresher roles generally start from ₹2.5 LPA – ₹5 LPA.",
+    "whoCanJoin": [
+      "Anyone new to programming",
+      "Students planning to go into Data Science, AI or Backend",
+      "Working professionals who want to learn an easy and powerful language"
+    ],
     "children": [
-      { "title": "Python Basics" },
-      { "title": "OOP in Python" },
-      { "title": "Mini Projects" }
+      { "title": "Python Basics & Syntax" },
+      { "title": "Data Structures & OOP" },
+      { "title": "Mini Projects & Automation" }
     ]
   },
   {
     "slug": "software-testing",
     "title": "Software Testing (Manual + Automation)",
-    "shortDescription": "Learn manual testing concepts, test cases, and automation basics.",
+    "shortDescription": "Learn manual testing concepts, test case design, bug reporting and basics of automation.",
     "category": "Testing",
     "level": "Beginner to Intermediate",
     "duration": "4 Months",
     "mode": "Offline + Online",
     "badge": "Job Oriented",
+    "image": "/testing.png",
+    "modules": [
+      "Software development life cycle (SDLC) and testing basics",
+      "STLC, test levels and test types",
+      "Requirement analysis and test planning",
+      "Designing test cases and scenarios",
+      "Defect life cycle and bug reporting (JIRA / similar tools)",
+      "Functional, regression, smoke and sanity testing",
+      "Introduction to automation testing concepts",
+      "Automation using Selenium basics",
+      "API testing basics and Postman usage",
+      "Interview preparation, real-time scenarios and documentation"
+    ],
+    "tools": [
+      "JIRA / Bug tracking tools",
+      "Excel / Test case management",
+      "Selenium (Basic)",
+      "Postman"
+    ],
+    "certification": "World Blazing Software Testing (Manual + Automation) Certification",
+    "jobRoles": [
+      "Manual Test Engineer",
+      "Quality Assurance (QA) Engineer",
+      "Test Analyst",
+      "Junior Automation Tester (after practice)"
+    ],
+    "emiOptions": "EMI facility available for job seekers and students.",
+    "salaryRange": "Fresher testing roles usually fall in the ₹2.2 LPA – ₹4.5 LPA range.",
+    "whoCanJoin": [
+      "Non-IT graduates who want to enter IT through testing",
+      "Engineering / Diploma students interested in QA",
+      "Anyone who is detail-oriented and likes finding issues"
+    ],
     "children": [
       { "title": "Manual Testing Fundamentals" },
-      { "title": "Test Cases & Bug Reporting" },
-      { "title": "Automation Introduction" }
+      { "title": "Bug Reporting & Test Management" },
+      { "title": "Automation Basics with Selenium" }
+    ]
+  },
+  {
+    "slug": "digital-marketing",
+    "title": "Digital Marketing & Performance Marketing",
+    "shortDescription": "Learn SEO, social media marketing, Google Ads, analytics and build campaigns that bring real leads.",
+    "category": "Digital Marketing",
+    "level": "Beginner to Intermediate",
+    "duration": "3–4 Months",
+    "mode": "Offline + Online",
+    "badge": "High Demand",
+    "image": "/digital.png",
+    "modules": [
+      "Basics of marketing and digital channels",
+      "Website fundamentals and landing pages",
+      "Search Engine Optimization (SEO) – on-page & off-page",
+      "Google Ads (Search, Display, YouTube)",
+      "Facebook & Instagram Ads, audience targeting",
+      "Social media strategy and content planning",
+      "Email marketing and lead nurturing basics",
+      "Google Analytics & campaign tracking",
+      "Influencer campaigns & brand building fundamentals",
+      "Portfolio building: run and document real campaigns"
+    ],
+    "tools": [
+      "Google Ads",
+      "Meta Business Suite",
+      "Google Analytics",
+      "SEO tools (Search Console, basic keyword tools)"
+    ],
+    "certification": "World Blazing Digital Marketing Certification",
+    "jobRoles": [
+      "Digital Marketing Executive",
+      "Social Media Marketer",
+      "SEO Executive",
+      "PPC / Performance Marketing Executive (Junior)"
+    ],
+    "emiOptions": "Installment options available; contact us for latest plans.",
+    "salaryRange": "Digital marketing freshers typically earn between ₹2.2 LPA – ₹4.5 LPA.",
+    "whoCanJoin": [
+      "Students interested in marketing and branding",
+      "Business owners who want to promote their own business",
+      "Anyone who enjoys creativity plus data/analytics"
+    ],
+    "children": [
+      { "title": "SEO & Website Optimization" },
+      { "title": "Social Media & Ads Campaigns" },
+      { "title": "Analytics & Performance Tracking" }
+    ]
+  },
+  {
+    "slug": "data-science",
+    "title": "Data Science with Python",
+    "shortDescription": "End-to-end Data Science journey: Python, statistics, data analysis, machine learning concepts and projects.",
+    "category": "Data / Analytics",
+    "level": "Intermediate",
+    "duration": "6 Months",
+    "mode": "Offline + Online",
+    "badge": "Career Transformation",
+    "image": "/data-science.jpg",
+    "modules": [
+      "Python basics for data science",
+      "Numpy, Pandas and data cleaning",
+      "Data visualization using Matplotlib / Seaborn",
+      "Statistics for data science: distributions, hypothesis testing",
+      "Exploratory Data Analysis (EDA)",
+      "Machine learning basics: supervised and unsupervised learning",
+      "Popular algorithms (Regression, Classification, Clustering)",
+      "Model evaluation and metrics",
+      "Intro to real-world projects (recommendation systems, predictions)",
+      "Project building and portfolio preparation"
+    ],
+    "tools": [
+      "Python",
+      "Jupyter Notebook",
+      "Pandas, Numpy",
+      "Matplotlib / Seaborn",
+      "Scikit-learn"
+    ],
+    "certification": "World Blazing Data Science Certification",
+    "jobRoles": [
+      "Junior Data Scientist",
+      "Data Analyst (with ML exposure)",
+      "Business Analyst (Tech-oriented)"
+    ],
+    "emiOptions": "EMI and part-payment options available with counseling.",
+    "salaryRange": "Entry-level roles can range from ₹3.5 LPA – ₹7 LPA depending on skills and projects.",
+    "whoCanJoin": [
+      "Students with basic programming knowledge (Python recommended)",
+      "Engineering / BSc / BCA graduates who like maths and data",
+      "Working professionals looking to switch into analytics / data"
+    ],
+    "children": [
+      { "title": "Data Analysis with Python" },
+      { "title": "Statistics & Machine Learning Basics" },
+      { "title": "End-to-End Data Science Projects" }
+    ]
+  },
+  {
+    "slug": "data-analytics",
+    "title": "Data Analytics & BI",
+    "shortDescription": "Learn Excel, SQL, dashboards and storytelling with data to become a job-ready data analyst.",
+    "category": "Data / Analytics",
+    "level": "Beginner to Intermediate",
+    "duration": "4–5 Months",
+    "mode": "Offline + Online",
+    "badge": "Job Ready",
+    "image": "/data-analytics.png",
+    "modules": [
+      "Advanced Excel for analysis and reporting",
+      "SQL for data extraction and joins",
+      "Data cleaning and preparation",
+      "Visualization and dashboards (Power BI / Tableau basics)",
+      "KPI design, reports and storytelling",
+      "Business analysis basics and case studies",
+      "Hands-on projects using real datasets"
+    ],
+    "tools": [
+      "MS Excel",
+      "SQL (MySQL / PostgreSQL)",
+      "Power BI / Tableau (basic)",
+      "Google Sheets"
+    ],
+    "certification": "World Blazing Data Analytics Certification",
+    "jobRoles": [
+      "Data Analyst",
+      "Business Intelligence (BI) Analyst",
+      "Reporting Analyst"
+    ],
+    "emiOptions": "Discuss flexible installment options with our counselor.",
+    "salaryRange": "Data analyst fresher roles generally fall in the ₹3 LPA – ₹5.5 LPA range.",
+    "whoCanJoin": [
+      "Students from any degree with interest in numbers",
+      "Non-coding students who still want to enter IT/data jobs",
+      "Working professionals (any domain) who work with reports and Excel"
+    ],
+    "children": [
+      { "title": "Excel & Data Cleaning" },
+      { "title": "SQL for Data Extraction" },
+      { "title": "Dashboards & BI Tools" }
+    ]
+  },
+  {
+    "slug": "java-full-stack-web-development",
+    "title": "Java Full Stack Web Development",
+    "shortDescription": "Backend with Java & Spring Boot plus modern frontend to build enterprise-grade full stack applications.",
+    "category": "Web Development",
+    "level": "Intermediate",
+    "duration": "6–7 Months",
+    "mode": "Offline + Online",
+    "badge": "Enterprise Focused",
+    "image": "/java.jpeg",
+    "modules": [
+      "Core Java: syntax, OOP, collections, exceptions",
+      "Java + JDBC and database connectivity",
+      "Spring Boot fundamentals and REST APIs",
+      "JPA / Hibernate for ORM and database operations",
+      "Authentication, security and JWT",
+      "Frontend with React / modern JS",
+      "Connecting Java backend with frontend",
+      "Deployment basics for Java applications",
+      "Capstone project: full stack Java application"
+    ],
+    "tools": [
+      "Java",
+      "IntelliJ IDEA / Eclipse",
+      "Spring Boot",
+      "MySQL / PostgreSQL",
+      "React (frontend)",
+      "Git & GitHub"
+    ],
+    "certification": "World Blazing Java Full Stack Developer Certification",
+    "jobRoles": [
+      "Java Full Stack Developer",
+      "Java Backend Developer",
+      "Software Engineer – Java"
+    ],
+    "emiOptions": "EMI options available. Contact office for current offers.",
+    "salaryRange": "Java full stack fresher roles often start in the ₹3.5 LPA – ₹7 LPA range.",
+    "whoCanJoin": [
+      "Students comfortable with basic programming concepts",
+      "BSc / BCA / BE students targeting enterprise Java jobs",
+      "Developers who know Java and want full stack skills"
+    ],
+    "children": [
+      { "title": "Core Java & OOP" },
+      { "title": "Spring Boot & REST APIs" },
+      { "title": "Frontend + Full Stack Integration" }
+    ]
+  },
+  {
+    "slug": "mern-stack-web-development",
+    "title": "MERN Stack Web Development",
+    "shortDescription": "Specialized track for MongoDB, Express, React and Node.js to build modern single page apps.",
+    "category": "Web Development",
+    "level": "Intermediate",
+    "duration": "5–6 Months",
+    "mode": "Offline + Online",
+    "badge": "Project Heavy",
+    "image": "/mern.png",
+    "modules": [
+      "Modern JavaScript and ES6+ concepts",
+      "React fundamentals and hooks",
+      "Routing, state management and forms in React",
+      "Node.js and Express backend fundamentals",
+      "MongoDB data modeling and queries",
+      "Building REST APIs with Express + MongoDB",
+      "Authentication, authorization (JWT) and security basics",
+      "File uploads, payments or other advanced modules (as project)",
+      "Deployment of MERN apps to cloud",
+      "End-to-end MERN project with documentation"
+    ],
+    "tools": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Git & GitHub",
+      "Postman",
+      "Vercel / Render"
+    ],
+    "certification": "World Blazing MERN Stack Developer Certification",
+    "jobRoles": [
+      "MERN Stack Developer",
+      "React + Node.js Developer",
+      "Full Stack JavaScript Developer"
+    ],
+    "emiOptions": "Installments available during course duration.",
+    "salaryRange": "MERN developers are usually offered ₹3.5 LPA – ₹7 LPA for fresher roles.",
+    "whoCanJoin": [
+      "Students who already know basic HTML, CSS, JS",
+      "Graduates who want to become JavaScript full stack developers",
+      "Developers shifting from PHP / other stacks to JS"
+    ],
+    "children": [
+      { "title": "React Frontend" },
+      { "title": "Node.js & Express Backend" },
+      { "title": "MongoDB & Full Stack Deployment" }
+    ]
+  },
+  {
+    "slug": "mean-stack-web-development",
+    "title": "MEAN Stack Web Development",
+    "shortDescription": "MongoDB, Express, Angular and Node.js to build scalable SPA and enterprise-style apps.",
+    "category": "Web Development",
+    "level": "Intermediate",
+    "duration": "5–6 Months",
+    "mode": "Offline + Online",
+    "badge": "Angular Specialization",
+    "image": "/mean.png",
+    "modules": [
+      "TypeScript basics and Angular fundamentals",
+      "Components, services and routing in Angular",
+      "Forms, validation and state handling",
+      "Node.js and Express backend",
+      "MongoDB database and models",
+      "REST API development and integration with Angular",
+      "Authentication and role based access",
+      "Deployment of MEAN applications",
+      "Project: complete MEAN business application"
+    ],
+    "tools": [
+      "Angular",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Git & GitHub"
+    ],
+    "certification": "World Blazing MEAN Stack Developer Certification",
+    "jobRoles": [
+      "Angular Developer",
+      "MEAN Stack Developer",
+      "Full Stack JavaScript Developer"
+    ],
+    "emiOptions": "Flexible EMI for students after initial registration.",
+    "salaryRange": "MEAN stack roles generally start from ₹3.5 LPA – ₹6.5 LPA.",
+    "whoCanJoin": [
+      "Students comfortable with basic JavaScript",
+      "Developers who want Angular + Node stack",
+      "Graduates targeting full stack roles in product/service companies"
+    ],
+    "children": [
+      { "title": "Angular Frontend with TypeScript" },
+      { "title": "Node.js & Express APIs" },
+      { "title": "MongoDB & Enterprise Deployment" }
+    ]
+  },
+  {
+    "slug": "basic-programming-and-logical-thinking",
+    "title": "Basic Programming & Logical Thinking",
+    "shortDescription": "Foundation course to build logic using C / Python, flowcharts and problem solving skills.",
+    "category": "Programming Foundation",
+    "level": "Absolute Beginner",
+    "duration": "2–3 Months",
+    "mode": "Offline + Online",
+    "badge": "Foundation Course",
+    "image": "/logical.png",
+    "modules": [
+      "Introduction to computers and programming",
+      "Flowcharts, algorithms and problem breakdown",
+      "Basic syntax in C / Python (institute preference)",
+      "Variables, operators and expressions",
+      "Conditions and loops",
+      "Basic functions and modular programming",
+      "Simple programs: patterns, series, small calculations",
+      "Intro to arrays and basic data structures",
+      "Logic building exercises and assignments"
+    ],
+    "tools": [
+      "CodeBlocks / VS Code",
+      "Online judges / practice platforms"
+    ],
+    "certification": "World Blazing Programming Foundation Certification",
+    "jobRoles": [
+      "Strong base for any IT / coding course",
+      "Helps for higher level courses like Full Stack, Data and Testing"
+    ],
+    "emiOptions": "Very affordable fees with simple payment options.",
+    "salaryRange": "This is a foundation course; salary depends on next advanced course chosen.",
+    "whoCanJoin": [
+      "Students from 10th/12th, Diploma or any degree",
+      "Anyone scared of programming who wants a smooth start",
+      "Non-IT background students planning to move into IT later"
+    ],
+    "children": [
+      { "title": "Flowcharts & Algorithms" },
+      { "title": "C / Python Programming Basics" },
+      { "title": "Logic Building & Exercises" }
     ]
   }
 ]
