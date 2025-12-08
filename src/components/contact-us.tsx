@@ -46,7 +46,7 @@ const ContactUsSection = () => {
             <h2 className="mt-4 text-3xl md:text-4xl font-bold text-neutral-900 dark:text-neutral-50">
               Contact Us
             </h2>
-            <p className="mt-3 text-sm md:text-base text-neutral-600 dark:text-neutral-300 max-w-xl">
+            <p className="mt-3 text-base md:text-base text-neutral-600 dark:text-neutral-300 max-w-xl">
               Have questions about courses, fees, or batch timings? Reach out to
               World Blazing Computer Institute and our team will help you choose
               the right path for your IT career.
@@ -60,7 +60,7 @@ const ContactUsSection = () => {
               <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
                 Call / WhatsApp
               </p>
-              <a className="mt-1 text-sm font-medium text-neutral-900 dark:text-neutral-50">
+              <a className="mt-1 text-base font-medium text-neutral-900 dark:text-neutral-50">
                 +91 8459816185
               </a>
               <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
@@ -73,7 +73,7 @@ const ContactUsSection = () => {
               <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
                 Email
               </p>
-              <p className="mt-1 text-sm font-medium text-neutral-900 dark:text-neutral-50 break-all">
+              <p className="mt-1 text-base font-medium text-neutral-900 dark:text-neutral-50 break-all">
                 worldblazinginstitute@gmail.com
               </p>
               <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
@@ -86,10 +86,10 @@ const ContactUsSection = () => {
               <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
                 Institute Address
               </p>
-              <p className="mt-1 text-sm font-medium text-neutral-900 dark:text-neutral-50">
+              <p className="mt-1 text-base font-medium text-neutral-900 dark:text-neutral-50">
                 Aru Palace Building, 162/A1, Malwadi Road,
               </p>
-              <p className="text-sm font-medium text-neutral-900 dark:text-neutral-50">
+              <p className="text-base font-medium text-neutral-900 dark:text-neutral-50">
                 near Laxmi Mata Mandir, Hadapsar Gaon, Pune – 411028
               </p>
               <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
@@ -119,7 +119,7 @@ const ContactUsSection = () => {
             <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
               What can we help you with?
             </p>
-            <ul className="space-y-1 text-sm text-neutral-600 dark:text-neutral-300 list-disc list-inside">
+            <ul className="space-y-1 text-base text-neutral-600 dark:text-neutral-300 list-disc list-inside">
               <li>Choosing the right course based on your background</li>
               <li>Understanding fees, EMI options and batch timings</li>
               <li>Booking a free demo session or counseling</li>
@@ -138,7 +138,7 @@ const ContactUsSection = () => {
             <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-50">
               Send us a message
             </h3>
-            <p className="mt-2 text-xs md:text-sm text-neutral-600 dark:text-neutral-300">
+            <p className="mt-2 text-xs md:text-base text-neutral-600 dark:text-neutral-300">
               Share your details and what you&apos;re looking for. Our team will
               call or email you back with course details and the next steps.
             </p>
@@ -156,7 +156,7 @@ const ContactUsSection = () => {
                   type="text"
                   required
                   placeholder="Your full name"
-                  className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
+                  className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
                 />
               </div>
               <div>
@@ -168,7 +168,7 @@ const ContactUsSection = () => {
                   type="tel"
                   required
                   placeholder="Your contact number"
-                  className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
+                  className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
                 />
               </div>
             </div>
@@ -183,7 +183,7 @@ const ContactUsSection = () => {
                 type="email"
                 required
                 placeholder="you@example.com"
-                className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
+                className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
               />
             </div>
 
@@ -196,7 +196,7 @@ const ContactUsSection = () => {
                 name="course"
                 type="text"
                 placeholder="Full Stack / Python / Testing / Data Analytics..."
-                className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
+                className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
               />
             </div>
 
@@ -209,7 +209,7 @@ const ContactUsSection = () => {
                 name="message"
                 rows={4}
                 placeholder="Tell us about your background and what you want to achieve..."
-                className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-sm text-neutral-900 resize-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
+                className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base text-neutral-900 resize-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
               />
             </div>
 
@@ -218,7 +218,7 @@ const ContactUsSection = () => {
               <button
                 type="submit"
                 disabled={loading}
-                className="inline-flex items-center justify-center rounded-full bg-indigo-600 px-6 py-2.5 text-sm font-semibold text-white shadow-md hover:bg-indigo-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-1 focus-visible:ring-offset-background transition-colors"
+                className="inline-flex items-center justify-center rounded-full bg-indigo-600 px-6 py-2.5 text-base font-semibold text-white shadow-md hover:bg-indigo-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-1 focus-visible:ring-offset-background transition-colors"
               >
                  {loading ? "Sending..." : "Submit Enquiry"}
               </button>

@@ -22,7 +22,7 @@ export default function CourseDetailPage() {
                 </p>
                 <Link
                     href="/courses"
-                    className="text-sm text-indigo-600 dark:text-indigo-300 underline"
+                    className="text-base text-indigo-600 dark:text-indigo-300 underline"
                 >
                     Back to all courses
                 </Link>
@@ -42,7 +42,7 @@ export default function CourseDetailPage() {
                         <h1 className="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-neutral-50 mb-3">
                             {course.title}
                         </h1>
-                        <p className="text-sm md:text-base text-neutral-600 dark:text-neutral-300 mb-4 max-w-2xl">
+                        <p className="text-base md:text-base text-neutral-600 dark:text-neutral-300 mb-4 max-w-2xl">
                             {course.shortDescription}
                         </p>
 
@@ -76,13 +76,13 @@ export default function CourseDetailPage() {
                         <div className="flex flex-wrap gap-3 mt-4">
                             <Link
                                 href="/contact"
-                                className="inline-flex items-center justify-center rounded-full bg-indigo-600 px-6 py-2 text-sm font-medium text-white hover:bg-indigo-500 transition-colors"
+                                className="inline-flex items-center justify-center rounded-full bg-indigo-600 px-6 py-2 text-base font-medium text-white hover:bg-indigo-500 transition-colors"
                             >
                                 Enroll Now / Enquire
                             </Link>
                             <Link
                                 href="/courses"
-                                className="inline-flex items-center justify-center rounded-full border border-neutral-300 dark:border-neutral-700 px-6 py-2 text-sm font-medium text-neutral-800 dark:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+                                className="inline-flex items-center justify-center rounded-full border border-neutral-300 dark:border-neutral-700 px-6 py-2 text-base font-medium text-neutral-800 dark:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
                             >
                                 Back to all courses
                             </Link>
@@ -98,7 +98,7 @@ export default function CourseDetailPage() {
                                 className="h-full w-full object-cover"
                             />
                         ) : (
-                            <div className="h-full w-full flex items-center justify-center text-sm text-neutral-500 dark:text-neutral-400">
+                            <div className="h-full w-full flex items-center justify-center text-base text-neutral-500 dark:text-neutral-400">
                                 Course preview coming soon
                             </div>
                         )}
@@ -111,7 +111,7 @@ export default function CourseDetailPage() {
                         <h2 className="text-lg font-semibold mb-2 text-neutral-900 dark:text-neutral-50">
                             What this course includes
                         </h2>
-                        <ul className="list-disc list-inside text-sm text-neutral-700 dark:text-neutral-200 space-y-1">
+                        <ul className="list-disc list-inside text-base text-neutral-700 dark:text-neutral-200 space-y-1">
                             {course.children.map((child, index: number) => (
                                 <li key={index}>{child.title}</li>
                             ))}
@@ -129,7 +129,7 @@ export default function CourseDetailPage() {
                             {course.modules.map((m, idx) => (
                                 <li
                                     key={idx}
-                                    className="relative rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/70 p-4 text-sm text-neutral-700 dark:text-neutral-200"
+                                    className="relative rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/70 p-4 text-base text-neutral-700 dark:text-neutral-200"
                                 >
                                     <div className="flex items-start gap-3">
                                         <div className="mt-0.5 flex h-6 w-6 items-center justify-center rounded-full bg-indigo-600 text-[11px] font-semibold text-white">
@@ -165,8 +165,8 @@ export default function CourseDetailPage() {
                         )}
 
                         {course.certification && (
-                            <div className="rounded-2xl border border-emerald-200/70 bg-emerald-50/60 px-4 py-4 text-sm text-emerald-800 dark:border-emerald-800/60 dark:bg-emerald-900/30 dark:text-emerald-100">
-                                <h3 className="text-sm font-semibold mb-1">
+                            <div className="rounded-2xl border border-emerald-200/70 bg-emerald-50/60 px-4 py-4 text-base text-emerald-800 dark:border-emerald-800/60 dark:bg-emerald-900/30 dark:text-emerald-100">
+                                <h3 className="text-base font-semibold mb-1">
                                     Certification you receive
                                 </h3>
                                 <p>{course.certification}</p>
@@ -183,7 +183,7 @@ export default function CourseDetailPage() {
                                 <h2 className="text-lg font-semibold text-neutral-900 dark:text-neutral-50 mb-2">
                                     Job roles you can target
                                 </h2>
-                                <ul className="list-disc list-inside text-sm text-neutral-700 dark:text-neutral-200 space-y-1">
+                                <ul className="list-disc list-inside text-base text-neutral-700 dark:text-neutral-200 space-y-1">
                                     {course.jobRoles.map((role, idx) => (
                                         <li key={idx}>{role}</li>
                                     ))}
@@ -193,16 +193,16 @@ export default function CourseDetailPage() {
 
                         <div className="space-y-4">
                             {course.salaryRange && (
-                                <div className="rounded-2xl border border-indigo-200/70 bg-indigo-50/60 px-4 py-4 text-sm text-indigo-900 dark:border-indigo-800/60 dark:bg-indigo-900/30 dark:text-indigo-100">
-                                    <h3 className="text-sm font-semibold mb-1">
+                                <div className="rounded-2xl border border-indigo-200/70 bg-indigo-50/60 px-4 py-4 text-base text-indigo-900 dark:border-indigo-800/60 dark:bg-indigo-900/30 dark:text-indigo-100">
+                                    <h3 className="text-base font-semibold mb-1">
                                         Expected fresher salary range
                                     </h3>
                                     <p>{course.salaryRange}</p>
                                 </div>
                             )}
                             {course.emiOptions && (
-                                <div className="rounded-2xl border border-neutral-200 dark:border-neutral-700 bg-neutral-50 px-4 py-4 text-sm text-neutral-800 dark:bg-neutral-900 dark:text-neutral-100">
-                                    <h3 className="text-sm font-semibold mb-1">EMI options</h3>
+                                <div className="rounded-2xl border border-neutral-200 dark:border-neutral-700 bg-neutral-50 px-4 py-4 text-base text-neutral-800 dark:bg-neutral-900 dark:text-neutral-100">
+                                    <h3 className="text-base font-semibold mb-1">EMI options</h3>
                                     <p>{course.emiOptions}</p>
                                 </div>
                             )}
@@ -216,7 +216,7 @@ export default function CourseDetailPage() {
                         <h2 className="text-lg font-semibold text-neutral-900 dark:text-neutral-50 mb-2">
                             Who is this course ideal for?
                         </h2>
-                        <ul className="list-disc list-inside text-sm text-neutral-700 dark:text-neutral-200 space-y-1">
+                        <ul className="list-disc list-inside text-base text-neutral-700 dark:text-neutral-200 space-y-1">
                             {course.whoCanJoin.map((item, idx) => (
                                 <li key={idx}>{item}</li>
                             ))}
@@ -230,7 +230,7 @@ export default function CourseDetailPage() {
                         <h2 className="text-lg font-semibold mb-1">
                             Ready to start the {course.title} journey?
                         </h2>
-                        <p className="text-xs md:text-sm text-indigo-50">
+                        <p className="text-xs md:text-base text-indigo-50">
                             Talk to our counselor, understand fees and EMI options, and book
                             your seat for the next batch.
                         </p>
@@ -238,13 +238,13 @@ export default function CourseDetailPage() {
                     <div className="flex flex-wrap gap-3">
                         <Link
                             href="/contact-us"
-                            className="inline-flex items-center justify-center rounded-full bg-white px-5 py-2 text-xs md:text-sm font-semibold text-indigo-700 hover:bg-neutral-100"
+                            className="inline-flex items-center justify-center rounded-full bg-white px-5 py-2 text-xs md:text-base font-semibold text-indigo-700 hover:bg-neutral-100"
                         >
                             Enroll / Book Counseling
                         </Link>
                         <Link
                             href="tel:+918459816185"
-                            className="inline-flex items-center justify-center rounded-full border border-white/70 px-5 py-2 text-xs md:text-sm font-semibold text-white hover:bg-white/10"
+                            className="inline-flex items-center justify-center rounded-full border border-white/70 px-5 py-2 text-xs md:text-base font-semibold text-white hover:bg-white/10"
                         >
                             Call Institute
                         </Link>

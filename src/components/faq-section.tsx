@@ -57,7 +57,7 @@ export default function FAQSection({ className }: FAQSectionProps) {
         <h2 className="mt-2 text-2xl md:text-3xl font-bold text-neutral-900 dark:text-neutral-50">
           Frequently Asked Questions
         </h2>
-        <p className="mt-3 text-sm md:text-base text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto">
+        <p className="mt-3 text-base md:text-base text-neutral-600 dark:text-neutral-300 max-w-2xl mx-auto">
           Here are some of the most common questions students ask us before
           joining. If you still have a doubt, feel free to contact us anytime.
         </p>
@@ -70,7 +70,7 @@ export default function FAQSection({ className }: FAQSectionProps) {
             className="group rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/80 dark:bg-neutral-900/70 backdrop-blur-sm px-4 py-3 md:px-5 md:py-4"
           >
             <summary className="flex cursor-pointer list-none items-center justify-between gap-3">
-              <span className="text-sm md:text-base font-medium text-neutral-900 dark:text-neutral-100">
+              <span className="text-base md:text-base font-medium text-neutral-900 dark:text-neutral-100">
                 {faq.question}
               </span>
               <span className="shrink-0 rounded-full border border-neutral-300 dark:border-neutral-700 p-1.5 text-neutral-500 group-open:rotate-180 transition-transform">
@@ -91,7 +91,7 @@ export default function FAQSection({ className }: FAQSectionProps) {
                 </svg>
               </span>
             </summary>
-            <div className="mt-2 md:mt-3 text-xs md:text-sm text-neutral-600 dark:text-neutral-300">
+            <div className="mt-2 md:mt-3 text-xs md:text-base text-neutral-600 dark:text-neutral-300">
               {faq.answer}
             </div>
           </details>

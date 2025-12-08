@@ -1,0 +1,35 @@
+{
+  "mission": {
+    "badge": "Our Mission",
+    "text": "World Blazing Computer Institute exists to help students in Hadapsar and across Pune move from \"I don't know where to start\" to job-ready confidence through practical IT training, small batches, and one-to-one mentoring."
+  },
+  "different": {
+    "title": "What makes us different?",
+    "intro": "Not just theory or YouTube-style tutorials. We focus on career outcomes with guided practice.",
+    "points": [
+      "Small batches & personal attention – every student gets time with the trainer.",
+      "Project-based learning – build real web apps, dashboards and campaigns, not just notes.",
+      "Offline + Online flexibility – continue learning even if your schedule changes.",
+      "Mentors from industry – trainers with real experience in development, testing, analytics & marketing."
+    ]
+  },
+  "results": {
+    "title": "Results & success stories",
+    "intro": "World Blazing students are working in IT companies across Pune and India in roles like Full Stack Developer, QA Engineer, Data Analyst and Digital Marketer.",
+    "stats": [
+      { "label": "Students trained", "value": "1,500+" },
+      { "label": "Avg. satisfaction rating", "value": "4.9/5 ⭐" },
+      { "label": "Placement-oriented batches", "value": "50+" },
+      { "label": "Success rate (job / internship)", "value": "90%+" }
+    ],
+    "disclaimer": "*Numbers are based on internal tracking of students who completed projects and interview preparation with us."
+  },
+  "awards": {
+    "badge": "Awards & Recognition",
+    "items": [
+      "4.9★ rated on Google Reviews",
+      "Trusted local institute in Hadapsar since 2018",
+      "Recognized for student-first teaching approach"
+    ]
+  }
+}

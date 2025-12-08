@@ -60,14 +60,14 @@ export function BlogSection() {
                   <div className="p-6 flex flex-col flex-1">
                     <div className="flex items-center gap-2 mb-4">
                       <span>👤</span>
-                      <span className="text-sm text-neutral-600 dark:text-neutral-400">
+                      <span className="text-base text-neutral-600 dark:text-neutral-400">
                         {post.author}
                       </span>
                     </div>
                     <h4 className="text-xl font-bold mb-3 text-neutral-900 dark:text-white">
                       {post.title}
                     </h4>
-                    <p className="text-neutral-600 dark:text-neutral-400 text-sm mb-6 flex-1">
+                    <p className="text-neutral-600 dark:text-neutral-400 text-base mb-6 flex-1">
                       {post.description}
                     </p>
                     <div className="flex items-center justify-between">

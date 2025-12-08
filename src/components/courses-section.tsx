@@ -29,7 +29,7 @@ export default function CoursesSection({
           <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 dark:text-neutral-50">
             Job-Oriented IT Courses
           </h2>
-          <p className="mt-2 text-sm md:text-base text-neutral-600 dark:text-neutral-300 max-w-xl">
+          <p className="mt-2 text-base md:text-base text-neutral-600 dark:text-neutral-300 max-w-xl">
             Choose from beginner-friendly to advanced courses designed for real
             industry skills. All courses are available in offline and online modes.
           </p>
@@ -54,7 +54,7 @@ export default function CoursesSection({
                 {course.title}
               </h3>
 
-              <p className="text-sm text-neutral-600 dark:text-neutral-300 line-clamp-3">
+              <p className="text-base text-neutral-600 dark:text-neutral-300 line-clamp-3">
                 {course.shortDescription}
               </p>
 

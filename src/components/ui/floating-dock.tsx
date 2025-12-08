@@ -73,7 +73,7 @@ const FloatingDockMobile = ({
                     initial={{ opacity: 0, x: 10 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: 10 }}
-                    className="absolute right-14 bg-gray-100 dark:bg-neutral-800 px-3 py-2 rounded-md text-sm text-neutral-700 dark:text-white whitespace-nowrap border border-gray-200 dark:border-neutral-700"
+                    className="absolute right-14 bg-gray-100 dark:bg-neutral-800 px-3 py-2 rounded-md text-base text-neutral-700 dark:text-white whitespace-nowrap border border-gray-200 dark:border-neutral-700"
                   >
                     {item.title}
                   </motion.div>

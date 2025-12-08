@@ -13,20 +13,19 @@ export default function Footer() {
 
           {/* Branding */}
           <div>
-            <h3 className="text-xl font-bold text-neutral-900 dark:text-white">
-              World Blazing
-            </h3>
-            <p className="mt-2 text-sm text-neutral-500 dark:text-neutral-400 max-w-sm">
-              Helping students build careers in IT through practical learning and industry mentorship.
-            </p>
+            <img
+              src="/wb-logo.png"
+              alt="World Blazing Logo"
+              className="h-50 w-50 mb-4"
+            />
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
+            <h4 className="text-base font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
               Quick Links
             </h4>
-            <ul className="space-y-2 text-sm text-neutral-600 dark:text-neutral-400">
+            <ul className="space-y-2 text-base text-neutral-600 dark:text-neutral-400">
               <li><Link href="/courses" className="hover:text-indigo-500">Courses</Link></li>
               <li><Link href="/placements" className="hover:text-indigo-500">Placements</Link></li>
               <li><Link href="/about-us" className="hover:text-indigo-500">About Us</Link></li>
@@ -36,10 +35,10 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
+            <h4 className="text-base font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
               Contact
             </h4>
-            <ul className="space-y-2 text-sm text-neutral-600 dark:text-neutral-400">
+            <ul className="space-y-2 text-base text-neutral-600 dark:text-neutral-400">
               <li className="flex items-center gap-2"><Phone size={14}/> +91 8459816185</li>
               <li className="flex items-center gap-2"><Mail size={14}/> worldblazinginstitute@gmail.com</li>
               <li>Pune, Maharashtra</li>
@@ -48,7 +47,7 @@ export default function Footer() {
 
           {/* Social */}
           <div>
-            <h4 className="text-sm font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
+            <h4 className="text-base font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
               Follow Us
             </h4>
             <div className="flex gap-3 text-neutral-600 dark:text-neutral-400">

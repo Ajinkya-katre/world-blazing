@@ -56,7 +56,7 @@ export default function PlacementSection({ className }: PlacementSectionProps) {
           <h2 className="mt-2 text-2xl md:text-3xl font-bold text-neutral-900 dark:text-neutral-50">
             Recent Student Placements
           </h2>
-          <p className="mt-3 text-sm md:text-base text-neutral-600 dark:text-neutral-300 max-w-xl">
+          <p className="mt-3 text-base md:text-base text-neutral-600 dark:text-neutral-300 max-w-xl">
             Our students have successfully started their careers in top IT
             companies with strong salaries and growth opportunities. Here are
             some of the highlights from our recent batches.
@@ -64,7 +64,7 @@ export default function PlacementSection({ className }: PlacementSectionProps) {
         </div>
 
         {/* quick stats */}
-        <div className="grid grid-cols-3 gap-3 text-center text-xs md:text-sm">
+        <div className="grid grid-cols-3 gap-3 text-center text-xs md:text-base">
           <StatPill
             label="Students Placed"
             value={`${totalStudents}+`}
@@ -91,7 +91,7 @@ export default function PlacementSection({ className }: PlacementSectionProps) {
             type="button"
             onClick={() => setSelectedCourse(course)}
             className={cn(
-              "px-3 py-1.5 rounded-full text-xs md:text-sm border transition-all",
+              "px-3 py-1.5 rounded-full text-xs md:text-base border transition-all",
               selectedCourse === course
                 ? "bg-indigo-600 text-white border-indigo-600 shadow-sm"
                 : "bg-neutral-50 text-neutral-700 dark:bg-neutral-900 dark:text-neutral-300 border-neutral-200 dark:border-neutral-800 hover:bg-neutral-100 dark:hover:bg-neutral-800"
@@ -117,7 +117,7 @@ export default function PlacementSection({ className }: PlacementSectionProps) {
 function StatPill({ label, value }: { label: string; value: string }) {
   return (
     <div className="rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white/70 dark:bg-neutral-900/70 px-3 py-2 shadow-sm">
-      <div className="text-sm font-semibold text-neutral-900 dark:text-neutral-50">
+      <div className="text-base font-semibold text-neutral-900 dark:text-neutral-50">
         {value}
       </div>
       <div className="mt-1 text-[11px] text-neutral-500 dark:text-neutral-400">
@@ -151,14 +151,14 @@ function FeaturedPlacementCard({ placement }: { placement: Placement }) {
           <h3 className="text-lg md:text-xl font-semibold">
             {placement.name}
           </h3>
-          <p className="text-xs md:text-sm text-white/90">
+          <p className="text-xs md:text-base text-white/90">
             {placement.role} @ {placement.company}
           </p>
         </div>
       </div>
 
       {/* Middle - details */}
-      <div className="relative flex-1 text-xs md:text-sm space-y-1">
+      <div className="relative flex-1 text-xs md:text-base space-y-1">
         <p className="font-medium">
           {placement.packageLPA.toFixed(1)} LPA • {placement.location}
         </p>
@@ -202,7 +202,7 @@ function PlacementCard({ placement }: { placement: Placement }) {
       <div className="flex-1 flex flex-col gap-1">
         <div className="flex items-center justify-between gap-2">
           <div>
-            <p className="text-sm font-semibold text-neutral-900 dark:text-neutral-50">
+            <p className="text-base font-semibold text-neutral-900 dark:text-neutral-50">
               {placement.name}
             </p>
             <p className="text-[11px] text-neutral-500 dark:text-neutral-400">
