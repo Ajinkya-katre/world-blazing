@@ -7,6 +7,7 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import FloatingContactBar from "@/components/floating-bar";
+import Footer from "@/components/footer";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -110,6 +111,7 @@ export default function RootLayout({
           {/* <FloatingContactBar /> */}
         </ThemeProvider>
         <SpeedInsights />
+        <Footer />
       </body>
     </html>
   );
