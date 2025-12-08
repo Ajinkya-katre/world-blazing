@@ -7,7 +7,7 @@ export function TimelineDemo() {
       title: "2018",
       content: (
         <div>
-          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
+          <p className="mb-8 text-xs font-normal text-neutral-800 md:text-base dark:text-neutral-200">
             World Blazing Computer Solution is a privately-owned training and computer education institute based in Hadapsar, Pune (Aru Palace Building, Malwadi Road, near Laxmi Mata Mandir, Hadapsar Gaon, Pune 411028).
           </p>
           <div className="grid grid-cols-2 gap-4">

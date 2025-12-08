@@ -13,8 +13,8 @@ interface CTAFooterProps {
 export default function CTAFooter({
   text = "Start Your Learning Journey Today",
   btnText = "Get Started",
-  href = "/contact",
-  className,
+  href = "/contact-us",
+  className,  
 }: CTAFooterProps) {
   return (
     <section
@@ -32,13 +32,13 @@ export default function CTAFooter({
           {text}
         </h2>
 
-        <p className="relative text-sm md:text-base text-white/90 mb-6">
+        <p className="relative text-base md:text-base text-white/90 mb-6">
           Join thousands of learners leveling up their careers through practical, guided courses.
         </p>
 
         <Link
           href={href}
-          className="relative inline-flex items-center justify-center bg-white text-indigo-700 dark:text-neutral-900 font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-transform text-sm md:text-base"
+          className="relative inline-flex items-center justify-center bg-white text-indigo-700 dark:text-neutral-900 font-semibold px-6 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-transform text-base md:text-base"
         >
           {btnText}
         </Link>

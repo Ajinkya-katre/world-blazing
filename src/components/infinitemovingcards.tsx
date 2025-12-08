@@ -111,21 +111,11 @@ export default function InfiniteMovingCards({
               className="flex min-w-[280px] max-w-[380px] flex-col gap-3 rounded-xl border border-neutral-200 bg-gradient-to-b from-white to-neutral-50 px-5 py-4 shadow-sm dark:border-neutral-700 dark:from-neutral-800 dark:to-neutral-900"
             >
               <div className="flex items-center gap-3">
-                {it.avatar ? (
-                  <img
-                    src={it.avatar}
-                    alt={it.name}
-                    className="h-10 w-10 rounded-full object-cover"
-                    width={40}
-                    height={40}
-                  />
-                ) : (
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-100 text-sm font-medium text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full bg-neutral-100 text-base font-medium text-neutral-700 dark:bg-neutral-700 dark:text-neutral-200">
                     {it.name.split(" ").map((n) => n[0]).slice(0, 2).join("")}
                   </div>
-                )}
                 <div>
-                  <p className="text-sm font-semibold text-neutral-800 dark:text-neutral-200">
+                  <p className="text-base font-semibold text-neutral-800 dark:text-neutral-200">
                     {it.name}
                   </p>
                   {it.title && (
@@ -134,7 +124,7 @@ export default function InfiniteMovingCards({
                 </div>
               </div>
 
-              <blockquote className="text-sm text-neutral-700 dark:text-neutral-200 line-clamp-6">
+              <blockquote className="text-base text-neutral-700 dark:text-neutral-200 line-clamp-6">
                 “{it.quote}”
               </blockquote>
 

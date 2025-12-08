@@ -24,7 +24,7 @@ export default function FloatingContactBar() {
       {/* Book Free Demo */}
       <Link
         href="/contact-us?type=demo"
-        className="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-4 py-2 text-xs md:text-sm font-semibold text-white shadow-lg hover:bg-indigo-500 transition-colors"
+        className="inline-flex items-center gap-2 rounded-full bg-indigo-600 px-4 py-2 text-xs md:text-base font-semibold text-white shadow-lg hover:bg-indigo-500 transition-colors"
       >
         🎓 Book Free Demo
       </Link>
@@ -34,7 +34,7 @@ export default function FloatingContactBar() {
         href={waLink}
         target="_blank"
         rel="noopener noreferrer"
-        className="inline-flex cursor-pointer items-center gap-2 rounded-full bg-emerald-500 px-3 py-2 text-xs md:text-sm font-semibold text-white shadow-lg hover:bg-emerald-400 transition-colors"
+        className="inline-flex cursor-pointer items-center gap-2 rounded-full bg-emerald-500 px-3 py-2 text-xs md:text-base font-semibold text-white shadow-lg hover:bg-emerald-400 transition-colors"
       >
         🟢 WhatsApp
       </Link>
@@ -42,7 +42,7 @@ export default function FloatingContactBar() {
       {/* Call now */}
       <Link
         href="tel:+918459816185" 
-        className="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-3 py-2 text-xs md:text-sm font-semibold text-white shadow-lg hover:bg-neutral-800 transition-colors dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-white"
+        className="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-3 py-2 text-xs md:text-base font-semibold text-white shadow-lg hover:bg-neutral-800 transition-colors dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-white"
       >
         📞 Call Now
       </Link>

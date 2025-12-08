@@ -7,7 +7,7 @@ export const HERO_SECTION_CONTENT = {
     sub: 'Interactive Learning Platform',
   },
   description:
-    'Experience the next generation of web development. Learn through interactive design using cutting-edge technologies like Tailwind CSS and Acernity UI.',
+    'Master Web Development, Full Stack, Python, Data Science and Software Testing with practical training in Pune. Learn industry tools like React, Tailwind CSS, SQL and Git — designed for beginners and graduates looking for placement-oriented IT courses.',
   buttons: {
     primary: {
       text: 'Explore Courses',

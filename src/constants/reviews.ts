@@ -13,7 +13,7 @@ export const studentReviews: Review[] = [
       "World Blazing Computer Solution helped me transform from a beginner into a confident coder. The teaching style is simple, practical, and very student-friendly.",
     name: "Rahul Patil",
     title: "Full Stack Student",
-    avatar: "/reviews/rahul.jpg", // optional (remove if not needed)
+    avatar: "/reviews/rahul.jpg", 
   },
   {
     quote:
