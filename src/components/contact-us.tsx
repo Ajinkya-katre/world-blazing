@@ -4,7 +4,7 @@ import { FormEvent, useState } from "react";
 const scriptURL = "https://script.google.com/macros/s/AKfycbyjqsJy5Z9IAYKNJKCr2e20dhJ_WZfnW2phJeCOw2_685ZvykwofDmDMtCqWkmSIF1g/exec"
 
 const ContactUsSection = () => {
-    const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<null | "success" | "error">(null);
 
   async function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -60,8 +60,11 @@ const ContactUsSection = () => {
               <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
                 Call / WhatsApp
               </p>
-              <a className="mt-1 text-base font-medium text-neutral-900 dark:text-neutral-50">
-                +91 8459816185
+              <a
+                href="tel:+918459816185"
+                className="inline-flex items-center justify-center rounded-full border border-white/70 px-5 py-2 text-xs md:text-base font-semibold text-white hover:bg-white/10"
+              >
+                Call Institute
               </a>
               <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
                 Mon – Sat, 9:00 AM to 8:00 PM
@@ -220,14 +223,14 @@ const ContactUsSection = () => {
                 disabled={loading}
                 className="inline-flex items-center justify-center rounded-full bg-indigo-600 px-6 py-2.5 text-base font-semibold text-white shadow-md hover:bg-indigo-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-1 focus-visible:ring-offset-background transition-colors"
               >
-                 {loading ? "Sending..." : "Submit Enquiry"}
+                {loading ? "Sending..." : "Submit Enquiry"}
               </button>
               <p className="text-[11px] text-neutral-500 dark:text-neutral-400">
                 We never share your details with anyone. You will receive a call
                 or WhatsApp within 24 hours.
               </p>
             </div>
-             {status === "success" && (
+            {status === "success" && (
               <p className="mt-2 text-xs text-emerald-500">
                 ✅ Thank you! We&apos;ve received your enquiry.
               </p>
