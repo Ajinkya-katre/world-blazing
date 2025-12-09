@@ -40,12 +40,12 @@ export default function FloatingContactBar() {
       </Link>
 
       {/* Call now */}
-      <Link
+      <a
         href="tel:+918459816185" 
         className="inline-flex items-center gap-2 rounded-full bg-neutral-900 px-3 py-2 text-xs md:text-base font-semibold text-white shadow-lg hover:bg-neutral-800 transition-colors dark:bg-neutral-100 dark:text-neutral-900 dark:hover:bg-white"
       >
         📞 Call Now
-      </Link>
+      </a>
     </div>
   );
 }
