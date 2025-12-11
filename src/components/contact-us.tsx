@@ -58,11 +58,11 @@ const ContactUsSection = () => {
             {/* Phone */}
             <div className="rounded-2xl border border-neutral-200 bg-white/80 px-4 py-3 dark:border-neutral-800 dark:bg-neutral-900/80 shadow-sm">
               <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-                Call / WhatsApp
+                Call / WhatsApp US at [+918459816185]
               </p>
               <a
                 href="tel:+918459816185"
-                className="inline-flex items-center justify-center rounded-full border border-white/70 px-5 py-2 text-xs md:text-base font-semibold text-white hover:bg-white/10"
+                className="inline-flex mt-2 items-center justify-center rounded-full border border-white/70 px-5 py-2 text-xs md:text-base font-semibold text-white hover:bg-white/10"
               >
                 Call Institute
               </a>
