@@ -20,7 +20,7 @@ export function AnimatedTestimonialsDemo() {
   },
   {
     quote:
-      "Rohit connects digital marketing theory with live campaign examples. From SEO to Meta and Google Ads, he shows students exactly how brands generate leads, track performance and run result-oriented campaigns.",
+      "Rahul connects digital marketing theory with live campaign examples. From SEO to Meta and Google Ads, he shows students exactly how brands generate leads, track performance and run result-oriented campaigns.",
     name: "Rahul Agarwal",
     designation:
       "Digital Marketing Trainer | SEO, Ads & Performance Marketing",
