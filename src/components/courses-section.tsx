@@ -4,6 +4,7 @@ import Link from "next/link";
 import { cn } from "@/lib/utils";
 import coursesData from "@/constants/courses.json";
 import type { Course } from "@/lib/interface/courses";
+import FreeDemoCTA from "./free-demo-cta";
 
 interface CoursesSectionProps {
   courses?: Course[];
@@ -35,6 +36,12 @@ export default function CoursesSection({
           </p>
         </div>
       </div>
+
+      {typeof window !== "undefined" && window.location.pathname.includes("/courses") && (
+        <>
+          <FreeDemoCTA />
+        </>
+      )}
 
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {courses.map((course) => (

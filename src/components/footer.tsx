@@ -25,24 +25,24 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-base font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
+            <h3 className="text-base font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
               Quick Links
-            </h4>
+            </h3>
             <ul className="space-y-2 text-base text-neutral-600 dark:text-neutral-400">
-              <li><Link href="/about-us" className="hover:text-indigo-500">About Us</Link></li>
-              <li><Link href="/courses" className="hover:text-indigo-500">Courses</Link></li>
-              <li><Link href="/gallery" className="hover:text-indigo-500">Gallery</Link></li>
-              <li><Link href="/blog" className="hover:text-indigo-500">Blog</Link></li>
-              <li><Link href="/placements" className="hover:text-indigo-500">Placements</Link></li>
-              <li><Link href="/contact-us" className="hover:text-indigo-500">Contact</Link></li>
+                <li><Link href="/about-us" className="hover:text-indigo-500" aria-label="About Us">About Us</Link></li>
+                <li><Link href="/courses" className="hover:text-indigo-500" aria-label="Courses">Courses</Link></li>
+                <li><Link href="/gallery" className="hover:text-indigo-500" aria-label="Gallery">Gallery</Link></li>
+                <li><Link href="/blog" className="hover:text-indigo-500" aria-label="Blog">Blog</Link></li>
+                <li><Link href="/placements" className="hover:text-indigo-500" aria-label="Placements">Placements</Link></li>
+                <li><Link href="/contact-us" className="hover:text-indigo-500" aria-label="Contact Us">Contact</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="text-base font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
+            <h3 className="text-base font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
               Contact
-            </h4>
+            </h3>
             <ul className="space-y-2 text-base text-neutral-600 dark:text-neutral-400">
               <li className="flex items-center gap-2"><Phone size={14}/> +91 8459816185</li>
               <li className="flex items-center gap-2"><Mail size={14}/> worldblazinginstitute@gmail.com</li>
@@ -52,9 +52,9 @@ export default function Footer() {
 
           {/* Social */}
           <div>
-            <h4 className="text-base font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
+            <h3 className="text-base font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
               Follow Us
-            </h4>
+            </h3>
             <div className="flex gap-3 text-neutral-600 dark:text-neutral-400">
                 <a href="https://www.instagram.com/worldblazing_computer_solution" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-500" aria-label="Follow us on Instagram"><Instagram size={18} /></a>
             </div>
