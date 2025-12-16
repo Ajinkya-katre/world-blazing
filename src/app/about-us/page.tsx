@@ -1,4 +1,4 @@
-import { TimelineDemo } from "@/components/timeline";
+import  TimelineSection  from "@/components/timeline";
 
 export default function AboutUs() {
   return (
@@ -7,7 +7,7 @@ export default function AboutUs() {
       <p className="text-gray-600 dark:text-gray-400">
         Welcome to World Blazing Computer Solution — your trusted place to learn computers, coding, and modern IT skills in Hadapsar, Pune!
       </p>
-      <TimelineDemo />
+      <TimelineSection />
     </div>
   );
 }

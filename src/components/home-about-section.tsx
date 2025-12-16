@@ -27,7 +27,7 @@ const data = homeAbout as HomeAboutData;
 
 export default function HomeAboutSection() {
   return (
-    <section className="w-full py-16 md:py-20 px-4 sm:px-6 lg:px-8">
+    <section className="w-full py-8 md:py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto space-y-10">
         {/* Our Mission */}
         <div className="max-w-3xl">

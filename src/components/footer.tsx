@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -13,10 +14,12 @@ export default function Footer() {
 
           {/* Branding */}
           <div>
-            <img
+            <Image
               src="/images/wb-logo.png"
               alt="World Blazing Logo"
-              className="h-50 w-50 mb-4"
+              width={200}
+              height={200}
+              className="mb-4"
             />
           </div>
 
@@ -26,9 +29,11 @@ export default function Footer() {
               Quick Links
             </h4>
             <ul className="space-y-2 text-base text-neutral-600 dark:text-neutral-400">
-              <li><Link href="/courses" className="hover:text-indigo-500">Courses</Link></li>
-              <li><Link href="/placements" className="hover:text-indigo-500">Placements</Link></li>
               <li><Link href="/about-us" className="hover:text-indigo-500">About Us</Link></li>
+              <li><Link href="/courses" className="hover:text-indigo-500">Courses</Link></li>
+              <li><Link href="/gallery" className="hover:text-indigo-500">Gallery</Link></li>
+              <li><Link href="/blog" className="hover:text-indigo-500">Blog</Link></li>
+              <li><Link href="/placements" className="hover:text-indigo-500">Placements</Link></li>
               <li><Link href="/contact-us" className="hover:text-indigo-500">Contact</Link></li>
             </ul>
           </div>
@@ -51,7 +56,7 @@ export default function Footer() {
               Follow Us
             </h4>
             <div className="flex gap-3 text-neutral-600 dark:text-neutral-400">
-              <a href="https://www.instagram.com/worldblazing_computer_solution" target="_blank" className="hover:text-indigo-500"><Instagram size={18} /></a>
+                <a href="https://www.instagram.com/worldblazing_computer_solution" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-500" aria-label="Follow us on Instagram"><Instagram size={18} /></a>
             </div>
           </div>
 

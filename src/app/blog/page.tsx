@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { IconArrowRight } from '@tabler/icons-react';
 import { BLOG_POSTS } from '@/constants/blog-data';
+import Image from 'next/image';
 
 const blogPosts = Array.isArray(BLOG_POSTS) ? BLOG_POSTS : [];
 
@@ -52,8 +53,7 @@ export function Blog() {
                   className="group cursor-pointer h-full flex flex-col rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden hover:shadow-lg transition-shadow"
                 >
                   <motion.div whileHover={{ scale: 1.03 }} className="relative h-48 overflow-hidden">
-                    {/* You can change to Next/Image, but this basic <img> works without config */}
-                    <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
+                    <Image src={post.image} alt={post.title} className="w-full h-full object-cover" />
                   </motion.div>
 
                   <div className="p-6 flex flex-col flex-1">

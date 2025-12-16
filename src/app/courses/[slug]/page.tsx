@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import coursesData from "@/constants/courses.json";
 import type { Course } from "@/lib/interface/courses";
+import Image from "next/image";
 
 const courses = coursesData as Course[];
 
@@ -92,7 +93,7 @@ export default function CourseDetailPage() {
                     {/* Course image / visual */}
                     <div className="relative rounded-3xl overflow-hidden border border-neutral-200 dark:border-neutral-800 bg-neutral-100/70 dark:bg-neutral-900/60 shadow-sm min-h-[220px]">
                         {course.image ? (
-                            <img
+                            <Image
                                 src={course.image}
                                 alt={course.title}
                                 className="h-full w-full object-cover"

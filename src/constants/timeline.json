@@ -1,0 +1,56 @@
+[
+  {
+    "year": "2018",
+    "title": "Foundation & Vision",
+    "description": "World Blazing Computer Solution was founded in Hadapsar, Pune with a vision to provide practical, job-oriented IT education. Located at Aru Palace Building, Malwadi Road, near Laxmi Mata Mandir, we began our journey with a strong focus on fundamentals and student success."
+  },
+  {
+    "year": "2019",
+    "title": "Growing Demand, Growing Team",
+    "description": "With increasing student trust, we expanded batches, upgraded lab infrastructure, and introduced courses like Tally, MS Office, and Basic Programming. This year established our reputation for student-first teaching."
+  },
+  {
+    "year": "2020",
+    "title": "Online Learning Revolution",
+    "description": "During the pandemic, we transitioned fully to online learning, enabling students to continue their education from anywhere. This helped us reach learners beyond Hadapsar and support hundreds during uncertain times."
+  },
+  {
+    "year": "2021",
+    "title": "Introducing Modern IT Skills",
+    "description": "To align with industry needs, we launched advanced programs including Python Programming, Full Stack Web Development, and Data Science & Analytics—transforming World Blazing into a career-focused IT training institute.",
+    "list": [
+      "Python Programming",
+      "Full Stack Web Development",
+      "Data Science & Analytics"
+    ]
+  },
+  {
+    "year": "Early 2023",
+    "title": "Upgrading Infrastructure & Learning Experience",
+    "description": "We enhanced classrooms, teaching methodology, and adopted modern tools. With more practical sessions, real-world projects, and one-on-one mentoring, students began progressing faster than ever."
+  },
+  {
+    "year": "2024",
+    "title": "Expanding Courses & Placement Support",
+    "description": "Structured programs were launched across multiple domains along with stronger placement guidance including resume building, mock interviews, and career counseling.",
+    "list": [
+      "Full Stack Web Development",
+      "Software Testing",
+      "Data Analytics",
+      "Digital Marketing",
+      "Data Science"
+    ]
+  },
+  {
+    "year": "2025",
+    "title": "Serving the Next Generation",
+    "description": "Today, World Blazing proudly serves students, job seekers, and professionals across Pune and beyond, recognized for quality training, flexibility, and strong student trust.",
+    "list": [
+      "Small batches & personal attention",
+      "Hands-on, practical teaching",
+      "Industry-relevant curriculum",
+      "Online & offline learning options",
+      "High student satisfaction"
+    ]
+  }
+]

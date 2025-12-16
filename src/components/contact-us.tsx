@@ -33,7 +33,7 @@ const ContactUsSection = () => {
     }
   }
   return (
-    <section className="w-full py-16 md:py-20 px-4 sm:px-6 lg:px-8">
+    <section className="w-full py-8 md:py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto grid gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] items-start">
         {/* LEFT SECTION */}
         <div className="space-y-8">

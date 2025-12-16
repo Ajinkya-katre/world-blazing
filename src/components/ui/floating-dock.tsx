@@ -92,6 +92,7 @@ const FloatingDockMobile = ({
         )}
       </AnimatePresence>
       <button
+        aria-label="Toggle navigation menu"
         onClick={() => setOpen(!open)}
         className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-800 shadow-lg hover:shadow-xl hover:bg-gray-100 dark:hover:bg-neutral-700 transition-all"
       >
