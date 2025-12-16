@@ -19,8 +19,8 @@ export const HERO_SECTION_CONTENT = {
     },
   },
   stats: [
-    { number: '100+', label: 'Courses' },
-    { number: '50K+', label: 'Students' },
+    { number: '10+', label: 'Courses' },
+    { number: '500+', label: 'Students' },
     { number: '95%', label: 'Success Rate' },
   ],
   scroll: {
