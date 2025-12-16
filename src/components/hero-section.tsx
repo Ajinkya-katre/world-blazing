@@ -119,7 +119,7 @@ export function HeroSection() {
                 whileHover={!isMobile ? { scale: 1.05 } : undefined}
                 whileTap={{ scale: 0.95 }}
                 className="flex items-center gap-2 rounded-lg bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-3 font-semibold text-white shadow-lg transition-all"
-                aria-label={HERO_SECTION_CONTENT.buttons.primary.text}
+                aria-label={HERO_SECTION_CONTENT.buttons.primary.ariaLabel}
                 >
                 {HERO_SECTION_CONTENT.buttons.primary.text}
                 <IconArrowRight className="h-5 w-5" aria-hidden="true" />
@@ -131,7 +131,7 @@ export function HeroSection() {
                 whileHover={!isMobile ? { scale: 1.05 } : undefined}
                 whileTap={{ scale: 0.95 }}
                 className="rounded-lg border-2 border-neutral-300 px-8 py-3 font-semibold text-neutral-900 transition-all hover:bg-neutral-50 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-900"
-                aria-label={HERO_SECTION_CONTENT.buttons.secondary.text}
+                aria-label={HERO_SECTION_CONTENT.buttons.secondary.ariaLabel}
               >
                 {HERO_SECTION_CONTENT.buttons.secondary.text}
               </motion.button>

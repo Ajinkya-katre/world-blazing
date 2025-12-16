@@ -27,7 +27,10 @@ export interface Course {
   whoCanJoin?: string[];     // target audience bullet points
 
   children?: CourseChild[];  // small “includes” list (existing)
-  
+  salary: string;          // average salary info
+  role: string;            // career role
+  outcome: string;         // learning outcome
+
   // Optional: if you want to add pricing later
   // price?: string;
 }

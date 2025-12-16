@@ -47,10 +47,19 @@
       "Beginners with basic computer knowledge and strong interest"
     ],
     "children": [
-      { "title": "Frontend (HTML, CSS, JavaScript, React)" },
-      { "title": "Backend (Node.js, Express, REST APIs)" },
-      { "title": "Databases & Deployment (MongoDB / SQL, Git, Cloud)" }
-    ]
+      {
+        "title": "Frontend (HTML, CSS, JavaScript, React)"
+      },
+      {
+        "title": "Backend (Node.js, Express, REST APIs)"
+      },
+      {
+        "title": "Databases & Deployment (MongoDB / SQL, Git, Cloud)"
+      }
+    ],
+    "salary": "₹5–12 LPA",
+    "role": "Full Stack Developer",
+    "outcome": "Build & deploy real web apps"
   },
   {
     "slug": "python-programming",
@@ -94,9 +103,15 @@
       "Working professionals who want to learn an easy and powerful language"
     ],
     "children": [
-      { "title": "Python Basics & Syntax" },
-      { "title": "Data Structures & OOP" },
-      { "title": "Mini Projects & Automation" }
+      {
+        "title": "Python Basics & Syntax"
+      },
+      {
+        "title": "Data Structures & OOP"
+      },
+      {
+        "title": "Mini Projects & Automation"
+      }
     ]
   },
   {
@@ -142,10 +157,19 @@
       "Anyone who is detail-oriented and likes finding issues"
     ],
     "children": [
-      { "title": "Manual Testing Fundamentals" },
-      { "title": "Bug Reporting & Test Management" },
-      { "title": "Automation Basics with Selenium" }
-    ]
+      {
+        "title": "Manual Testing Fundamentals"
+      },
+      {
+        "title": "Bug Reporting & Test Management"
+      },
+      {
+        "title": "Automation Basics with Selenium"
+      }
+    ],
+    "role": "Python Developer / Automation Engineer",
+    "salary": "₹3.5 – ₹8.5 LPA",
+    "outcome": "Write clean Python code for automation, backend & data basics"
   },
   {
     "slug": "digital-marketing",
@@ -190,10 +214,19 @@
       "Anyone who enjoys creativity plus data/analytics"
     ],
     "children": [
-      { "title": "SEO & Website Optimization" },
-      { "title": "Social Media & Ads Campaigns" },
-      { "title": "Analytics & Performance Tracking" }
-    ]
+      {
+        "title": "SEO & Website Optimization"
+      },
+      {
+        "title": "Social Media & Ads Campaigns"
+      },
+      {
+        "title": "Analytics & Performance Tracking"
+      }
+    ],
+    "role": "QA / Software Test Engineer",
+    "salary": "₹3 – ₹8 LPA",
+    "outcome": "Test applications, report bugs & start automation testing"
   },
   {
     "slug": "data-science",
@@ -238,10 +271,19 @@
       "Working professionals looking to switch into analytics / data"
     ],
     "children": [
-      { "title": "Data Analysis with Python" },
-      { "title": "Statistics & Machine Learning Basics" },
-      { "title": "End-to-End Data Science Projects" }
-    ]
+      {
+        "title": "Data Analysis with Python"
+      },
+      {
+        "title": "Statistics & Machine Learning Basics"
+      },
+      {
+        "title": "End-to-End Data Science Projects"
+      }
+    ],
+    "role": "Junior Data Scientist",
+    "salary": "₹4 – ₹10 LPA",
+    "outcome": "Analyze data, build ML models & solve business problems"
   },
   {
     "slug": "data-analytics",
@@ -282,10 +324,19 @@
       "Working professionals (any domain) who work with reports and Excel"
     ],
     "children": [
-      { "title": "Excel & Data Cleaning" },
-      { "title": "SQL for Data Extraction" },
-      { "title": "Dashboards & BI Tools" }
-    ]
+      {
+        "title": "Excel & Data Cleaning"
+      },
+      {
+        "title": "SQL for Data Extraction"
+      },
+      {
+        "title": "Dashboards & BI Tools"
+      }
+    ],
+    "role": "Junior Data Scientist",
+    "salary": "₹4 – ₹8 LPA",
+    "outcome": "Analyze data, build ML models & solve business problems"
   },
   {
     "slug": "java-full-stack-web-development",
@@ -330,10 +381,19 @@
       "Developers who know Java and want full stack skills"
     ],
     "children": [
-      { "title": "Core Java & OOP" },
-      { "title": "Spring Boot & REST APIs" },
-      { "title": "Frontend + Full Stack Integration" }
-    ]
+      {
+        "title": "Core Java & OOP"
+      },
+      {
+        "title": "Spring Boot & REST APIs"
+      },
+      {
+        "title": "Frontend + Full Stack Integration"
+      }
+    ],
+    "role": "Java Full Stack Developer",
+    "salary": "₹4 – ₹8 LPA",
+    "outcome": "Build enterprise-grade full stack Java applications"
   },
   {
     "slug": "mern-stack-web-development",
@@ -380,10 +440,19 @@
       "Developers shifting from PHP / other stacks to JS"
     ],
     "children": [
-      { "title": "React Frontend" },
-      { "title": "Node.js & Express Backend" },
-      { "title": "MongoDB & Full Stack Deployment" }
-    ]
+      {
+        "title": "React Frontend"
+      },
+      {
+        "title": "Node.js & Express Backend"
+      },
+      {
+        "title": "MongoDB & Full Stack Deployment"
+      }
+    ],
+    "role": "MERN Stack Developer",
+    "salary": "₹4 – ₹7.5 LPA",
+    "outcome": "Develop modern single-page applications using JavaScript stack"
   },
   {
     "slug": "mean-stack-web-development",
@@ -428,10 +497,19 @@
       "Graduates targeting full stack roles in product/service companies"
     ],
     "children": [
-      { "title": "Angular Frontend with TypeScript" },
-      { "title": "Node.js & Express APIs" },
-      { "title": "MongoDB & Enterprise Deployment" }
-    ]
+      {
+        "title": "Angular Frontend with TypeScript"
+      },
+      {
+        "title": "Node.js & Express APIs"
+      },
+      {
+        "title": "MongoDB & Enterprise Deployment"
+      }
+    ],
+    "role": "Angular / MEAN Stack Developer",
+    "salary": "₹3.5 – ₹8.5 LPA",
+    "outcome": "Build scalable Angular-based full stack applications"
   },
   {
     "slug": "basic-programming-and-logical-thinking",
@@ -471,9 +549,18 @@
       "Non-IT background students planning to move into IT later"
     ],
     "children": [
-      { "title": "Flowcharts & Algorithms" },
-      { "title": "C / Python Programming Basics" },
-      { "title": "Logic Building & Exercises" }
-    ]
+      {
+        "title": "Flowcharts & Algorithms"
+      },
+      {
+        "title": "C / Python Programming Basics"
+      },
+      {
+        "title": "Logic Building & Exercises"
+      }
+    ],
+    "role": "Programming Foundation (Entry Level)",
+    "salary": "Depends on next advanced course",
+    "outcome": "Build strong logic & confidence to move into IT careers"
   }
 ]
