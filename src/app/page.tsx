@@ -8,6 +8,7 @@ import HomeAboutSection from "@/components/home-about-section";
 import PlacementLogosSection from "@/components/placement-section";
 import FreeDemoCTA from "@/components/free-demo-cta";
 import ReviewSources from "@/components/review-sources";
+import SalaryComparisonChart from "@/components/salary-comparison-chart";
 
 export default function Page() {
   return (
@@ -16,6 +17,7 @@ export default function Page() {
       <FreeDemoCTA />
       <HomeAboutSection />
       <ReviewSources />
+      <SalaryComparisonChart />
       <CoursesPage />
       <PlacementLogosSection />
       <section className="py-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

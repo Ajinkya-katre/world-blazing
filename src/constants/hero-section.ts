@@ -1,3 +1,5 @@
+import { a } from "framer-motion/client";
+
 export const HERO_SECTION_CONTENT = {
   badge: {
     text: 'Welcome to the Future',
@@ -14,10 +16,12 @@ export const HERO_SECTION_CONTENT = {
     primary: {
       text: 'Explore Courses',
       href: '/courses',
+      ariaLabel: 'Explore our IT courses',
     },
     secondary: {
       text: 'Learn More',
       href: '/about-us',
+      ariaLabel: 'Learn more about World Blazing Computer Institute',
     },
   },
   stats: [

@@ -65,7 +65,7 @@ export default function FreeDemoCTA() {
           </div>
 
           {/* Trust Line */}
-          <p className="mt-4 text-xs text-indigo-100">
+          <p className="mt-4 text-base text-indigo-100">
             ✔ No payment required • ✔ Career guidance included • ✔ Limited seats per batch
           </p>
         </motion.div>

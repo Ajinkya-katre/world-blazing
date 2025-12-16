@@ -32,48 +32,35 @@ export function Blog() {
           </p>
         </div>
 
-        <div>
-          <h3 className="text-3xl font-bold mb-12 text-neutral-900 dark:text-white">
-            More Posts
-          </h3>
 
-          <div className="mb-12">
-            <input
-              type="text"
-              placeholder="Search blogs"
-              className="w-full bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-lg px-4 py-3 text-neutral-900 dark:text-white placeholder-neutral-500 dark:placeholder-neutral-400 focus:outline-none focus:ring-2 focus:ring-blue-600"
-            />
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.slice(1).map((post) => (
-              <Link key={post.id ?? post.slug} href={`/blog/${post.slug}`} aria-label={`Read ${post.title}`}>
-                <motion.div
-                  whileHover={{ y: -6 }}
-                  className="group cursor-pointer h-full flex flex-col rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden hover:shadow-lg transition-shadow"
-                >
-                  <motion.div whileHover={{ scale: 1.03 }} className="relative h-48 overflow-hidden">
-                    <Image src={post.image} alt={post.title} className="w-full h-full object-cover" />
-                  </motion.div>
-
-                  <div className="p-6 flex flex-col flex-1">
-                    <div className="flex items-center gap-2 mb-4">
-                      <span>👤</span>
-                      <span className="text-base text-neutral-600 dark:text-neutral-400">{post.author}</span>
-                    </div>
-                    <h4 className="text-xl font-bold mb-3 text-neutral-900 dark:text-white">{post.title}</h4>
-                    <p className="text-neutral-600 dark:text-neutral-400 text-base mb-6 flex-1">{post.description}</p>
-                    <div className="flex items-center justify-between">
-                      <span className="text-xs text-neutral-500 dark:text-neutral-500">{post.date}</span>
-                      <motion.div whileHover={{ x: 5 }} className="text-blue-600 dark:text-blue-400">
-                        <IconArrowRight className="w-5 h-5" />
-                      </motion.div>
-                    </div>
-                  </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {blogPosts.map((post) => (
+            <Link key={post.id ?? post.slug} href={`/blog/${post.slug}`} aria-label={`Read ${post.title}`}>
+              <motion.div
+                whileHover={{ y: -6 }}
+                className="group cursor-pointer h-full flex flex-col rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden hover:shadow-lg transition-shadow"
+              >
+                <motion.div whileHover={{ scale: 1.03 }} className="relative h-48 overflow-hidden">
+                  <Image src={post.image} alt={post.title} fill className="object-cover" />
                 </motion.div>
-              </Link>
-            ))}
-          </div>
+
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="flex items-center gap-2 mb-4">
+                    <span>👤</span>
+                    <span className="text-base text-neutral-600 dark:text-neutral-400">{post.author}</span>
+                  </div>
+                  <h4 className="text-xl font-bold mb-3 text-neutral-900 dark:text-white">{post.title}</h4>
+                  <p className="text-neutral-600 dark:text-neutral-400 text-base mb-6 flex-1">{post.description}</p>
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs text-neutral-500 dark:text-neutral-500">{post.date}</span>
+                    <motion.div whileHover={{ x: 5 }} className="text-blue-600 dark:text-blue-400">
+                      <IconArrowRight className="w-5 h-5" />
+                    </motion.div>
+                  </div>
+                </div>
+              </motion.div>
+            </Link>
+          ))}
         </div>
       </div>
     </div>

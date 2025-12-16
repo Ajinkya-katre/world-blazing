@@ -31,8 +31,8 @@ export default function BlogPost() {
                 </div>
             </div>
 
-            <div className="w-full h-96 overflow-hidden">
-                <Image src={post.image} alt={post.title} className="w-full h-full object-cover" />
+            <div className="w-full h-[300px] pt-8 flex justify-center align-center overflow-hidden">
+                <Image src={post.image} alt={post.title} height={300} width={600} className=" object-cover" />
             </div>
 
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
