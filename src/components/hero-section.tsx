@@ -9,6 +9,7 @@ import {
   HERO_ANIMATION_CONFIG,
   HERO_BACKGROUND_BLOBS,
 } from '@/constants/hero-section';
+import CountUp from './CountUp';
 
 export function HeroSection() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -119,9 +120,17 @@ export function HeroSection() {
                 whileHover={{ y: -5, boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.1)' }}
                 className="p-6 rounded-xl bg-white dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 backdrop-blur-sm"
               >
-                <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
+                <CountUp
+                  from={0}
+                  to={typeof stat.number === 'string' ? parseInt(stat.number, 10) : stat.number}
+                  separator=","
+                  direction="up"
+                  duration={1}
+                  className="count-up-text text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2"
+                />
+                {/* <div className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
                   {stat.number}
-                </div>
+                </div> */}
                 <div className="text-neutral-600 dark:text-neutral-400 font-medium">
                   {stat.label}
                 </div>
