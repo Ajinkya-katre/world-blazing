@@ -73,7 +73,7 @@ export default function GallerySection() {
   return (
     <section
       ref={sectionRef}
-      className="w-full py-16 md:py-20 px-4 sm:px-6 lg:px-8"
+      className="w-full py-8 md:py-12 px-4 sm:px-6 lg:px-8"
       id="gallery"
     >
       <div className="max-w-6xl mx-auto">

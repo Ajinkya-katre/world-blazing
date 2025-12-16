@@ -22,7 +22,7 @@ export const metadata = {
   openGraph: {
     title: "World Blazing Computer Institute",
     description:
-      "Best IT & Programming Institute in Hadapsar Pune offering Full Stack, Python, Testing, Data Analytics courses.",
+      "World Blazing Computer Institute in Hadapsar Pune offers job-oriented IT courses including Full Stack Development, Python, Software Testing, Data Analytics & Digital Marketing with placement assistance.",
     url: "https://www.worldblazing.com",
     siteName: "World Blazing Computer Institute",
     images: [

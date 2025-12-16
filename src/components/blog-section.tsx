@@ -4,6 +4,7 @@ import { motion } from 'motion/react';
 import Link from 'next/link';
 import { IconArrowRight } from '@tabler/icons-react';
 import { BLOG_POSTS } from '@/constants/blog-data';
+import Image from 'next/image';
 
 const blogPosts = BLOG_POSTS;
 
@@ -49,7 +50,7 @@ export function BlogSection() {
                     whileHover={{ scale: 1.05 }}
                     className="relative h-48 overflow-hidden"
                   >
-                    <img
+                    <Image
                       src={post.image}
                       alt={post.title}
                       className="w-full h-full object-cover"

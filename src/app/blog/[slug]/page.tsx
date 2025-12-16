@@ -3,6 +3,7 @@ import { notFound, useParams } from 'next/navigation';
 import Link from 'next/link';
 import { IconArrowLeft } from '@tabler/icons-react';
 import { getBlogPostBySlug } from '@/constants/blog-data';
+import Image from 'next/image';
 
 export default function BlogPost() {
     const params = useParams();
@@ -31,7 +32,7 @@ export default function BlogPost() {
             </div>
 
             <div className="w-full h-96 overflow-hidden">
-                <img src={post.image} alt={post.title} className="w-full h-full object-cover" />
+                <Image src={post.image} alt={post.title} className="w-full h-full object-cover" />
             </div>
 
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">

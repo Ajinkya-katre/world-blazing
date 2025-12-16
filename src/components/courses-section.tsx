@@ -58,14 +58,14 @@ export default function CoursesSection({
                 {course.shortDescription}
               </p>
 
-              <div className="flex flex-wrap gap-2 text-[11px] text-neutral-500 dark:text-neutral-400">
-                <span className="inline-flex items-center rounded-full bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5">
+              <div className="flex flex-wrap gap-2 text-[11px]">
+                <span className="inline-flex items-center rounded-full bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 text-neutral-700 dark:text-neutral-200">
                   {course.category}
                 </span>
-                <span className="inline-flex items-center rounded-full bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5">
+                <span className="inline-flex items-center rounded-full bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 text-neutral-700 dark:text-neutral-200">
                   {course.level}
                 </span>
-                <span className="inline-flex items-center rounded-full bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5">
+                <span className="inline-flex items-center rounded-full bg-neutral-100 dark:bg-neutral-800 px-2 py-0.5 text-neutral-700 dark:text-neutral-200">
                   {course.duration}
                 </span>
               </div>
