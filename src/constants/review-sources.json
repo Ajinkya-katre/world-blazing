@@ -1,0 +1,23 @@
+[
+  {
+    "source": "Google",
+    "rating": 4.9,
+    "count": 218,
+    "logo": "/images/google-review.png",
+    "link": "https://share.google/pvLohsFpaiifJuhY3"
+  },
+  {
+    "source": "Justdial",
+    "rating": 4.7,
+    "count": 492,
+    "logo": "/images/justdial.png",
+    "link": "https://jsdl.in/DT-49EUMUMQQAY"
+  },
+  {
+    "source": "Collegedunia",
+    "rating": 4.9,
+    "count": 176,
+    "logo": "/images/collegedunia.svg",
+    "link": "https://collegedunia.com/institute/10179-world-blazing-computer-institute-pune"
+  }
+]

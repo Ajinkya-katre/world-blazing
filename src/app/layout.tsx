@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
+
 import Script from "next/script";
 import { Lato } from "next/font/google";
 import "./globals.css";
 import FloatingDockDemo from "@/components/floating-dock-demo";
 import { ThemeProvider } from "@/providers/theme-provider";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "@/components/footer";
+import ThemeToggleClient from "@/components/theme-toggle.client";
 
 const lato = Lato({
   subsets: ["latin"],
@@ -52,7 +52,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en"   >
       <head>
         {/* ✅ JSON-LD schema – use Script with dangerouslySetInnerHTML */}
         <script
@@ -100,7 +100,7 @@ export default function RootLayout({
         className={`${lato.className} antialiased bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50 transition-colors`}
       >
         <ThemeProvider>
-          <ThemeToggle />
+          <ThemeToggleClient />
           <div className="block md:hidden fixed top-2 right-4 z-50">
             <FloatingDockDemo />
           </div>

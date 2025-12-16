@@ -3,11 +3,13 @@ export const HERO_SECTION_CONTENT = {
     text: 'Welcome to the Future',
   },
   heading: {
-    main: 'World Blazing',
-    sub: 'Interactive Learning Platform',
+    main: 'World Blazing Computer Institute',
+    sub: 'Interactive Classroom Training for IT Careers',
   },
   description:
-    'Master Web Development, Full Stack, Python, Data Science and Software Testing with practical training in Pune. Learn industry tools like React, Tailwind CSS, SQL and Git — designed for beginners and graduates looking for placement-oriented IT courses.',
+    `World Blazing Computer Institute is a trusted IT training center in Hadapsar, Pune.
+     We provide hands-on classroom training in Full Stack Development, Python, Software Testing,
+    Data Analytics and Digital Marketing with real projects, expert trainers and placement guidance.`,
   buttons: {
     primary: {
       text: 'Explore Courses',

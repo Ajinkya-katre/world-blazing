@@ -96,7 +96,9 @@ export default function CourseDetailPage() {
                             <Image
                                 src={course.image}
                                 alt={course.title}
-                                className="h-full w-full object-cover"
+                                fill={true}
+                                loading="lazy"
+                                className=" object-cover"
                             />
                         ) : (
                             <div className="h-full w-full flex items-center justify-center text-base text-neutral-500 dark:text-neutral-400">
