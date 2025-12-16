@@ -8,7 +8,7 @@ export function AnimatedTestimonialsDemo() {
     name: "Monika Waikar",
     designation:
       "Lead Trainer – Data Science & Data Analytics | Practical, project-focused teaching",
-    src: "/monika.png"
+    src: "/images/monika.png"
   },
   {
     quote:
@@ -16,7 +16,7 @@ export function AnimatedTestimonialsDemo() {
     name: "Ajinkya Katre",
     designation:
       "Full Stack & MERN Stack Trainer | Web development, projects & career guidance",
-    src: "/ak.jpg"
+    src: "/images/ak.jpg"
   },
   {
     quote:
@@ -24,7 +24,7 @@ export function AnimatedTestimonialsDemo() {
     name: "Rahul Agarwal",
     designation:
       "Digital Marketing Trainer | SEO, Ads & Performance Marketing",
-    src: "/rahul_agarwal.jpg"
+    src: "/images/rahul_agarwal.jpg"
   }
 ];
 

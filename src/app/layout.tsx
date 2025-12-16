@@ -15,29 +15,36 @@ const lato = Lato({
 });
 
 // ✅ add Metadata type + metadataBase + some OG details
-export const metadata: Metadata = {
-  metadataBase: new URL("https://worldblazing.com"),
-  title:
-    "World Blazing Computer Institute • Best IT & Programming Courses in Hadapsar Pune",
+export const metadata = {
+  title: "World Blazing Computer Institute | Best IT Courses in Hadapsar Pune",
   description:
-    "World Blazing Computer Institute offers top-rated IT courses in Hadapsar Pune: Full Stack Development, Python, Software Testing, Data Analytics, Digital Marketing and more.",
-  keywords: [
-    "computer classes in Hadapsar",
-    "IT institute Pune",
-    "programming classes Pune",
-    "full stack course Pune",
-    "python classes Hadapsar",
-  ],
+    "World Blazing Computer Institute offers job-oriented IT courses in Hadapsar Pune. Full Stack, Python, Software Testing, Data Analytics, Digital Marketing with placements.",
   openGraph: {
-    title:
-      "World Blazing Computer Institute – Pune’s Best Software Training Center",
+    title: "World Blazing Computer Institute",
     description:
-      "Top-rated software training institute in Hadapsar, Pune for Full Stack, Python, Testing, Data Analytics & more.",
-    url: "https://worldblazing.com",
+      "Best IT & Programming Institute in Hadapsar Pune offering Full Stack, Python, Testing, Data Analytics courses.",
+    url: "https://www.worldblazing.com",
+    siteName: "World Blazing Computer Institute",
+    images: [
+      {
+        url: "https://www.worldblazing.com/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "World Blazing Computer Institute",
+      },
+    ],
+    locale: "en_IN",
     type: "website",
-    images: ["/og/worldblazing.jpg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "World Blazing Computer Institute",
+    description:
+      "Job-oriented IT courses in Pune with real classroom training.",
+    images: ["https://www.worldblazing.com/og-image.png"],
   },
 };
+
 
 export default function RootLayout({
   children,
@@ -48,34 +55,28 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* ✅ JSON-LD schema – use Script with dangerouslySetInnerHTML */}
-        <Script
-          id="local-business-schema"
+        <script
           type="application/ld+json"
-          strategy="beforeInteractive" // optional but nice for SEO
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "EducationalOrganization",
               name: "World Blazing Computer Institute",
-              image: "https://worldblazing.com/logo.png",
+              url: "https://www.worldblazing.com",
+              logo: "https://www.worldblazing.com/logo.png",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "162/A1, Malwadi Rd, Hadapsar Gaon",
-                addressLocality: "Pune",
-                addressRegion: "Maharashtra",
+                streetAddress: "Aru Palace Building, Malwadi Rd",
+                addressLocality: "Hadapsar",
+                addressRegion: "MH",
                 postalCode: "411028",
                 addressCountry: "IN",
               },
-              telephone: "08237978163",
-              url: "https://worldblazing.com",
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "218",
-              },
+              telephone: "+918237978163",
             }),
           }}
         />
+
 
         {/* Google Analytics (gtag.js) */}
         <Script
