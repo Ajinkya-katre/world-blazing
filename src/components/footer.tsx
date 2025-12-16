@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Branding */}
           <div>
             <img
-              src="/wb-logo.png"
+              src="/images/wb-logo.png"
               alt="World Blazing Logo"
               className="h-50 w-50 mb-4"
             />

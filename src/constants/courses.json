@@ -8,7 +8,7 @@
     "duration": "6 Months",
     "mode": "Offline + Online",
     "badge": "Most Popular",
-    "image": "/full-stack-development.png",
+    "image": "/images/full-stack-development.png",
     "modules": [
       "Web basics: HTML, CSS, responsive layouts",
       "Modern JavaScript (ES6+), DOM, API calls",
@@ -61,7 +61,7 @@
     "duration": "3 Months",
     "mode": "Offline + Online",
     "badge": "Beginner Friendly",
-    "image": "/python.png",
+    "image": "/images/python.png",
     "modules": [
       "Introduction to Python, setup and IDEs",
       "Variables, data types, operators and input / output",
@@ -108,7 +108,7 @@
     "duration": "4 Months",
     "mode": "Offline + Online",
     "badge": "Job Oriented",
-    "image": "/testing.png",
+    "image": "/images/testing.png",
     "modules": [
       "Software development life cycle (SDLC) and testing basics",
       "STLC, test levels and test types",
@@ -156,7 +156,7 @@
     "duration": "3–4 Months",
     "mode": "Offline + Online",
     "badge": "High Demand",
-    "image": "/digital.png",
+    "image": "/images/digital.png",
     "modules": [
       "Basics of marketing and digital channels",
       "Website fundamentals and landing pages",
@@ -204,7 +204,7 @@
     "duration": "6 Months",
     "mode": "Offline + Online",
     "badge": "Career Transformation",
-    "image": "/data-science.jpg",
+    "image": "/images/data-science.jpg",
     "modules": [
       "Python basics for data science",
       "Numpy, Pandas and data cleaning",
@@ -252,7 +252,7 @@
     "duration": "4–5 Months",
     "mode": "Offline + Online",
     "badge": "Job Ready",
-    "image": "/data-analytics.png",
+    "image": "/images/data-analytics.png",
     "modules": [
       "Advanced Excel for analysis and reporting",
       "SQL for data extraction and joins",
@@ -296,7 +296,7 @@
     "duration": "6–7 Months",
     "mode": "Offline + Online",
     "badge": "Enterprise Focused",
-    "image": "/java.jpeg",
+    "image": "/images/java.jpeg",
     "modules": [
       "Core Java: syntax, OOP, collections, exceptions",
       "Java + JDBC and database connectivity",
@@ -344,7 +344,7 @@
     "duration": "5–6 Months",
     "mode": "Offline + Online",
     "badge": "Project Heavy",
-    "image": "/mern.png",
+    "image": "/images/mern.png",
     "modules": [
       "Modern JavaScript and ES6+ concepts",
       "React fundamentals and hooks",
@@ -394,7 +394,7 @@
     "duration": "5–6 Months",
     "mode": "Offline + Online",
     "badge": "Angular Specialization",
-    "image": "/mean.png",
+    "image": "/images/mean.png",
     "modules": [
       "TypeScript basics and Angular fundamentals",
       "Components, services and routing in Angular",
@@ -442,7 +442,7 @@
     "duration": "2–3 Months",
     "mode": "Offline + Online",
     "badge": "Foundation Course",
-    "image": "/logical.png",
+    "image": "/images/logical.png",
     "modules": [
       "Introduction to computers and programming",
       "Flowcharts, algorithms and problem breakdown",
