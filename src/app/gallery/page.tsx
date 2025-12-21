@@ -11,17 +11,30 @@ type GalleryImage = {
 };
 
 const GALLERY_IMAGES: GalleryImage[] = [
-  { src: "/gallery/classroom-1.jpg", alt: "Students attending classroom session" },
-  { src: "/gallery/classroom-2.jpg", alt: "Trainer explaining concept on whiteboard" },
-  { src: "/gallery/lab-1.jpg", alt: "Students practicing in computer lab" },
-  { src: "/gallery/lab-2.jpg", alt: "Hands-on coding practice" },
-  { src: "/gallery/event-1.jpg", alt: "Workshop or seminar at institute" },
-  { src: "/gallery/event-2.jpg", alt: "Group activity or project discussion" },
-  { src: "/gallery/certificates-1.jpg", alt: "Students with certificate after course" },
-  { src: "/gallery/certificates-2.jpg", alt: "Certification distribution" },
-  { src: "/gallery/faculty-1.jpg", alt: "Trainer guiding student one-to-one" },
-  { src: "/gallery/facility-1.jpg", alt: "Institute front desk or reception" },
-  // Add more up to 15–20…
+  { src: "/gallery/1.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/2.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/3.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/4.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/5.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/6.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/7.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/8.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/9.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/10.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/11.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/12.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/13.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/14.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/15.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/16.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/17.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/18.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/19.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/20.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/21.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/22.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/23.jpeg", alt: "Students getting certificate" },
+  { src: "/gallery/24.jpeg", alt: "Students getting certificate" }
 ];
 
 export default function GallerySection() {
@@ -108,6 +121,7 @@ export default function GallerySection() {
                 key={img.src + index}
                 type="button"
                 onClick={() => openLightbox(index)}
+                onContextMenu={(e) => e.preventDefault()}
                 className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-neutral-200/70 bg-neutral-100/60 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md dark:border-neutral-800 dark:bg-neutral-900/70"
               >
                 <Image
@@ -115,6 +129,7 @@ export default function GallerySection() {
                   alt={img.alt}
                   fill
                   loading="lazy"
+                  draggable={false}
                   className="object-cover transition-transform duration-300 group-hover:scale-105"
                   sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
                 />
@@ -147,12 +162,15 @@ export default function GallerySection() {
             </button>
 
             {/* Image container */}
-            <div className="relative overflow-hidden rounded-3xl border border-neutral-700 bg-neutral-950 aspect-[16/10]">
+            <div className="relative overflow-hidden rounded-3xl border border-neutral-700 bg-neutral-950 aspect-[16/10]"
+            onContextMenu={(e) => e.preventDefault()}
+            >
               <Image
                 src={images[activeIndex].src}
                 alt={images[activeIndex].alt}
                 fill
                 priority
+                draggable={false}
                 className="object-contain"
               />
             </div>
@@ -180,6 +198,12 @@ export default function GallerySection() {
           </div>
         </div>
       )}
+
+      <p className="text-xs text-neutral-500 mt-2">
+        © World Blazing Computer Institute. Student photos are protected.
+        Unauthorized use is prohibited.
+      </p>
+
     </section>
   );
 }
