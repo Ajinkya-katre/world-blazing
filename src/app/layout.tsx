@@ -1,4 +1,3 @@
-
 import Script from "next/script";
 import { Lato } from "next/font/google";
 import "./globals.css";
@@ -8,17 +7,38 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "@/components/footer";
 import ThemeToggleClient from "@/components/theme-toggle.client";
 
+/* ---------------- FONT ---------------- */
 const lato = Lato({
   subsets: ["latin"],
   weight: ["100", "300", "400", "700", "900"],
   variable: "--font-lato",
 });
 
-// ✅ add Metadata type + metadataBase + some OG details
+/* ---------------- SEO METADATA ---------------- */
 export const metadata = {
+  metadataBase: new URL("https://www.worldblazing.com"),
+
   title: "World Blazing Computer Institute | Best IT Courses in Hadapsar Pune",
   description:
     "World Blazing Computer Institute offers job-oriented IT courses in Hadapsar Pune. Full Stack, Python, Software Testing, Data Analytics, Digital Marketing with placements.",
+
+  keywords: [
+    "World Blazing Computer Institute",
+    "IT courses in Hadapsar",
+    "IT institute in Pune",
+    "Full Stack Development course Pune",
+    "Python training Pune",
+    "Software Testing classes Pune",
+    "Data Analytics course Pune",
+    "Digital Marketing course Pune",
+    "Computer classes in Hadapsar",
+    "Job oriented IT courses Pune",
+  ],
+
+  alternates: {
+    canonical: "https://www.worldblazing.com",
+  },
+
   openGraph: {
     title: "World Blazing Computer Institute",
     description:
@@ -27,7 +47,7 @@ export const metadata = {
     siteName: "World Blazing Computer Institute",
     images: [
       {
-        url: "https://www.worldblazing.com/og-image.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "World Blazing Computer Institute",
@@ -36,25 +56,49 @@ export const metadata = {
     locale: "en_IN",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "World Blazing Computer Institute",
     description:
       "Job-oriented IT courses in Pune with real classroom training.",
-    images: ["https://www.worldblazing.com/og-image.png"],
+    images: ["/og-image.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
 
+/* ---------------- VIEWPORT ---------------- */
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
 
+/* ---------------- ROOT LAYOUT ---------------- */
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en"   >
+    <html lang="en">
       <head>
-        {/* ✅ JSON-LD schema – use Script with dangerouslySetInnerHTML */}
+        {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -76,14 +120,14 @@ export default function RootLayout({
             }),
           }}
         />
-        <link rel="icon" href="/favicon.ico" />
-        {/* Google Analytics (gtag.js) */}
+
+        {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-BR2WK3HFQF"
           strategy="afterInteractive"
         />
         <Script
-          id="gtm-script"
+          id="ga-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
@@ -95,20 +139,26 @@ export default function RootLayout({
           }}
         />
       </head>
+
       <body
         className={`${lato.className} antialiased bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50 transition-colors`}
       >
         <ThemeProvider>
           <ThemeToggleClient />
+
+          {/* Mobile Dock */}
           <div className="block md:hidden fixed top-2 right-4 z-50">
             <FloatingDockDemo />
           </div>
+
+          {/* Desktop Dock */}
           <div className="hidden md:fixed md:bottom-0 md:left-0 md:right-0 md:flex md:justify-center md:pb-4 md:z-50">
             <FloatingDockDemo />
           </div>
+
           {children}
-          {/* <FloatingContactBar /> */}
         </ThemeProvider>
+
         <SpeedInsights />
         <Footer />
       </body>
