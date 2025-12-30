@@ -76,8 +76,7 @@ export default function RootLayout({
             }),
           }}
         />
-
-
+        <link rel="icon" href="/favicon.ico" />
         {/* Google Analytics (gtag.js) */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-BR2WK3HFQF"
