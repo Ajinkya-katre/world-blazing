@@ -6,6 +6,8 @@ import {
   IconNews,
   IconUsers,
   IconMail,
+  IconBriefcase,
+  IconChartBar,
 } from "@tabler/icons-react";
 
 export default function FloatingDockDemo() {
@@ -38,6 +40,17 @@ export default function FloatingDockDemo() {
         <IconNews className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "/gallery",
+    },
+    {
+      title: "Services",
+      icon: <IconBriefcase />,
+      children: [
+        {
+          title: "Digital Marketing",
+          href: "/digital-marketing",
+          icon: <IconChartBar />,
+        },
+      ],
     },
     {
       title: "Blog",

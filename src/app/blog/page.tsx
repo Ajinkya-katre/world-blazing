@@ -25,7 +25,7 @@ export function Blog() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16">
           <h2 className="text-5xl sm:text-6xl font-bold mb-6 text-neutral-900 dark:text-white">
-            Blog
+            Blogs
           </h2>
           <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl">
             Discover insightful resources and expert advice from our seasoned team to elevate your knowledge.
