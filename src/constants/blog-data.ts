@@ -283,6 +283,183 @@ export const BLOG_POSTS: BlogPost[] = [
 
     `,
   },
+  {
+  id: '3',
+  title: 'Python Classes in Hadapsar Pune – Syllabus, Salary & Career Scope',
+  description: 'Looking for Python classes in Hadapsar Pune? Learn syllabus, career scope, salary & why Python is best for beginners.',
+  image: '/images/python-classes-hadapsar.png',
+  author: 'Monika Waikar',
+  date: '1 January 2026',
+  slug: 'python-classes-hadapsar-pune',
+  content: `
+<section class="max-w-4xl mx-auto px-4 py-12">
+
+<h2 class="text-3xl md:text-4xl font-bold mb-4">
+Python Classes in Hadapsar Pune 🐍
+</h2>
+
+<p class="text-neutral-700 dark:text-neutral-300 mb-6">
+Python is one of the most beginner-friendly and high-demand programming languages in India.
+If you are searching for Python classes in Hadapsar Pune, this guide will help you understand
+syllabus, salary and career scope.
+</p>
+
+<h3 class="text-2xl font-semibold mb-3">📘 Python Course Syllabus</h3>
+<ul class="list-disc list-inside space-y-2 mb-6">
+<li>Python basics & syntax</li>
+<li>Control statements & loops</li>
+<li>Functions, modules & OOP</li>
+<li>File handling & error handling</li>
+<li>Mini projects & automation scripts</li>
+</ul>
+
+<div class="rounded-xl border p-6 mb-8 bg-white dark:bg-neutral-900">
+<h3 class="text-xl font-semibold text-indigo-600 mb-3">
+💰 Python Developer Salary in India
+</h3>
+<ul class="space-y-2">
+<li><strong>Fresher:</strong> ₹2.5 – ₹5 LPA</li>
+<li><strong>2–4 Years:</strong> ₹6 – ₹10 LPA</li>
+<li><strong>Advanced Roles:</strong> ₹12+ LPA</li>
+</ul>
+</div>
+
+<h3 class="text-2xl font-semibold mb-3">🚀 Career Opportunities</h3>
+<ul class="grid sm:grid-cols-2 gap-3 mb-8">
+<li>Python Developer</li>
+<li>Automation Engineer</li>
+<li>Data Analyst</li>
+<li>Backend Developer</li>
+</ul>
+
+<div class="mt-10 rounded-2xl bg-indigo-600 p-6 text-white text-center">
+<h3 class="text-xl font-bold mb-2">Book a Free Python Demo</h3>
+<p class="mb-4">Learn Python practically with offline + online training.</p>
+<a href="/contact-us" class="bg-white text-indigo-600 px-6 py-2 rounded-lg font-semibold">
+Book Free Demo →
+</a>
+</div>
+
+</section>
+`,
+},
+{
+  id: '4',
+  title: 'Data Analyst Career in India – Complete Beginner Guide',
+  description: 'Data Analyst career in India explained: salary, skills, roadmap & how beginners can enter analytics.',
+  image: '/images/data-analyst-career-india.png',
+  author: 'Ajinkya Katre',
+  date: '1 January 2026',
+  slug: 'data-analyst-career-india',
+  content: `
+<section class="max-w-4xl mx-auto px-4 py-12">
+
+<h2 class="text-3xl md:text-4xl font-bold mb-4">
+Data Analyst Career in India 📊
+</h2>
+
+<p class="text-neutral-700 dark:text-neutral-300 mb-6">
+Data Analysts help companies make smart decisions using data.
+This career is perfect for beginners who like numbers, logic and insights.
+</p>
+
+<h3 class="text-2xl font-semibold mb-3">🛠 Skills Required</h3>
+<ul class="list-disc list-inside mb-6">
+<li>Excel & Advanced Excel</li>
+<li>SQL for data queries</li>
+<li>Power BI / Tableau</li>
+<li>Basic statistics</li>
+</ul>
+
+<div class="rounded-xl border p-6 mb-8">
+<h3 class="text-xl font-semibold text-indigo-600 mb-3">
+💰 Data Analyst Salary in India
+</h3>
+<ul class="space-y-2">
+<li><strong>Fresher:</strong> ₹3 – ₹5.5 LPA</li>
+<li><strong>2–4 Years:</strong> ₹6 – ₹10 LPA</li>
+<li><strong>Senior Analyst:</strong> ₹12+ LPA</li>
+</ul>
+</div>
+
+<h3 class="text-2xl font-semibold mb-3">🎯 Who Should Learn Data Analytics?</h3>
+<ul class="grid sm:grid-cols-2 gap-3">
+<li>BSc / BCom / BA students</li>
+<li>Non-IT graduates</li>
+<li>Working professionals</li>
+<li>Excel users</li>
+</ul>
+
+<div class="mt-10 bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-6 rounded-2xl text-center">
+<h3 class="text-xl font-bold mb-2">Become Job-Ready Data Analyst</h3>
+<p class="mb-4">Learn analytics with real datasets & dashboards.</p>
+<a href="/contact-us" class="bg-white text-indigo-600 px-6 py-2 rounded-lg font-semibold">
+Book Free Demo →
+</a>
+</div>
+
+</section>
+`,
+},
+{
+  id: '5',
+  title: 'Digital Marketing Career in India – Salary, Skills & Job Roles',
+  description: 'Digital marketing career in India explained with salary, skills, job roles & growth opportunities.',
+  image: '/images/digital-marketing-career-india.png',
+  author: 'Ajinkya Katre',
+  date: '2nd January 2026',
+  slug: 'digital-marketing-career-india',
+  content: `
+<section class="max-w-4xl mx-auto px-4 py-12">
+
+<h2 class="text-3xl md:text-4xl font-bold mb-4">
+Digital Marketing Career in India 📢
+</h2>
+
+<p class="text-neutral-700 dark:text-neutral-300 mb-6">
+Digital marketing is one of the fastest-growing careers in India.
+Perfect for students interested in marketing, freelancing and business growth.
+</p>
+
+<h3 class="text-2xl font-semibold mb-3">🧠 Skills You’ll Learn</h3>
+<ul class="list-disc list-inside mb-6">
+<li>SEO & Website Optimization</li>
+<li>Google Ads & Meta Ads</li>
+<li>Social Media Marketing</li>
+<li>Analytics & Reporting</li>
+</ul>
+
+<div class="rounded-xl border p-6 mb-8">
+<h3 class="text-xl font-semibold text-indigo-600 mb-3">
+💰 Digital Marketing Salary in India
+</h3>
+<ul class="space-y-2">
+<li><strong>Fresher:</strong> ₹2.5 – ₹4.5 LPA</li>
+<li><strong>2–4 Years:</strong> ₹6 – ₹9 LPA</li>
+<li><strong>Freelancers:</strong> ₹50k–₹2L/month</li>
+</ul>
+</div>
+
+<h3 class="text-2xl font-semibold mb-3">🎯 Job Roles</h3>
+<ul class="grid sm:grid-cols-2 gap-3 mb-8">
+<li>SEO Executive</li>
+<li>PPC Specialist</li>
+<li>Social Media Manager</li>
+<li>Performance Marketer</li>
+</ul>
+
+<div class="mt-10 bg-indigo-600 text-white p-6 rounded-2xl text-center">
+<h3 class="text-xl font-bold mb-2">Start Digital Marketing Career</h3>
+<p class="mb-4">Learn by running real campaigns with expert guidance.</p>
+<a href="/contact-us" class="bg-white text-indigo-600 px-6 py-2 rounded-lg font-semibold">
+Book Free Demo →
+</a>
+</div>
+
+</section>
+`,
+},
+
 ];
 
 /**
