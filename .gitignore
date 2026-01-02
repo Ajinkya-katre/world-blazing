@@ -41,5 +41,5 @@ yarn-error.log*
 next-env.d.ts
 
 # Student photos / private media
-public/gallery/
-public/images/
+# public/gallery/
+# public/images/
