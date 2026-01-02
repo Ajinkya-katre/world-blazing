@@ -42,4 +42,4 @@ next-env.d.ts
 
 # Student photos / private media
 public/gallery/
-public/images/
+# public/images/
