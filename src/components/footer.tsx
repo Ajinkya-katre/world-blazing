@@ -69,7 +69,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-between text-xs text-neutral-500 dark:text-neutral-400 text-center sm:text-left gap-2">
 
           <p>
-            © 2025 World Blazing — All Rights Reserved.
+            © 2026 World Blazing — All Rights Reserved.
           </p>
 
           <p>

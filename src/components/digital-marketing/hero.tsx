@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import marketingImage from "../../../public/images/marketing-dashboard.png";
 
 export default function DigitalMarketingHero() {
   return (
@@ -44,7 +45,7 @@ planned, executed, and optimized by experienced digital marketing professionals.
         {/* RIGHT VISUAL */}
         <div className="relative">
           <Image
-            src="/images/marketing-dashboard.webp"
+            src={marketingImage}
             alt="Digital marketing dashboard showing SEO, Google Ads and performance metrics"
             width={600}
             height={400}
