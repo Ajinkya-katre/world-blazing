@@ -1,6 +1,5 @@
 "use client";
 
-import { Images } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -45,8 +44,8 @@ planned, executed, and optimized by experienced digital marketing professionals.
         {/* RIGHT VISUAL */}
         <div className="relative">
           <Image
-            src="/images/marketing-dashboard.png"
-            alt="Digital marketing growth dashboard"
+            src="/images/marketing-dashboard.webp"
+            alt="Digital marketing dashboard showing SEO, Google Ads and performance metrics"
             width={600}
             height={400}
             className="rounded-3xl shadow-xl w-full"

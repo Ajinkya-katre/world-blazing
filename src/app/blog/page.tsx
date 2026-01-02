@@ -41,7 +41,12 @@ export function Blog() {
                 className="group cursor-pointer h-full flex flex-col rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden hover:shadow-lg transition-shadow"
               >
                 <motion.div whileHover={{ scale: 1.03 }} className="relative h-48 overflow-hidden">
-                  <Image src={`public${post.image}`} alt={post.title} fill className="object-cover" />
+                  <Image 
+                  src={post.image}
+                  alt={post.title}
+                   fill 
+                  className="object-cover" />
+
                 </motion.div>
 
                 <div className="p-6 flex flex-col flex-1">
