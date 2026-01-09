@@ -2,8 +2,10 @@
 
 import { motion } from "motion/react";
 import { IconArrowRight, IconSparkles } from "@tabler/icons-react";
+import { SparklesText } from "@/components/ui/sparkles-text"
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { Highlighter } from "@/components/ui/highlighter"
 
 import {
   HERO_SECTION_CONTENT,
@@ -94,7 +96,9 @@ export function HeroSection() {
             className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
           >
             <span className="block text-neutral-900 dark:text-white">
+              <SparklesText sparklesCount={30}>
               {HERO_SECTION_CONTENT.heading.main}
+              </SparklesText>
             </span>
             <span className="mt-2 block bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
               {HERO_SECTION_CONTENT.heading.sub}
@@ -123,6 +127,7 @@ export function HeroSection() {
                 >
                 {HERO_SECTION_CONTENT.buttons.primary.text}
                 <IconArrowRight className="h-5 w-5" aria-hidden="true" />
+                
                 </motion.button>
             </Link>
 
@@ -164,6 +169,19 @@ export function HeroSection() {
           </motion.div>
         </motion.div>
       </div>
+
+      <p className="absolute bottom-4 w-full text-center text-lg text-white px-4">
+  {" "}
+  <Highlighter action="underline" color="#FF9800">
+    You don’t need more time.
+  </Highlighter>{" "}
+    You need{" "} 
+  <Highlighter action="highlight" color="#8BC34A">
+    one decision
+  </Highlighter>{" "}
+  — call now.
+</p>
+
     </section>
   );
 }

@@ -48,6 +48,14 @@ export default function Footer() {
               <li className="flex items-center gap-2"><Mail size={14}/> worldblazinginstitute@gmail.com</li>
               <li>Pune, Maharashtra</li>
             </ul>
+
+            <p className="mt-4 text-base text-neutral-600 dark:text-neutral-400">
+              <Link href="/privacy-policy" className="hover:text-indigo-500" aria-label="Privacy Policy">Privacy Policy</Link>
+            </p>
+
+            <p className="mt-2 text-base text-neutral-600 dark:text-neutral-400">
+              <Link href="/terms-and-conditions" className="hover:text-indigo-500" aria-label="Terms & Conditions">Terms & Conditions</Link>  
+            </p>
           </div>
 
           {/* Social */}
