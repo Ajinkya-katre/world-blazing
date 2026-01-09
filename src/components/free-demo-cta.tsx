@@ -36,7 +36,7 @@ export default function FreeDemoCTA() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
-              <Link href="/contact-us?type=demo">
+              <Link href="/contact-us?type=demo" aria-label="Book a free demo class">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

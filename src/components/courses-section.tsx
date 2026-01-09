@@ -1,10 +1,7 @@
-"use client";
-
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import coursesData from "@/constants/courses.json";
 import type { Course } from "@/lib/interface/courses";
-import FreeDemoCTA from "./free-demo-cta";
 
 interface CoursesSectionProps {
   courses?: Course[];
@@ -56,6 +53,7 @@ export default function CoursesSection({
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {courses.map((course) => (
           <Link
+            aria-label="move to courses"
             key={course.slug}
             href={`/courses/${course.slug}`}
             className="group relative rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-5 flex flex-col justify-between transition-all hover:-translate-y-2 hover:shadow-xl"

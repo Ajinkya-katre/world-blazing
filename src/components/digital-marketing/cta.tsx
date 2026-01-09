@@ -11,6 +11,7 @@ export default function MarketingCTA() {
       </p>
 
       <Link
+        aria-label="Get Free Consultation for Digital Marketing"
         href="/contact-us?type=marketing"
         className="inline-block mt-8 rounded-full bg-white px-8 py-3 text-sm font-semibold text-indigo-600 hover:bg-neutral-100"
       >

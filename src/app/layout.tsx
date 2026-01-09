@@ -12,7 +12,7 @@ import WhatsAppFloat from "@/components/whatsapp-float";
 /* ---------------- FONT ---------------- */
 const lato = Lato({
   subsets: ["latin"],
-  weight: ["100", "300", "400", "700", "900"],
+  weight: ["100", "300", "400"],
   variable: "--font-lato",
 });
 

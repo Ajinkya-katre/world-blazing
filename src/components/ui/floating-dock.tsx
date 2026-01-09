@@ -77,7 +77,7 @@ const FloatingDockMobile = ({
                   <div className="flex items-center gap-3">
                     <div className="h-4 w-4">{item.icon}</div>
                     {item.href ? (
-                      <Link href={item.href}>{item.title}</Link>
+                      <Link href={item.href} aria-label={item.title}>{item.title}</Link>
                     ) : (
                       <span>{item.title}</span>
                     )}
@@ -103,6 +103,7 @@ const FloatingDockMobile = ({
                     >
                       {item.children.map((child) => (
                         <Link
+                          aria-label={child.title}
                           key={child.title}
                           href={child.href!}
                           onClick={() => setOpen(false)}
@@ -191,6 +192,7 @@ function DesktopDropdown({
           >
             {item.children?.map((child) => (
               <Link
+                aria-label={child.title}
                 key={child.title}
                 href={child.href!}
                 className="block px-4 py-3 text-sm hover:bg-neutral-100 dark:hover:bg-neutral-800"
@@ -247,5 +249,5 @@ function IconContainer({
     </motion.div>
   );
 
-  return href ? <Link href={href}>{content}</Link> : content;
+  return href ? <Link href={href} aria-label={title}>{content}</Link> : content;
 }
