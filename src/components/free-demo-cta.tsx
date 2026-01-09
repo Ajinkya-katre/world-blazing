@@ -36,7 +36,7 @@ export default function FreeDemoCTA() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
-              <Link href="/contact-us?type=demo">
+              <Link href="/contact-us?type=demo" aria-label="Book a free demo class">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -46,7 +46,11 @@ export default function FreeDemoCTA() {
                              shadow hover:bg-indigo-50"
                 >
                   <IconCalendarEvent size={18} />
-                  Book Free Demo
+                  Book Free Demo 
+                  <span className="relative flex size-3">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-500 opacity-75"></span>
+                    <span className="relative inline-flex size-3 rounded-full bg-teal-400"></span>
+                  </span>
                 </motion.button>
               </Link>
 

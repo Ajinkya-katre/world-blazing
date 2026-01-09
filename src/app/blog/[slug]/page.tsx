@@ -24,8 +24,8 @@ export default function BlogPost() {
         <div className=" min-h-screen">
             <div className="sticky top-0 z-0 bg-white dark:bg-neutral-950 border-b border-neutral-200 dark:border-neutral-800">
                 <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-                    <Link href="/blog" className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline">
-                        <IconArrowLeft className="w-5 h-5" />
+                    <Link href="/blog" className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline" aria-label='blog'>
+                        <IconArrowLeft className="w-5 h-5"/>
                         Back to Blog
                     </Link>
                 </div>
@@ -50,7 +50,7 @@ export default function BlogPost() {
                 </div>
 
                 <div className="mt-16 pt-8 border-t border-neutral-200 dark:border-neutral-800">
-                    <Link href="/blog" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">
+                    <Link href="/blog" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold" aria-label='back to all posts'>
                         ← Back to all posts
                     </Link>
                 </div>

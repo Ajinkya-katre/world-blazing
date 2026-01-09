@@ -1,7 +1,7 @@
 [
   {
     "slug": "full-stack-web-development",
-    "title": "Full Stack Web Development",
+    "title": "Full Stack Web Development With AI",
     "shortDescription": "Learn HTML, CSS, JavaScript, React, Node.js and build real-world web apps from scratch using industry best practices.",
     "category": "Web Development",
     "level": "Beginner to Advanced",
@@ -19,7 +19,9 @@
       "Authentication (JWT), security basics and validation",
       "Deployment on cloud platforms (Vercel / Render / AWS basics)",
       "Git & GitHub, teamwork and project workflow",
-      "Capstone project: end-to-end full stack web application"
+      "Capstone project: end-to-end full stack web application",
+      "Create AI-powered web applications using OpenAI APIs",
+      "Integrate AI features like chatbots, content generation, and more into your web apps"
     ],
     "tools": [
       "VS Code",
@@ -31,7 +33,7 @@
       "Postman",
       "Vercel / Render / AWS basics"
     ],
-    "certification": "World Blazing Full Stack Web Developer Certification",
+    "certification": "World Blazing Full Stack Web Developement With AI Certification",
     "jobRoles": [
       "Full Stack Web Developer",
       "Frontend Developer (React)",
@@ -48,7 +50,7 @@
     ],
     "children": [
       {
-        "title": "Frontend (HTML, CSS, JavaScript, React)"
+        "title": "Frontend (HTML5, CSS, JavaScript, JSON, React)"
       },
       {
         "title": "Backend (Node.js, Express, REST APIs)"

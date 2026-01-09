@@ -1,7 +1,6 @@
-"use client";
 
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react";
+import { Instagram, Mail, Phone } from "lucide-react";
 import Image from "next/image";
 
 export default function Footer() {
@@ -32,6 +31,7 @@ export default function Footer() {
                 <li><Link href="/about-us" className="hover:text-indigo-500" aria-label="About Us">About Us</Link></li>
                 <li><Link href="/courses" className="hover:text-indigo-500" aria-label="Courses">Courses</Link></li>
                 <li><Link href="/gallery" className="hover:text-indigo-500" aria-label="Gallery">Gallery</Link></li>
+                <li><Link href="/digital-marketing" className="hover:text-indigo-500" aria-label="Digital Marketing">Digital Marketing</Link></li>
                 <li><Link href="/blog" className="hover:text-indigo-500" aria-label="Blog">Blog</Link></li>
                 <li><Link href="/placements" className="hover:text-indigo-500" aria-label="Placements">Placements</Link></li>
                 <li><Link href="/contact-us" className="hover:text-indigo-500" aria-label="Contact Us">Contact</Link></li>

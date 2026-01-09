@@ -5,7 +5,6 @@ import { IconArrowRight, IconSparkles } from "@tabler/icons-react";
 import { SparklesText } from "@/components/ui/sparkles-text"
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Highlighter } from "@/components/ui/highlighter"
 
 import {
   HERO_SECTION_CONTENT,
@@ -96,7 +95,7 @@ export function HeroSection() {
             className="mb-6 text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
           >
             <span className="block text-neutral-900 dark:text-white">
-              <SparklesText sparklesCount={30}>
+              <SparklesText sparklesCount={30} >
               {HERO_SECTION_CONTENT.heading.main}
               </SparklesText>
             </span>
@@ -118,7 +117,7 @@ export function HeroSection() {
             variants={!isMobile ? itemVariants : undefined}
             className="mb-12 flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
-            <Link href={HERO_SECTION_CONTENT.buttons.primary.href}>
+            <Link href={HERO_SECTION_CONTENT.buttons.primary.href} aria-label={HERO_SECTION_CONTENT.buttons.primary.ariaLabel}>
                 <motion.button
                 whileHover={!isMobile ? { scale: 1.05 } : undefined}
                 whileTap={{ scale: 0.95 }}
@@ -131,7 +130,7 @@ export function HeroSection() {
                 </motion.button>
             </Link>
 
-            <Link href={HERO_SECTION_CONTENT.buttons.secondary.href}>
+            <Link href={HERO_SECTION_CONTENT.buttons.secondary.href} aria-label={HERO_SECTION_CONTENT.buttons.secondary.ariaLabel}>
               <motion.button
                 whileHover={!isMobile ? { scale: 1.05 } : undefined}
                 whileTap={{ scale: 0.95 }}
@@ -169,18 +168,6 @@ export function HeroSection() {
           </motion.div>
         </motion.div>
       </div>
-
-      <p className="absolute bottom-4 w-full text-center text-lg text-white px-4">
-  {" "}
-  <Highlighter action="underline" color="#FF9800">
-    You don’t need more time.
-  </Highlighter>{" "}
-    You need{" "} 
-  <Highlighter action="highlight" color="#8BC34A">
-    one decision
-  </Highlighter>{" "}
-  — call now.
-</p>
 
     </section>
   );

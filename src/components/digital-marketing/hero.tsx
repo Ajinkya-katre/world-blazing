@@ -27,6 +27,7 @@ planned, executed, and optimized by experienced digital marketing professionals.
 
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
+              aria-label="Get Free Marketing Audit"
               href="/contact-us?type=marketing-audit"
               className="rounded-full bg-indigo-600 px-6 py-3 text-sm font-semibold text-white hover:bg-indigo-500 transition"
             >
@@ -34,6 +35,7 @@ planned, executed, and optimized by experienced digital marketing professionals.
             </Link>
 
             <Link
+              aria-label="Talk to a Marketing Expert"
               href="/contact-us"
               className="rounded-full border border-neutral-300 px-6 py-3 text-sm font-semibold hover:bg-neutral-100 dark:hover:bg-neutral-800 transition"
             >

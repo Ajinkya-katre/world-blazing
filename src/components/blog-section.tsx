@@ -40,7 +40,7 @@ export function BlogSection() {
           {/* Blog Posts Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.slice(1).map((post) => (
-              <Link key={post.id} href={`/blog/${post.slug}`}>
+              <Link key={post.id} href={`/blog/${post.slug}`} aria-label={`Read ${post.title}`}>
                 <motion.div
                   whileHover={{ y: -10 }}
                   className="group cursor-pointer h-full flex flex-col rounded-2xl bg-neutral-100 dark:bg-neutral-900 overflow-hidden hover:shadow-lg transition-shadow"

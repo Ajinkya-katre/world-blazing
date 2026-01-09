@@ -22,6 +22,7 @@ export default function CourseDetailPage() {
                     The course you are looking for does not exist or has been removed.
                 </p>
                 <Link
+                    aria-label="Back to all courses"
                     href="/courses"
                     className="text-base text-indigo-600 dark:text-indigo-300 underline"
                 >
@@ -76,12 +77,14 @@ export default function CourseDetailPage() {
                         {/* Primary CTAs */}
                         <div className="flex flex-wrap gap-3 mt-4">
                             <Link
+                                aria-label="Enroll or Enquire about the course"
                                 href="/contact-us"
                                 className="inline-flex items-center justify-center rounded-full bg-indigo-600 px-6 py-2 text-base font-medium text-white hover:bg-indigo-500 transition-colors"
                             >
                                 Enroll Now / Enquire
                             </Link>
                             <Link
+                                aria-label="Back to all courses"
                                 href="/courses"
                                 className="inline-flex items-center justify-center rounded-full border border-neutral-300 dark:border-neutral-700 px-6 py-2 text-base font-medium text-neutral-800 dark:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
                             >
@@ -240,6 +243,7 @@ export default function CourseDetailPage() {
                     </div>
                     <div className="flex flex-wrap gap-3">
                         <Link
+                            aria-label="Enroll or Book Counseling for the course"
                             href="/contact-us"
                             className="inline-flex items-center justify-center rounded-full bg-white px-5 py-2 text-xs md:text-base font-semibold text-indigo-700 hover:bg-neutral-100"
                         >
