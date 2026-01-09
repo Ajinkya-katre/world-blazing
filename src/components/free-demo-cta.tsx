@@ -46,7 +46,11 @@ export default function FreeDemoCTA() {
                              shadow hover:bg-indigo-50"
                 >
                   <IconCalendarEvent size={18} />
-                  Book Free Demo
+                  Book Free Demo 
+                  <span className="relative flex size-3">
+                    <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal-500 opacity-75"></span>
+                    <span className="relative inline-flex size-3 rounded-full bg-teal-400"></span>
+                  </span>
                 </motion.button>
               </Link>
 

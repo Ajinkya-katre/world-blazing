@@ -6,6 +6,8 @@ import { ThemeProvider } from "@/providers/theme-provider";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "@/components/footer";
 import ThemeToggleClient from "@/components/theme-toggle.client";
+import { Suspense } from "react";
+import WhatsAppFloat from "@/components/whatsapp-float";
 
 /* ---------------- FONT ---------------- */
 const lato = Lato({
@@ -18,21 +20,21 @@ const lato = Lato({
 export const metadata = {
   metadataBase: new URL("https://www.worldblazing.com"),
 
-  title: "World Blazing Computer Institute | Best IT Courses in Hadapsar Pune",
+  title: "World Blazing Computer Institute | Best IT Courses in Hadapsar",
   description:
-    "World Blazing Computer Institute offers job-oriented IT courses in Hadapsar Pune. Full Stack, Python, Software Testing, Data Analytics, Digital Marketing with placements.",
+    "World Blazing Computer Institute offers job-oriented IT courses in Hadapsar . Full Stack, Python, Software Testing, Data Analytics, Digital Marketing with placements.",
 
   keywords: [
     "World Blazing Computer Institute",
     "IT courses in Hadapsar",
-    "IT institute in Pune",
-    "Full Stack Development course Pune",
-    "Python training Pune",
-    "Software Testing classes Pune",
-    "Data Analytics course Pune",
-    "Digital Marketing course Pune",
+    "IT institute in Hadapsar",
+    "Full Stack Development course Hadapsar",
+    "Python training Hadapsar",
+    "Software Testing classes Hadapsar",
+    "Data Analytics course Hadapsar",
+    "Digital Marketing course Hadapsar",
     "Computer classes in Hadapsar",
-    "Job oriented IT courses Pune",
+    "Job oriented IT courses Hadapsar",
   ],
 
   alternates: {
@@ -145,16 +147,22 @@ export default function RootLayout({
         className={`${lato.className} antialiased bg-white dark:bg-neutral-950 text-neutral-900 dark:text-neutral-50 transition-colors`}
       >
         <ThemeProvider>
-          <ThemeToggleClient />
+          <Suspense fallback={null}>
+            <ThemeToggleClient />
+          </Suspense>
 
           {/* Mobile Dock */}
           <div className="block md:hidden fixed top-2 right-4 z-50">
-            <FloatingDockDemo />
+            <Suspense fallback={null}>
+              <FloatingDockDemo />
+            </Suspense>
           </div>
 
           {/* Desktop Dock */}
           <div className="hidden md:fixed md:bottom-0 md:left-0 md:right-0 md:flex md:justify-center md:pb-4 md:z-50">
-            <FloatingDockDemo />
+            <Suspense fallback={null}>
+              <FloatingDockDemo />
+            </Suspense>
           </div>
 
           {children}
@@ -162,6 +170,7 @@ export default function RootLayout({
 
         <SpeedInsights />
         <Footer />
+        <WhatsAppFloat />
       </body>
     </html>
   );

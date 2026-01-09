@@ -1,250 +1,320 @@
-'use client';
-import { FormEvent, useState } from "react";
+"use client";
 
-const scriptURL = "https://script.google.com/macros/s/AKfycbyjqsJy5Z9IAYKNJKCr2e20dhJ_WZfnW2phJeCOw2_685ZvykwofDmDMtCqWkmSIF1g/exec"
+import { useState } from "react";
+import { useForm, Controller } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { trackEvent } from "@/lib/analytics";
+import coursesData from "@/constants/courses.json";
+import * as z from "zod";
+import { motion } from "motion/react";
+import { Check } from "lucide-react";
 
-const ContactUsSection = () => {
+import {
+  Field,
+  FieldGroup,
+  FieldLabel,
+  FieldError,
+} from "@/components/ui/field";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Textarea } from "@/components/ui/textarea";
+
+/* ================= GOOGLE SHEETS ================= */
+const SCRIPT_URL =
+  "https://script.google.com/macros/s/AKfycbyjqsJy5Z9IAYKNJKCr2e20dhJ_WZfnW2phJeCOw2_685ZvykwofDmDMtCqWkmSIF1g/exec";
+
+/* ================= FORM SCHEMA ================= */
+const formSchema = z.object({
+  name: z.string().min(2, "Name is required"),
+  phone: z.string().min(10, "Valid phone number required"),
+  email: z.string().email().optional().or(z.literal("")),
+  course: z.string().min(1, "Please select a course"),
+  message: z.string().optional(),
+});
+
+type FormData = z.infer<typeof formSchema>;
+
+export default function ContactUsPage() {
+  const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState<null | "success" | "error">(null);
+  const [error, setError] = useState(false);
 
-  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
-    e.preventDefault();
+  const form = useForm<FormData>({
+    resolver: zodResolver(formSchema),
+  });
+
+  async function onSubmit(data: FormData) {
     setLoading(true);
-    setStatus(null);
-
-    const form = e.currentTarget;
-    const formData = new FormData(form);
+    setError(false);
 
     try {
-      // Google Apps Script + FormData – keep it simple
-      await fetch(scriptURL, {
+      const formData = new FormData();
+      Object.entries(data).forEach(([k, v]) =>
+        formData.append(k, v ?? "")
+      );
+
+      await fetch(SCRIPT_URL, {
         method: "POST",
         body: formData,
-        mode: "no-cors", // we don't need to read the response, just fire-and-forget
+        mode: "no-cors",
       });
 
-      setStatus("success");
+      // Track successful submission in GA
+      trackEvent({
+        event: "contact_form_submitted",
+        category: "conversion",
+        label: data.course || "contact_form",
+      });
+
+      setSubmitted(true);
       form.reset();
-    } catch (err) {
-      console.error(err);
-      setStatus("error");
+    } catch {
+      setError(true);
     } finally {
       setLoading(false);
     }
   }
-  return (
-    <section className="w-full py-8 md:py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto grid gap-12 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] items-start">
-        {/* LEFT SECTION */}
-        <div className="space-y-8">
-          {/* Badge + title */}
-          <div>
-            <div className="inline-flex items-center gap-2 rounded-full bg-indigo-50 text-indigo-600 px-3 py-1 text-xs font-medium dark:bg-indigo-900/30 dark:text-indigo-300">
-              <span className="text-[11px]">📞 Let&apos;s talk</span>
-            </div>
 
-            <h2 className="mt-4 text-3xl md:text-4xl font-bold text-neutral-900 dark:text-neutral-50">
+  const handleClick = () => {
+    const values = form.getValues();
+    trackEvent({
+      event: "contact_form_click",
+      category: "conversion",
+      label: values.course || "contact_form",
+    });
+  };
+
+  return (
+    <section className="w-full py-10 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto grid gap-12 lg:grid-cols-[1.1fr_1fr] items-start">
+
+        {/* ================= LEFT SECTION ================= */}
+        <div className="space-y-8">
+
+          {/* Header */}
+          <div>
+            <span className="inline-flex rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium text-indigo-600 dark:bg-indigo-900/30 dark:text-indigo-300">
+              📞 Let’s talk
+            </span>
+
+            <h2 className="mt-4 text-3xl md:text-4xl font-bold">
               Contact Us
             </h2>
-            <p className="mt-3 text-base md:text-base text-neutral-600 dark:text-neutral-300 max-w-xl">
+
+            <p className="mt-3 text-neutral-600 dark:text-neutral-300 max-w-xl">
               Have questions about courses, fees, or batch timings? Reach out to
               World Blazing Computer Institute and our team will help you choose
-              the right path for your IT career.
+              the right IT career path.
             </p>
           </div>
 
           {/* Contact info cards */}
           <div className="grid gap-4 sm:grid-cols-2">
-            {/* Phone */}
-            <div className="rounded-2xl border border-neutral-200 bg-white/80 px-4 py-3 dark:border-neutral-800 dark:bg-neutral-900/80 shadow-sm">
-              <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-                Call / WhatsApp US at [+918459816185]
+            <div className="rounded-2xl border bg-white/80 p-4 dark:bg-neutral-900/80">
+              <p className="text-xs font-semibold uppercase text-neutral-500">
+                Call / WhatsApp
               </p>
               <a
                 href="tel:+918459816185"
-                className="inline-flex mt-2 items-center justify-center rounded-full border border-white/70 px-5 py-2 text-xs md:text-base font-semibold text-white hover:bg-white/10"
+                className="inline-flex mt-2 rounded-full bg-indigo-600 px-5 py-2 text-white font-semibold"
               >
                 Call Institute
               </a>
-              <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
+              <p className="mt-1 text-xs text-neutral-500">
                 Mon – Sat, 9:00 AM to 8:00 PM
               </p>
             </div>
 
-            {/* Email */}
-            <div className="rounded-2xl border border-neutral-200 bg-white/80 px-4 py-3 dark:border-neutral-800 dark:bg-neutral-900/80 shadow-sm">
-              <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+            <div className="rounded-2xl border bg-white/80 p-4 dark:bg-neutral-900/80">
+              <p className="text-xs font-semibold uppercase text-neutral-500">
                 Email
               </p>
-              <p className="mt-1 text-base font-medium text-neutral-900 dark:text-neutral-50 break-all">
+              <p className="mt-1 font-medium break-all">
                 worldblazinginstitute@gmail.com
-              </p>
-              <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
-                Share your queries, our team usually replies within 24 hours.
               </p>
             </div>
 
-            {/* Address */}
-            <div className="rounded-2xl border border-neutral-200 bg-white/80 px-4 py-3 sm:col-span-2 dark:border-neutral-800 dark:bg-neutral-900/80 shadow-sm">
-              <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
+            <div className="rounded-2xl border bg-white/80 p-4 sm:col-span-2 dark:bg-neutral-900/80">
+              <p className="text-xs font-semibold uppercase text-neutral-500">
                 Institute Address
               </p>
-              <p className="mt-1 text-base font-medium text-neutral-900 dark:text-neutral-50">
+              <p className="font-medium">
                 Aru Palace Building, 162/A1, Malwadi Road,
-              </p>
-              <p className="text-base font-medium text-neutral-900 dark:text-neutral-50">
-                near Laxmi Mata Mandir, Hadapsar Gaon, Pune – 411028
-              </p>
-              <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">
-                Visit us for counseling, course details and campus tour.
+                Hadapsar Gaon, Pune – 411028
               </p>
             </div>
           </div>
 
-          {/* Map (responsive) */}
-          <div className="mt-4">
-            <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400 mb-2">
+          {/* Map */}
+          <div>
+            <p className="text-xs font-semibold uppercase text-neutral-500 mb-2">
               Find us on map
             </p>
-            <div className="relative w-full overflow-hidden rounded-2xl border border-neutral-200 dark:border-neutral-800 shadow-sm aspect-[4/3]">
+            <div className="aspect-[4/3] rounded-2xl overflow-hidden border">
               <iframe
                 title="World Blazing Computer Institute Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.592981813237!2d73.93112067496244!3d18.50208678258787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c14d243a2639%3A0xa550799b8227e301!2sWORLD%20BLAZING%20COMPUTER%20INSTITUTE!5e0!3m2!1sen!2sin!4v1765137627969!5m2!1sen!2sin"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="absolute inset-0 h-full w-full border-0"
+                className="h-full w-full border-0"
               />
             </div>
           </div>
 
-          {/* Why contact us – clarity for students */}
-          <div className="space-y-2">
-            <p className="text-xs font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400">
-              What can we help you with?
-            </p>
-            <ul className="space-y-1 text-base text-neutral-600 dark:text-neutral-300 list-disc list-inside">
-              <li>Choosing the right course based on your background</li>
-              <li>Understanding fees, EMI options and batch timings</li>
-              <li>Booking a free demo session or counseling</li>
-              <li>Placement assistance and career guidance queries</li>
-            </ul>
-          </div>
-
+          {/* Why contact */}
+          <ul className="list-disc list-inside text-neutral-600 dark:text-neutral-300">
+            <li>Choosing the right course</li>
+            <li>Understanding fees & batch timings</li>
+            <li>Booking free demo session</li>
+            <li>Placement & career guidance</li>
+          </ul>
         </div>
 
-        {/* RIGHT SECTION — FORM */}
-        <div className="relative overflow-hidden rounded-3xl border border-neutral-200 bg-white/90 px-5 py-6 sm:px-7 sm:py-8 shadow-lg dark:border-neutral-800 dark:bg-neutral-900/90">
-          {/* subtle bg grid / pattern */}
-          <div className="pointer-events-none absolute inset-0 opacity-10 bg-[url('/grid.svg')] dark:opacity-15" />
+        {/* ================= RIGHT SECTION (FORM) ================= */}
+        <div className="rounded-3xl border bg-white/90 p-6 dark:bg-neutral-900/90">
 
-          <div className="relative mb-6">
-            <h3 className="text-xl font-semibold text-neutral-900 dark:text-neutral-50">
-              Send us a message
-            </h3>
-            <p className="mt-2 text-xs md:text-base text-neutral-600 dark:text-neutral-300">
-              Share your details and what you&apos;re looking for. Our team will
-              call or email you back with course details and the next steps.
-            </p>
-          </div>
-
-          <form className="relative space-y-5" onSubmit={handleSubmit}>
-            {/* Name + Phone in two-column on larger screens */}
-            <div className="grid gap-4 sm:grid-cols-2">
-              <div>
-                <label className="block mb-2 text-xs font-medium text-neutral-600 dark:text-neutral-300">
-                  Full Name
-                </label>
-                <input
-                  name="name"
-                  type="text"
-                  required
-                  placeholder="Your full name"
-                  className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
-                />
-              </div>
-              <div>
-                <label className="block mb-2 text-xs font-medium text-neutral-600 dark:text-neutral-300">
-                  Phone Number
-                </label>
-                <input
-                  name="phone"
-                  type="tel"
-                  required
-                  placeholder="Your contact number"
-                  className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
-                />
-              </div>
-            </div>
-
-            {/* Email */}
-            <div>
-              <label className="block mb-2 text-xs font-medium text-neutral-600 dark:text-neutral-300">
-                Email Address
-              </label>
-              <input
-                name="email"
-                type="email"
-                required
-                placeholder="you@example.com"
-                className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
-              />
-            </div>
-
-            {/* Course Interest */}
-            <div>
-              <label className="block mb-2 text-xs font-medium text-neutral-600 dark:text-neutral-300">
-                Course you&apos;re interested in
-              </label>
-              <input
-                name="course"
-                type="text"
-                placeholder="Full Stack / Python / Testing / Data Analytics..."
-                className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base text-neutral-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
-              />
-            </div>
-
-            {/* Message */}
-            <div>
-              <label className="block mb-2 text-xs font-medium text-neutral-600 dark:text-neutral-300">
-                Message
-              </label>
-              <textarea
-                name="message"
-                rows={4}
-                placeholder="Tell us about your background and what you want to achieve..."
-                className="w-full rounded-xl border border-neutral-200 bg-neutral-50 px-4 py-3 text-base text-neutral-900 resize-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:border-indigo-500 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
-              />
-            </div>
-
-            {/* Submit + helper text */}
-            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between pt-2">
-              <button
-                type="submit"
-                disabled={loading}
-                className="inline-flex items-center justify-center rounded-full bg-indigo-600 px-6 py-2.5 text-base font-semibold text-white shadow-md hover:bg-indigo-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-1 focus-visible:ring-offset-background transition-colors"
+          {submitted ? (
+            <div className="text-center py-10">
+              <motion.div
+                initial={{ scale: 0.5 }}
+                animate={{ scale: 1 }}
+                className="mx-auto mb-4 flex size-14 items-center justify-center rounded-full border"
               >
-                {loading ? "Sending..." : "Submit Enquiry"}
-              </button>
-              <p className="text-[11px] text-neutral-500 dark:text-neutral-400">
-                We never share your details with anyone. You will receive a call
-                or WhatsApp within 24 hours.
+                <Check />
+              </motion.div>
+              <h3 className="text-2xl font-bold mb-2">
+                Thank you!
+              </h3>
+              <p className="text-neutral-600 dark:text-neutral-300">
+                We’ll call or WhatsApp you within 24 hours.
               </p>
             </div>
-            {status === "success" && (
-              <p className="mt-2 text-xs text-emerald-500">
-                ✅ Thank you! We&apos;ve received your enquiry.
-              </p>
-            )}
-            {status === "error" && (
-              <p className="mt-2 text-xs text-red-500">
-                ❌ Something went wrong. Please try again or call us directly.
-              </p>
-            )}
-          </form>
+          ) : (
+            <form onSubmit={form.handleSubmit(onSubmit)}>
+              <FieldGroup className="space-y-4">
+                <h1 className="mt-6 mb-1 font-extrabold text-3xl tracking-tight col-span-full">
+          World Blazing Computer Solution
+        </h1>
+        <h2 className="mt-4 mb-1 font-bold text-2xl tracking-tight col-span-full">
+          👉 Book Your Free Demo Class
+        </h2>
+        <p className="tracking-wide text-muted-foreground mb-5 text-wrap text-sm col-span-full">
+          👉 Talk to our trainers, understand the syllabus, career scope, fees,
+          and placements before joining — no payment required.
+        </p>
+                <Controller
+                  name="name"
+                  control={form.control}
+                  render={({ field, fieldState }) => (
+                    <Field data-invalid={fieldState.invalid}>
+                      <FieldLabel>Full Name *</FieldLabel>
+                      <Input {...field} />
+                      {fieldState.error && (
+                        <FieldError errors={[fieldState.error]} />
+                      )}
+                    </Field>
+                  )}
+                />
+
+                <Controller
+                  name="phone"
+                  control={form.control}
+                  render={({ field, fieldState }) => (
+                    <Field data-invalid={fieldState.invalid}>
+                      <FieldLabel>Mobile Number *</FieldLabel>
+                      <Input {...field} type="tel" />
+                      {fieldState.error && (
+                        <FieldError errors={[fieldState.error]} />
+                      )}
+                    </Field>
+                  )}
+                />
+
+                <Controller
+          name="email"
+          control={form.control}
+          render={({ field, fieldState }) => (
+            <Field
+              data-invalid={fieldState.invalid}
+              className="gap-1 md:col-span-3"
+            >
+              <FieldLabel htmlFor="email">Email </FieldLabel>
+              <Input
+                {...field}
+                id="email"
+                type="text"
+                onChange={(e) => {
+                  field.onChange(e.target.value);
+                }}
+                aria-invalid={fieldState.invalid}
+                placeholder="Enter your Email"
+              />
+
+              {fieldState.invalid && <FieldError errors={[fieldState.error]} />}
+            </Field>
+          )}
+        />
+
+                <Controller
+                  name="course"
+                  control={form.control}
+                  render={({ field, fieldState }) => (
+                    <Field data-invalid={fieldState.invalid}>
+                      <FieldLabel>Course *</FieldLabel>
+                      <Select
+                        value={field.value}
+                        onValueChange={field.onChange}
+                      >
+                        <SelectTrigger>
+                          <SelectValue placeholder="Select course" />
+                        </SelectTrigger>
+                        <SelectContent>
+                          {coursesData.map((course) => (
+                            <SelectItem key={course.slug} value={course.title}>
+                              {course.title}
+                            </SelectItem>
+                          ))}
+                        </SelectContent>
+                      </Select>
+                      {fieldState.error && (
+                        <FieldError errors={[fieldState.error]} />
+                      )}
+                    </Field>
+                  )}
+                />
+
+                <Controller
+                  name="message"
+                  control={form.control}
+                  render={({ field }) => (
+                    <Field>
+                      <FieldLabel>Message (optional)</FieldLabel>
+                      <Textarea {...field} rows={3} />
+                    </Field>
+                  )}
+                />
+
+                <Button disabled={loading} onClick={handleClick}>
+                  {loading ? "Submitting..." : "Get Call Back"}
+                </Button>
+
+                {error && (
+                  <p className="text-sm text-red-500">
+                    Something went wrong. Please try again.
+                  </p>
+                )}
+              </FieldGroup>
+            </form>
+          )}
         </div>
       </div>
     </section>
   );
-};
-
-export default ContactUsSection;
+}
