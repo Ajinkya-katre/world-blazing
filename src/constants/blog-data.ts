@@ -459,6 +459,136 @@ Book Free Demo →
 </section>
 `,
 },
+{
+  id: '6',
+  title: 'Data Analytics Roadmap in 2025 | Skills, Tools, Salary & Career Guide',
+  description: 'Complete Data Analytics Roadmap in 2025 with skills, tools, salary insights, and learning path',
+  image: '/images/data-analytics-roadmap.png',
+  author: 'Ajinkya Katre',
+  date: '10 Jan 2026',
+  slug: 'data-analytics-roadmap-2025',
+  content: `
+<section class="max-w-4xl mx-auto px-4 py-12">
+  <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
+    Data Analytics Roadmap in 2025 📊
+  </h2>
+
+  <p class="text-base md:text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed mb-6">
+    Data Analytics has become one of the most in-demand careers in 2025 as companies
+    rely heavily on data-driven decision making. From startups to MNCs, skilled data
+    analysts are playing a critical role in business growth.
+  </p>
+
+  <h3 class="text-2xl font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
+    📈 Why Data Analytics Is a High-Demand Career
+  </h3>
+
+  <ul class="list-disc list-inside space-y-2 text-neutral-700 dark:text-neutral-300 mb-8">
+    <li>Every business generates massive amounts of data</li>
+    <li>Companies need insights to improve profits and efficiency</li>
+    <li>Strong demand across IT, finance, healthcare, marketing, and e-commerce</li>
+  </ul>
+
+  <!-- Salary -->
+  <div class="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-6 mb-8 shadow-sm">
+    <h3 class="text-2xl font-semibold text-indigo-600 dark:text-indigo-400 mb-4">
+      💰 Data Analyst Salary in India (2025)
+    </h3>
+
+    <ul class="space-y-2 text-neutral-700 dark:text-neutral-300">
+      <li>
+        <strong class="text-neutral-900 dark:text-neutral-100">Fresher:</strong>
+        ₹4 – ₹7 LPA
+      </li>
+      <li>
+        <strong class="text-neutral-900 dark:text-neutral-100">2–4 Years Experience:</strong>
+        ₹8 – ₹14 LPA
+      </li>
+      <li>
+        <strong class="text-neutral-900 dark:text-neutral-100">Senior / Lead Analyst:</strong>
+        ₹18+ LPA
+      </li>
+    </ul>
+  </div>
+
+  <h3 class="text-2xl font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
+    🗺 Step-by-Step Data Analytics Roadmap
+  </h3>
+
+  <ul class="list-disc list-inside space-y-2 text-neutral-700 dark:text-neutral-300 mb-8">
+    <li>📌 Basics of statistics & mathematics</li>
+    <li>📌 Excel & Google Sheets for data handling</li>
+    <li>📌 SQL for data extraction and analysis</li>
+    <li>📌 Python for data analysis (NumPy, Pandas)</li>
+    <li>📌 Data visualization with Power BI / Tableau</li>
+    <li>📌 Real-world projects & case studies</li>
+  </ul>
+
+  <h3 class="text-2xl font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
+    🛠 Skills Required to Become a Data Analyst
+  </h3>
+
+  <ul class="grid sm:grid-cols-2 gap-3 text-neutral-700 dark:text-neutral-300 mb-8">
+    <li>✔ Strong analytical thinking</li>
+    <li>✔ Excel & SQL expertise</li>
+    <li>✔ Python or R basics</li>
+    <li>✔ Data visualization & storytelling</li>
+  </ul>
+
+  <!-- How to start -->
+  <h3 class="text-2xl font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
+    🎓 How to Start a Career in Data Analytics
+  </h3>
+
+  <p class="text-neutral-700 dark:text-neutral-300 mb-4">
+    You don’t need to be a coding expert to start Data Analytics. With the right roadmap,
+    hands-on practice, and mentorship, anyone can build a strong analytics career.
+  </p>
+
+  <p class="font-medium text-neutral-900 dark:text-neutral-100 mb-3">
+    At <span class="text-indigo-600 dark:text-indigo-400">
+      World Blazing Computer Institute, Hadapsar
+    </span>, we focus on:
+  </p>
+
+  <ul class="list-disc list-inside space-y-2 text-neutral-700 dark:text-neutral-300 mb-8">
+    <li>✅ Practical data analytics projects</li>
+    <li>✅ Industry-relevant tools & case studies</li>
+    <li>✅ Personalized mentorship & career guidance</li>
+  </ul>
+
+  <!-- Who should learn -->
+  <h3 class="text-2xl font-semibold text-neutral-900 dark:text-neutral-100 mb-3">
+    🎯 Who Should Learn Data Analytics?
+  </h3>
+
+  <ul class="grid sm:grid-cols-2 gap-3 text-neutral-700 dark:text-neutral-300">
+    <li>👨‍🎓 Students from any background</li>
+    <li>📊 Commerce & management graduates</li>
+    <li>👨‍💼 Working professionals</li>
+    <li>🔄 Career switchers looking for growth</li>
+  </ul>
+
+  <div class="mt-10 rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 p-6 text-center text-white shadow-lg">
+    <h3 class="text-xl md:text-2xl font-bold mb-2">
+      Build Your Data Analytics Career in 2025 🚀
+    </h3>
+    <p class="text-sm md:text-base mb-4 opacity-90">
+      Join the best Data Analytics course in Hadapsar Pune with hands-on training
+      and placement support.
+    </p>
+
+    <a
+      href="/contact-us"
+      class="inline-flex items-center justify-center rounded-lg bg-white px-6 py-2 font-semibold text-indigo-600 hover:bg-neutral-100 transition"
+    >
+      Book Free Demo →
+    </a>
+  </div>
+</section>
+  `,
+},
+
 
 ];
 
