@@ -5,8 +5,29 @@ import Link from "next/link";
 import coursesData from "@/constants/courses.json";
 import type { Course } from "@/lib/interface/courses";
 import Image from "next/image";
+import { Metadata } from "next";
 
 const courses = coursesData as Course[];
+
+export function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Metadata {
+  const course = courses.find((c) => c.slug === params.slug);
+
+  if (!course) {
+    return {
+      title: "Course Not Found",
+      description: "The requested course does not exist.",
+    };
+  }
+
+  return {
+    title: `${course.title} Course in Pune`,
+    description: `${course.title} course at World Blazing Computer Institute, Hadapsar Pune. Classroom training, real projects, demo classes and placement guidance.`,
+  };
+}
 
 export default function CourseDetailPage() {
     const params = useParams<{ slug: string }>();

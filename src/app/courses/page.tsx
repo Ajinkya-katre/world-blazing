@@ -3,6 +3,12 @@ import FreeDemoCTA from "@/components/free-demo-cta";
 import coursesData from "@/constants/courses.json";
 import type { Course } from "@/lib/interface/courses";
 
+export const metadata = {
+  title: "IT Courses in Pune",
+  description:
+    "Explore job-oriented IT courses at World Blazing Computer Institute including Full Stack Development, Python, Testing, Data Analytics and Digital Marketing.",
+};
+
 export default function CoursesPage() {
   const courses = coursesData as Course[];
 

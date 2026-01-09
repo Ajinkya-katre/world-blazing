@@ -10,6 +10,13 @@ type GalleryImage = {
   alt: string;
 };
 
+export const metadata = {
+  title: "Institute Gallery",
+  description:
+    "Explore classroom photos, student activities and training environment at World Blazing Computer Institute in Hadapsar Pune.",
+};
+
+
 const GALLERY_IMAGES: GalleryImage[] = [
   { src: "/gallery/1.jpeg", alt: "Students getting certificate" },
   { src: "/gallery/2.jpeg", alt: "Students getting certificate" },

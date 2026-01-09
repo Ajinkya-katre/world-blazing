@@ -1,5 +1,10 @@
-import { section } from "framer-motion/client";
-import React from "react";
+
+export const metadata = {
+  title: "Privacy Policy",
+  description:
+    "Read the privacy policy of World Blazing Computer Institute to understand how we collect, use and protect your personal information.",
+};
+
 
 const privacyPolicyText = `<h1>Privacy Policy for World Blazing Computer Solution</h1>
 

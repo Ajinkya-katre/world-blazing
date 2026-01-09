@@ -1,4 +1,8 @@
-import React from "react";
+export const metadata = {
+  title: "Terms and Conditions",
+  description:
+    "Review the terms and conditions governing the use of World Blazing Computer Institute website, services and training programs.",
+};
 
 const termsAndConditionsText = `<h1>Terms and Conditions for World Blazing Computer Solution</h1>
 <h2><strong>Terms and Conditions</strong></h2>
