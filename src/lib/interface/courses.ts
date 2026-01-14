@@ -3,6 +3,7 @@ export interface CourseChild {
 }
 
 export interface Course {
+  description: string | null | undefined;
   slug: string;
   title: string;
   shortDescription: string;

@@ -1,5 +1,12 @@
 import PlacementSection from "@/components/placements-section";
 
+export const metadata = {
+  title: "Placements & Student Success",
+  description:
+    "View placement support, student success stories and career guidance offered by World Blazing Computer Institute in Hadapsar Pune.",
+};
+
+
 export default function Placements() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">

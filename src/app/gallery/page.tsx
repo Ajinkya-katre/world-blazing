@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
@@ -9,6 +8,13 @@ type GalleryImage = {
   src: string; // path from public/, e.g. "/gallery/class-1.jpg"
   alt: string;
 };
+
+const metadata = {
+  title: "Institute Gallery",
+  description:
+    "Explore classroom photos, student activities and training environment at World Blazing Computer Institute in Hadapsar Pune.",
+};
+
 
 const GALLERY_IMAGES: GalleryImage[] = [
   { src: "/gallery/1.jpeg", alt: "Students getting certificate" },
