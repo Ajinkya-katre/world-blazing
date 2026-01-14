@@ -1,5 +1,4 @@
 "use client";
-
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
@@ -10,7 +9,7 @@ type GalleryImage = {
   alt: string;
 };
 
-export const metadata = {
+const metadata = {
   title: "Institute Gallery",
   description:
     "Explore classroom photos, student activities and training environment at World Blazing Computer Institute in Hadapsar Pune.",

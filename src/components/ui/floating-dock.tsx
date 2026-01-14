@@ -66,12 +66,13 @@ const FloatingDockMobile = ({
             {items.map((item) => (
               <div key={item.title} className="border-b last:border-none dark:border-neutral-800">
                 {/* Parent */}
-                <button
+                <a
                   onClick={() =>
                     item.children
                       ? setExpanded(expanded === item.title ? null : item.title)
                       : setOpen(false)
                   }
+                  href={item.href}
                   className="w-full flex items-center justify-between px-4 py-3 text-sm font-medium hover:bg-neutral-100 dark:hover:bg-neutral-800"
                 >
                   <div className="flex items-center gap-3">
@@ -90,7 +91,7 @@ const FloatingDockMobile = ({
                       )}
                     />
                   )}
-                </button>
+                </a>
 
                 {/* Children */}
                 <AnimatePresence>
@@ -124,7 +125,7 @@ const FloatingDockMobile = ({
       <button
         aria-label="Toggle navigation menu"
         onClick={() => setOpen(!open)}
-        className="flex h-12 w-12 items-center justify-center rounded-full bg-gray-50 dark:bg-neutral-800 shadow-lg"
+        className="flex h-12 w-12 items-center cursor-pointer justify-center rounded-full bg-gray-50 dark:bg-neutral-800 shadow-lg"
       >
         <IconLayoutNavbarCollapse className="h-6 w-6 text-neutral-500" />
       </button>
