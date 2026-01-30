@@ -284,14 +284,14 @@ export const BLOG_POSTS: BlogPost[] = [
     `,
   },
   {
-  id: '3',
-  title: 'Python Classes in Hadapsar Pune – Syllabus, Salary & Career Scope',
-  description: 'Looking for Python classes in Hadapsar Pune? Learn syllabus, career scope, salary & why Python is best for beginners.',
-  image: '/images/python-classes-hadapsar.png',
-  author: 'Monika Waikar',
-  date: '1 January 2026',
-  slug: 'python-classes-hadapsar-pune',
-  content: `
+    id: '3',
+    title: 'Python Classes in Hadapsar Pune – Syllabus, Salary & Career Scope',
+    description: 'Looking for Python classes in Hadapsar Pune? Learn syllabus, career scope, salary & why Python is best for beginners.',
+    image: '/images/python-classes-hadapsar.png',
+    author: 'Monika Waikar',
+    date: '1 January 2026',
+    slug: 'python-classes-hadapsar-pune',
+    content: `
 <section class="max-w-4xl mx-auto px-4 py-12">
 
 <h2 class="text-3xl md:text-4xl font-bold mb-4">
@@ -342,16 +342,16 @@ Book Free Demo →
 
 </section>
 `,
-},
-{
-  id: '4',
-  title: 'Data Analyst Career in India – Complete Beginner Guide',
-  description: 'Data Analyst career in India explained: salary, skills, roadmap & how beginners can enter analytics.',
-  image: '/images/data-analyst-career-india.png',
-  author: 'Ajinkya Katre',
-  date: '1 January 2026',
-  slug: 'data-analyst-career-india',
-  content: `
+  },
+  {
+    id: '4',
+    title: 'Data Analyst Career in India – Complete Beginner Guide',
+    description: 'Data Analyst career in India explained: salary, skills, roadmap & how beginners can enter analytics.',
+    image: '/images/data-analyst-career-india.png',
+    author: 'Ajinkya Katre',
+    date: '1 January 2026',
+    slug: 'data-analyst-career-india',
+    content: `
 <section class="max-w-4xl mx-auto px-4 py-12">
 
 <h2 class="text-3xl md:text-4xl font-bold mb-4">
@@ -400,16 +400,16 @@ Book Free Demo →
 
 </section>
 `,
-},
-{
-  id: '5',
-  title: 'Digital Marketing Career in India – Salary, Skills & Job Roles',
-  description: 'Digital marketing career in India explained with salary, skills, job roles & growth opportunities.',
-  image: '/images/digital-marketing-career-india.png',
-  author: 'Ajinkya Katre',
-  date: '2nd January 2026',
-  slug: 'digital-marketing-career-india',
-  content: `
+  },
+  {
+    id: '5',
+    title: 'Digital Marketing Career in India – Salary, Skills & Job Roles',
+    description: 'Digital marketing career in India explained with salary, skills, job roles & growth opportunities.',
+    image: '/images/digital-marketing-career-india.png',
+    author: 'Ajinkya Katre',
+    date: '2nd January 2026',
+    slug: 'digital-marketing-career-india',
+    content: `
 <section class="max-w-4xl mx-auto px-4 py-12">
 
 <h2 class="text-3xl md:text-4xl font-bold mb-4">
@@ -458,16 +458,16 @@ Book Free Demo →
 
 </section>
 `,
-},
-{
-  id: '6',
-  title: 'Data Analytics Roadmap in 2025 | Skills, Tools, Salary & Career Guide',
-  description: 'Complete Data Analytics Roadmap in 2025 with skills, tools, salary insights, and learning path',
-  image: '/images/data-analytics-roadmap.png',
-  author: 'Ajinkya Katre',
-  date: '10 Jan 2026',
-  slug: 'data-analytics-roadmap-2025',
-  content: `
+  },
+  {
+    id: '6',
+    title: 'Data Analytics Roadmap in 2025 | Skills, Tools, Salary & Career Guide',
+    description: 'Complete Data Analytics Roadmap in 2025 with skills, tools, salary insights, and learning path',
+    image: '/images/data-analytics-roadmap.png',
+    author: 'Ajinkya Katre',
+    date: '10 Jan 2026',
+    slug: 'data-analytics-roadmap-2025',
+    content: `
 <section class="max-w-4xl mx-auto px-4 py-12">
   <h2 class="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-neutral-100 mb-4">
     Data Analytics Roadmap in 2025 📊
@@ -587,7 +587,128 @@ Book Free Demo →
   </div>
 </section>
   `,
-},
+  }, {
+    id: "7",
+    title: "Is Data Analytics Compulsory for Data Science? Complete Roadmap (2025)",
+    description:
+      "Is data analytics compulsory for data science? Learn complete roadmap, skills, salary, projects and career path explained simply.",
+    image: "/images/data-science.jpg",
+    author: "Ajinkya Katre",
+    date: "27 January 2026",
+    slug: "is-data-analytics-compulsory-for-data-science",
+    content: `
+        <section class="max-w-4xl mx-auto px-4 py-12">
+
+        <h1 class="text-3xl md:text-4xl font-bold text-neutral-900 dark:text-neutral-100 mb-6">
+        Is Data Analytics Compulsory for Data Science? Complete Roadmap 🚀
+        </h1>
+
+        <p class="text-lg text-neutral-700 dark:text-neutral-300 mb-6">
+        This is one of the most common questions beginners ask:
+        <strong>“Do I need Data Analytics to become a Data Scientist?”</strong>
+        Let’s clear this confusion once and for all.
+        </p>
+
+        <div class="rounded-xl border border-neutral-200 dark:border-neutral-800 bg-indigo-50 dark:bg-indigo-950/40 p-6 mb-10">
+        <h2 class="text-xl font-semibold text-indigo-600 mb-3">✅ Short Answer</h2>
+
+        <p class="font-semibold text-green-600 text-lg">
+        NO — Data Analytics is not compulsory.
+        </p>
+
+        <p class="mt-3 text-neutral-700 dark:text-neutral-300">
+        But it is the <strong>foundation</strong> of Data Science.
+        </p>
+
+        <p class="mt-2 font-semibold text-indigo-600">
+        Data Analytics → Data Science → Machine Learning → AI
+        </p>
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-4">🧠 Difference Between Roles</h2>
+
+        <table class="w-full border border-neutral-200 dark:border-neutral-800 rounded-lg mb-10">
+        <thead class="bg-neutral-100 dark:bg-neutral-800">
+        <tr>
+        <th class="px-4 py-2 text-left">Role</th>
+        <th class="px-4 py-2 text-left">What They Do</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="border-t">
+        <td class="px-4 py-2 font-medium">Data Analyst</td>
+        <td class="px-4 py-2">Analyze past data and dashboards</td>
+        </tr>
+        <tr class="border-t">
+        <td class="px-4 py-2 font-medium">Data Scientist</td>
+        <td class="px-4 py-2">Predict future using ML models</td>
+        </tr>
+        <tr class="border-t">
+        <td class="px-4 py-2 font-medium">ML Engineer</td>
+        <td class="px-4 py-2">Build scalable ML systems</td>
+        </tr>
+        </tbody>
+        </table>
+
+        <h2 class="text-2xl font-semibold mb-6">🎯 Complete Data Science Roadmap</h2>
+
+        <ul class="list-disc list-inside space-y-2 mb-6">
+        <li>Math basics (statistics & probability)</li>
+        <li>Python programming</li>
+        <li>Pandas, NumPy, Visualization</li>
+        <li>Data Analytics concepts</li>
+        <li>SQL (very important)</li>
+        <li>Machine Learning</li>
+        <li>Projects & GitHub</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold mb-4">📁 Must-Have Projects</h3>
+
+        <ul class="grid sm:grid-cols-2 gap-2 mb-8">
+        <li>✔ Sales prediction</li>
+        <li>✔ House price prediction</li>
+        <li>✔ Customer churn</li>
+        <li>✔ Fraud detection</li>
+        </ul>
+
+        <div class="rounded-xl bg-neutral-100 dark:bg-neutral-900 p-6 mb-10">
+        <h3 class="text-2xl font-semibold text-indigo-600 mb-4">
+        💰 Salary in India (Approx)
+        </h3>
+
+        <ul class="space-y-2">
+        <li><strong>Data Analyst:</strong> ₹4–7 LPA</li>
+        <li><strong>Data Scientist:</strong> ₹6–12 LPA</li>
+        <li><strong>ML Engineer:</strong> ₹8–20 LPA</li>
+        </ul>
+        </div>
+
+        <h3 class="text-xl font-semibold mb-4">⚠️ Truth No One Tells You</h3>
+
+        <ul class="list-disc list-inside space-y-2 mb-10">
+        <li>❌ You cannot skip analytics completely</li>
+        <li>❌ You cannot skip SQL</li>
+        <li>✅ Projects matter more than certificates</li>
+        </ul>
+
+        <div class="rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 p-8 text-center text-white">
+        <h3 class="text-2xl font-bold mb-3">
+        Start Your Data Science Career Today 🚀
+        </h3>
+
+        <p class="mb-4">
+        Learn Data Science with real projects, offline training and placement guidance.
+        </p>
+
+        <a href="/contact-us"
+        class="inline-block bg-white text-indigo-600 px-6 py-2 rounded-lg font-semibold hover:bg-neutral-100 transition">
+        Book Free Demo →
+        </a>
+        </div>
+
+        </section>
+`
+  }
 
 
 ];

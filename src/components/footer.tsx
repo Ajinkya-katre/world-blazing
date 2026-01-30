@@ -44,9 +44,13 @@ export default function Footer() {
               Contact
             </h3>
             <ul className="space-y-2 text-base text-neutral-600 dark:text-neutral-400">
-              <li className="flex items-center gap-2"><Phone size={14}/> +91 8459816185</li>
-              <li className="flex items-center gap-2"><Mail size={14}/> worldblazinginstitute@gmail.com</li>
-              <li>Pune, Maharashtra</li>
+              <li className="flex items-center gap-2"><a href="tel:+918459816185" className="flex gap-2 items-center"><Phone size={14}/> +91 8459816185</a></li>
+              <li className="flex items-center gap-2">
+                <a href="mailto:worldblazinginstitute@gmail.com" className="flex items-center gap-2">
+                  <Mail size={14}/> worldblazinginstitute@gmail.com
+                </a>
+              </li>
+              <li><a href="https://maps.app.goo.gl/GAtmoqsoZuSFFbHC6" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-500"> Aru Palace Building, 162/A1, Malwadi Road, Hadapsar Gaon, Pune – 411028</a></li>
             </ul>
 
             <p className="mt-4 text-base text-neutral-600 dark:text-neutral-400">
