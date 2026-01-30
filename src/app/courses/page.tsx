@@ -20,7 +20,7 @@ export default function CoursesPage() {
           Not sure which course is right for you?
         </p>
         <p className="mt-2 text-neutral-600 dark:text-neutral-300">
-          Book a free counselling session and get a personalized roadmap.
+          Book a free counselling session and get a personalized roadmap. Our experts will help you choose the best course to achieve your career goals.
         </p>
 
         <div className="mt-4 inline-flex">

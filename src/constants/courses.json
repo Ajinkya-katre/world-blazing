@@ -1,6 +1,6 @@
 [
   {
-    "slug": "full-stack-web-development",
+    "slug": "full-stack-web-development-course-in-hadapsar-pune",
     "title": "Full Stack Web Development With AI",
     "shortDescription": "Learn HTML, CSS, JavaScript, React, Node.js and build real-world web apps from scratch using industry best practices.",
     "category": "Web Development",
@@ -64,7 +64,7 @@
     "outcome": "Build & deploy real web apps"
   },
   {
-    "slug": "python-programming",
+    "slug": "python-classes-in-hadapsar-pune",
     "title": "Python Programming",
     "shortDescription": "Master Python from basics to OOP, file handling and small projects. Strong base for data, automation and backend.",
     "category": "Programming",
@@ -120,7 +120,7 @@
     "outcome": "Write clean Python code for automation, backend & data basics"
   },
   {
-    "slug": "software-testing",
+    "slug": "software-testing-course-in-hadapsar-pune",
     "title": "Software Testing (Manual + Automation)",
     "shortDescription": "Learn manual testing concepts, test case design, bug reporting and basics of automation.",
     "category": "Testing",
@@ -177,7 +177,7 @@
     "outcome": "Write clean Python code for automation, backend & data basics"
   },
   {
-    "slug": "digital-marketing",
+    "slug": "digital-marketing-course-in-hadapsar-pune",
     "title": "Digital Marketing & Performance Marketing",
     "shortDescription": "Learn SEO, social media marketing, Google Ads, analytics and build campaigns that bring real leads.",
     "category": "Digital Marketing",
@@ -234,7 +234,7 @@
     "outcome": "Test applications, report bugs & start automation testing"
   },
   {
-    "slug": "data-science",
+    "slug": "data-science-course-in-hadapsar-pune",
     "title": "Data Science with Python",
     "shortDescription": "End-to-end Data Science journey: Python, statistics, data analysis, machine learning concepts and projects.",
     "category": "Data / Analytics",
@@ -291,7 +291,7 @@
     "outcome": "Analyze data, build ML models & solve business problems"
   },
   {
-    "slug": "data-analytics",
+    "slug": "data-analytics-course-in-hadapsar-pune",
     "title": "Data Analytics & BI",
     "shortDescription": "Learn Excel, SQL, dashboards and storytelling with data to become a job-ready data analyst.",
     "category": "Data / Analytics",
@@ -344,7 +344,7 @@
     "outcome": "Analyze data, build ML models & solve business problems"
   },
   {
-    "slug": "java-full-stack-web-development",
+    "slug": "java-full-stack-web-development-course-in-hadapsar-pune",
     "title": "Java Full Stack Web Development",
     "shortDescription": "Backend with Java & Spring Boot plus modern frontend to build enterprise-grade full stack applications.",
     "category": "Web Development",
@@ -401,7 +401,7 @@
     "outcome": "Build enterprise-grade full stack Java applications"
   },
   {
-    "slug": "mern-stack-web-development",
+    "slug": "mern-stack-web-development-course-in-hadapsar-pune",
     "title": "MERN Stack Web Development",
     "shortDescription": "Specialized track for MongoDB, Express, React and Node.js to build modern single page apps.",
     "category": "Web Development",
@@ -460,7 +460,7 @@
     "outcome": "Develop modern single-page applications using JavaScript stack"
   },
   {
-    "slug": "mean-stack-web-development",
+    "slug": "mean-stack-web-development-course-in-hadapsar-pune",
     "title": "MEAN Stack Web Development",
     "shortDescription": "MongoDB, Express, Angular and Node.js to build scalable SPA and enterprise-style apps.",
     "category": "Web Development",
@@ -517,7 +517,7 @@
     "outcome": "Build scalable Angular-based full stack applications"
   },
   {
-    "slug": "basic-programming-and-logical-thinking",
+    "slug": "computer-clasess-in-hadapsar-pune",
     "title": "Basic Programming & Logical Thinking",
     "shortDescription": "Foundation course to build logic using C / Python, flowcharts and problem solving skills.",
     "category": "Programming Foundation",
@@ -567,5 +567,121 @@
     "role": "Programming Foundation (Entry Level)",
     "salary": "Depends on next advanced course",
     "outcome": "Build strong logic & confidence to move into IT careers"
+  },
+  {
+    "slug": "excel-basic-to-advanced-course-in-hadapsar-pune",
+    "title": "Excel: Basic to Advanced",
+    "shortDescription": "Master Excel from basics to advanced formulas, pivot tables, data analysis and automation with macros.",
+    "category": "Business Tools",
+    "level": "Beginner to Advanced",
+    "duration": "2–3 Months",
+    "mode": "Offline + Online",
+    "badge": "In-Demand Skill",
+    "image": "/images/excel.png",
+    "modules": [
+      "Excel interface, navigation and basic formatting",
+      "Data entry, organizing and basic calculations",
+      "Formulas and functions (SUM, IF, VLOOKUP, INDEX-MATCH)",
+      "Advanced functions (SUMIF, COUNTIF, nested formulas)",
+      "Data validation and conditional formatting",
+      "Pivot tables and data summarization",
+      "Charts, graphs and data visualization",
+      "Sorting, filtering and removing duplicates",
+      "Introduction to macros and VBA basics",
+      "Real-world projects: financial models, dashboards and reports"
+    ],
+    "tools": [
+      "Microsoft Excel",
+      "Google Sheets (basics)"
+    ],
+    "certification": "World Blazing Excel Professional Certification",
+    "jobRoles": [
+      "Data Analyst (Entry level)",
+      "Business Analyst",
+      "Financial Analyst (Junior)",
+      "Administrative / Executive Assistant"
+    ],
+    "emiOptions": "Affordable monthly installments available.",
+    "salaryRange": "Excel proficiency adds ₹0.5–1 LPA to baseline salary depending on role and company.",
+    "whoCanJoin": [
+      "Office professionals and administrative staff",
+      "Business students and graduates",
+      "Anyone working with data and reports",
+      "Career switchers looking for quick upskilling"
+    ],
+    "children": [
+      {
+        "title": "Excel Basics & Formatting"
+      },
+      {
+        "title": "Advanced Formulas & Functions"
+      },
+      {
+        "title": "Pivot Tables, Macros & Dashboards"
+      }
+    ],
+    "role": "Excel Data Specialist",
+    "salary": "₹2.5 – ₹5 LPA",
+    "outcome": "Create professional reports, dashboards and automate Excel tasks"
+  },
+  {
+    "slug": "graphic-design-course-in-hadapsar-pune",
+    "title": "Graphic Design (CorelDraw, Photoshop, Illustrator, InDesign)",
+    "shortDescription": "Complete graphic design training with industry-standard tools to create stunning visuals for print and digital.",
+    "category": "Design",
+    "level": "Beginner to Advanced",
+    "duration": "4–5 Months",
+    "mode": "Offline + Online",
+    "badge": "Creative Career",
+    "image": "/images/graphic-design.jpg",
+    "modules": [
+      "Design fundamentals: color theory, typography, composition",
+      "CorelDraw: vector graphics, logo design and illustration",
+      "Adobe Photoshop: photo editing, retouching and digital design",
+      "Adobe Illustrator: vector art, icons and branding materials",
+      "Adobe InDesign: layouts, brochures, magazines and publications",
+      "Brand identity design and guidelines",
+      "Web graphics and UI/UX design basics",
+      "Print design standards and file preparation",
+      "Portfolio building: real client projects and case studies",
+      "Freelancing tips and business basics for designers"
+    ],
+    "tools": [
+      "CorelDraw",
+      "Adobe Photoshop",
+      "Adobe Illustrator",
+      "Adobe InDesign",
+      "Font libraries and stock resources"
+    ],
+    "certification": "World Blazing Graphic Design Professional Certification",
+    "jobRoles": [
+      "Graphic Designer",
+      "UI/UX Designer (Junior)",
+      "Brand Designer",
+      "Print & Digital Media Designer",
+      "Freelance Designer"
+    ],
+    "emiOptions": "EMI plans available with counseling support.",
+    "salaryRange": "Graphic design freshers typically earn between ₹2.5 LPA – ₹5.5 LPA in companies; freelancers earn based on projects.",
+    "whoCanJoin": [
+      "Students with creative interests",
+      "Fine arts and commerce graduates",
+      "Professionals wanting to switch to creative fields",
+      "Anyone passionate about visual design and branding"
+    ],
+    "children": [
+      {
+        "title": "Vector Design (CorelDraw & Illustrator)"
+      },
+      {
+        "title": "Photo Editing & Digital Design (Photoshop)"
+      },
+      {
+        "title": "Layout & Publication Design (InDesign & Branding)"
+      }
+    ],
+    "role": "Graphic & Brand Designer",
+    "salary": "₹3 – ₹7 LPA",
+    "outcome": "Design professional branding, marketing materials and digital graphics"
   }
 ]

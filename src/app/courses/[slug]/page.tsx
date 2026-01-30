@@ -26,7 +26,7 @@ export default function CourseDetailPage() {
                     href="/courses"
                     className="text-base text-indigo-600 dark:text-indigo-300 underline"
                 >
-                    Back to all courses
+                    ⬅️ Back to all courses
                 </Link>
             </main>
         );
@@ -257,6 +257,13 @@ export default function CourseDetailPage() {
                         </a>
                     </div>
                 </section>
+                <Link
+                    aria-label="Back to all courses"
+                    href="/courses"
+                    className="inline-flex items-center justify-center gap-2 rounded-full border border-neutral-300 dark:border-neutral-700 bg-neutral-50 dark:bg-neutral-900 px-6 py-2 text-base font-medium text-neutral-800 dark:text-neutral-100 hover:bg-neutral-100 dark:hover:bg-neutral-800 hover:border-neutral-400 dark:hover:border-neutral-600 transition-colors"
+                    >
+                    ⬅️ Back to all courses
+                </Link>
             </div>
         </main>
     );
