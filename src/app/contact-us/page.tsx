@@ -9,7 +9,8 @@ export const metadata = {
 export default function ContactUs() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-12">
-      <ContactUsSection />
+      
+      <ContactUsSection scriptUrl="https://script.google.com/macros/s/AKfycbwbOGYEzpxerAll1enPNGe2eY4qsYljbFb4H4lWXu94ps4Vl6_be-KB1rVu3s820elK/exec" linkType="contact-us"  />
     </div>
   );
 }

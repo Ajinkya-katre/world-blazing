@@ -1,9 +1,11 @@
+import ContactUsSection from "../../components/contact-us";
+
 export default function BookDemoForm() {
   return (
-    <section className="max-w-5xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10">
+    <section className="max-w-7xl mx-auto px-4 py-12">
 
       {/* Left content */}
-      <div>
+      {/* <div>
         <h2 className="text-2xl font-bold mb-4">
           Why Book a Demo?
         </h2>
@@ -23,19 +25,12 @@ export default function BookDemoForm() {
         >
           📲 Book via WhatsApp
         </a>
-      </div>
+      </div> */}
 
       {/* Google Form Embed */}
-      <div className="rounded-xl overflow-hidden border shadow">
-        <iframe
-          src="https://forms.gle/2MV3oJ8RpdqFGxiK6"
-          width="100%"
-          height="620"
-          loading="lazy"
-        >
-          Loading…
-        </iframe>
-      </div>
+      {/* <div className="rounded-xl overflow-hidden border shadow"> */}
+        <ContactUsSection scriptUrl="https://script.google.com/macros/s/AKfycbwbOGYEzpxerAll1enPNGe2eY4qsYljbFb4H4lWXu94ps4Vl6_be-KB1rVu3s820elK/exec" />
+      {/* </div> */}
     </section>
   );
 }
