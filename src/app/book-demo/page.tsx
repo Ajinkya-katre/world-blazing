@@ -3,9 +3,9 @@ import DemoHero from "@/components/book-demo/demo-hero";
 import TrustStrip from "@/components/book-demo/trust-strip";
 
 export const metadata = {
-  title: "Book Free Demo Class | World Blazing Computer Institute",
+  title: "Book Free Demo Class | World Blazing Programming Institute",
   description:
-    "Book a free demo class at World Blazing Computer Institute Hadapsar Pune. Learn Python, Full Stack, Data Science & more.",
+    "Book a free demo class at World Blazing Programming Institute Hadapsar Pune. Learn Python, Full Stack, Data Science & more.",
 };
 
 export default function BookDemoPage() {

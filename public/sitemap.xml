@@ -1,24 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Main Pages -->
   <url>
     <loc>https://www.worldblazing.com/</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.worldblazing.com/about-us</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.worldblazing.com/courses</loc>
-  </url>
-  <url>
-    <loc>https://www.worldblazing.com/gallery</loc>
-  </url>
-  <url>
-    <loc>https://www.worldblazing.com/blog</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.worldblazing.com/placements</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.worldblazing.com/gallery</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.worldblazing.com/blog</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.worldblazing.com/contact-us</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Deep Links: Individual Course Pages -->
+  <url>
+    <loc>https://www.worldblazing.com/courses/full-stack-web-development</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.worldblazing.com/courses/python-programming</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.worldblazing.com/courses/software-testing</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.worldblazing.com/courses/digital-marketing</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.worldblazing.com/courses/data-science</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.worldblazing.com/courses/data-analytics</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.worldblazing.com/courses/java-full-stack</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.worldblazing.com/courses/mern-stack</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.worldblazing.com/courses/mean-stack</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.worldblazing.com/courses/basic-programming</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.worldblazing.com/courses/excel-advanced</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Deep Links: Individual Blog Posts (REPLACE THESE EXAMPLES) -->
+  <url>
+    <loc>https://www.worldblazing.com/blog/how-to-start-a-career-in-full-stack-development</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.worldblazing.com/blog/top-it-skills-in-demand-for-2026</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.worldblazing.com/blog/python-vs-java-which-should-you-learn</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.6</priority>
   </url>
 </urlset>

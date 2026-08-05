@@ -20,12 +20,12 @@ const lato = Lato({
 export const metadata = {
   metadataBase: new URL("https://www.worldblazing.com"),
 
-  title: "World Blazing Computer Institute | Best IT Courses in Hadapsar",
+  title: "World Blazing Programming Institute | Best IT Courses in Hadapsar",
   description:
-    "World Blazing Computer Institute offers job-oriented IT courses in Hadapsar . Full Stack, Python, Software Testing, Data Analytics, Digital Marketing with placements.",
+    "World Blazing Programming Institute offers job-oriented IT courses in Hadapsar . Full Stack, Python, Software Testing, Data Analytics, Digital Marketing with placements.",
 
   keywords: [
-    "World Blazing Computer Institute",
+    "World Blazing Programming Institute",
     "IT courses in Hadapsar",
     "IT institute in Hadapsar",
     "Full Stack Development course Hadapsar",
@@ -33,7 +33,7 @@ export const metadata = {
     "Software Testing classes Hadapsar",
     "Data Analytics course Hadapsar",
     "Digital Marketing course Hadapsar",
-    "Computer classes in Hadapsar",
+    "Programming classes in Hadapsar",
     "Job oriented IT courses Hadapsar",
   ],
 
@@ -42,17 +42,17 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "World Blazing Computer Institute",
+    title: "World Blazing Programming Institute",
     description:
-      "World Blazing Computer Institute in Hadapsar Pune offers job-oriented IT courses including Full Stack Development, Python, Software Testing, Data Analytics & Digital Marketing with placement assistance.",
+      "World Blazing Programming Institute in Hadapsar Pune offers job-oriented IT courses including Full Stack Development, Python, Software Testing, Data Analytics & Digital Marketing with placement assistance.",
     url: "https://www.worldblazing.com",
-    siteName: "World Blazing Computer Institute",
+    siteName: "World Blazing Programming Institute",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "World Blazing Computer Institute",
+        alt: "World Blazing Programming Institute",
       },
     ],
     locale: "en_IN",
@@ -61,7 +61,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "World Blazing Computer Institute",
+    title: "World Blazing Programming Institute",
     description:
       "Job-oriented IT courses in Pune with real classroom training.",
     images: ["/og-image.png"],
@@ -107,7 +107,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "EducationalOrganization",
-              name: "World Blazing Computer Institute",
+              name: "World Blazing Programming Institute",
               url: "https://www.worldblazing.com",
               logo: "https://www.worldblazing.com/logo.png",
               address: {

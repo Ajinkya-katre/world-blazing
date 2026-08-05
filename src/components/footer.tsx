@@ -68,7 +68,7 @@ export default function Footer() {
               Follow Us
             </h3>
             <div className="flex gap-3 text-neutral-600 dark:text-neutral-400">
-                <a href="https://www.instagram.com/worldblazing_computer_solution" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-500" aria-label="Follow us on Instagram"><Instagram size={18} /></a>
+                <a href="https://www.instagram.com/worldblazing_programming_solution" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-500" aria-label="Follow us on Instagram"><Instagram size={18} /></a>
             </div>
           </div>
 

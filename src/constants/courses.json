@@ -46,7 +46,7 @@
       "Students from any stream who want to get into IT",
       "Diploma / Engineering students looking for job-oriented training",
       "Working professionals who want to switch to development",
-      "Beginners with basic computer knowledge and strong interest"
+      "Beginners with basic programming knowledge and strong interest"
     ],
     "children": [
       {
@@ -517,7 +517,7 @@
     "outcome": "Build scalable Angular-based full stack applications"
   },
   {
-    "slug": "computer-clasess-in-hadapsar-pune",
+    "slug": "programming-clasess-in-hadapsar-pune",
     "title": "Basic Programming & Logical Thinking",
     "shortDescription": "Foundation course to build logic using C / Python, flowcharts and problem solving skills.",
     "category": "Programming Foundation",
@@ -527,7 +527,7 @@
     "badge": "Foundation Course",
     "image": "/images/logical.png",
     "modules": [
-      "Introduction to computers and programming",
+      "Introduction to programmings and programming",
       "Flowcharts, algorithms and problem breakdown",
       "Basic syntax in C / Python (institute preference)",
       "Variables, operators and expressions",

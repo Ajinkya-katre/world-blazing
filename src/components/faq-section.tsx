@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 
 const faqs = [
   {
-    question: "What courses do you offer at World Blazing Computer Institute?",
+    question: "What courses do you offer at World Blazing Programming Institute?",
     answer:
       "We offer job-oriented IT courses like Full Stack Web Development, Python Programming, Software Testing (Manual + Automation), Data Analytics, Digital Marketing, MS-CIT / MS Office and more. New batches are started regularly for most courses.",
   },
@@ -24,12 +24,12 @@ const faqs = [
   {
     question: "What are the eligibility criteria to join your courses?",
     answer:
-      "There is no strict eligibility for most beginner courses. Basic computer knowledge and willingness to learn is enough. For advanced or specialization courses, we recommend some prior programming or domain understanding.",
+      "There is no strict eligibility for most beginner courses. Basic programming knowledge and willingness to learn is enough. For advanced or specialization courses, we recommend some prior programming or domain understanding.",
   },
   {
     question: "Will I receive a certificate after completing the course?",
     answer:
-      "Yes, after successfully completing the course and required assessments, you will receive an institute certificate from World Blazing Computer Institute which you can add to your resume and LinkedIn profile.",
+      "Yes, after successfully completing the course and required assessments, you will receive an institute certificate from World Blazing Programming Institute which you can add to your resume and LinkedIn profile.",
   },
   {
     question: "Do you offer EMI or flexible payment options for fees?",

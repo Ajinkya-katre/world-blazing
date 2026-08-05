@@ -12,7 +12,7 @@ type GalleryImage = {
 const metadata = {
   title: "Institute Gallery",
   description:
-    "Explore classroom photos, student activities and training environment at World Blazing Computer Institute in Hadapsar Pune.",
+    "Explore classroom photos, student activities and training environment at World Blazing Programming Institute in Hadapsar Pune.",
 };
 
 
@@ -206,7 +206,7 @@ export default function GallerySection() {
       )}
 
       <p className="text-xs text-neutral-500 mt-2">
-        © World Blazing Computer Institute. Student photos are protected.
+        © World Blazing Programming Institute. Student photos are protected.
         Unauthorized use is prohibited.
       </p>
 

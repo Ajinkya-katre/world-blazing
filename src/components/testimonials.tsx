@@ -12,14 +12,6 @@ export function AnimatedTestimonialsDemo() {
   },
   {
     quote:
-      "Ajinkya focuses on writing clean code, understanding real project structure and building full-stack apps the way companies expect. Students learn how frontend, backend, databases and deployment all connect in one real product.",
-    name: "Ajinkya Katre",
-    designation:
-      "Full Stack & MERN Stack Trainer | Web development, projects & career guidance",
-    src: "/images/ak.jpg"
-  },
-  {
-    quote:
       "Rahul connects digital marketing theory with live campaign examples. From SEO to Meta and Google Ads, he shows students exactly how brands generate leads, track performance and run result-oriented campaigns.",
     name: "Rahul Agarwal",
     designation:

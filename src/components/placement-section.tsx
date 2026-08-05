@@ -74,7 +74,7 @@ export default function PlacementLogosSection() {
         {/* Fine print */}
         <p className="mt-6 text-[11px] md:text-xs text-neutral-500 dark:text-neutral-400">
           *Logos represent companies where students have been placed through
-          training and guidance from World Blazing Computer Institute.
+          training and guidance from World Blazing Programming Institute.
         </p>
       </div>
     </section>

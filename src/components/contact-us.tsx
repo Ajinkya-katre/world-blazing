@@ -144,7 +144,7 @@ export default function ContactUsPage({ scriptUrl, linkType }: ContactUsPageProp
 
             <p className="mt-3 text-neutral-600 dark:text-neutral-400 max-w-xl">
               Have questions about courses, fees, or batch timings? Reach out to
-              World Blazing Computer Institute and our team will help you choose
+              World Blazing Programming Institute and our team will help you choose
               the right IT career path.
             </p>
 
@@ -194,7 +194,7 @@ export default function ContactUsPage({ scriptUrl, linkType }: ContactUsPageProp
             </p>
             <div className="aspect-[4/3] rounded-2xl overflow-hidden border">
               <iframe
-                title="World Blazing Computer Institute Location"
+                title="World Blazing Programming Institute Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.592981813237!2d73.93112067496244!3d18.50208678258787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c14d243a2639%3A0xa550799b8227e301!2sWORLD%20BLAZING%20COMPUTER%20INSTITUTE!5e0!3m2!1sen!2sin!4v1765137627969!5m2!1sen!2sin"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"

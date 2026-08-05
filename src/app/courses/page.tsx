@@ -6,7 +6,7 @@ import type { Course } from "@/lib/interface/courses";
 export const metadata = {
   title: "IT Courses in Pune",
   description:
-    "Explore job-oriented IT courses at World Blazing Computer Institute including Full Stack Development, Python, Testing, Data Analytics and Digital Marketing.",
+    "Explore job-oriented IT courses at World Blazing Programming Institute including Full Stack Development, Python, Testing, Data Analytics and Digital Marketing.",
 };
 
 export default function CoursesPage() {
