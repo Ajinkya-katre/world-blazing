@@ -1,6 +1,8 @@
 "use client";
 
 import { useParams } from "next/navigation";
+import { useEffect } from "react";
+import { pushViewCourseDetail } from "@/utils/dataLayer";
 import Link from "next/link";
 import coursesData from "@/constants/courses.json";
 import type { Course } from "@/lib/interface/courses";
@@ -13,6 +15,17 @@ export default function CourseDetailPage() {
     const slug = Array.isArray(params.slug) ? params.slug[0] : params.slug;
 
     const course = courses.find((c) => c.slug === slug);
+    useEffect(() => {
+        if (course) {
+            try {
+                pushViewCourseDetail({
+                    courseId: course.slug,
+                    courseName: course.title,
+                    courseCategory: course.category || '',
+                });
+            } catch (e) { console.warn(e) }
+        }
+    }, [course]);
 
     if (!course) {
         return (

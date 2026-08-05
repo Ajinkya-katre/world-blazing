@@ -2,9 +2,25 @@
 
 import Link from "next/link";
 import { motion } from "motion/react";
+import { pushCourseSelection, pushContactClick } from "@/utils/dataLayer";
 import { IconCalendarEvent, IconPhoneCall } from "@tabler/icons-react";
 
 export default function FreeDemoCTA() {
+  const handleBookDemoClick = () => {
+    pushCourseSelection({
+      courseName: "",
+      buttonLocation: "free_demo_cta",
+    });
+  };
+
+  const handleCallNowClick = () => {
+    pushContactClick({
+      contactMethod: "phone_call",
+      clickLocation: "free_demo_cta",
+      phoneNumber: "+918237978163",
+    });
+  };
+
   return (
     <section className="relative w-full py-10 md:py-14">
       <div className="max-w-5xl mx-auto px-4">
@@ -36,7 +52,11 @@ export default function FreeDemoCTA() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
-              <Link href="/contact-us?type=demo" aria-label="Book a free demo class">
+              <Link
+                href="/contact-us?type=demo"
+                aria-label="Book a free demo class"
+                onClick={handleBookDemoClick}
+              >
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -56,6 +76,7 @@ export default function FreeDemoCTA() {
 
               <a
                 href="tel:+918237978163"
+                onClick={handleCallNowClick}
                 className="inline-flex items-center justify-center gap-2 
                            rounded-full border border-white/70 
                            px-6 py-3 text-sm font-semibold text-white 
