@@ -3,7 +3,7 @@ import PlacementSection from "@/components/placements-section";
 export const metadata = {
   title: "Placements & Student Success",
   description:
-    "View placement support, student success stories and career guidance offered by World Blazing Computer Institute in Hadapsar Pune.",
+    "View placement support, student success stories and career guidance offered by World Blazing Programming Institute in Hadapsar Pune.",
 };
 
 

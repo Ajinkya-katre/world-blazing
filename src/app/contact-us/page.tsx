@@ -3,7 +3,7 @@ import ContactUsSection from "@/components/contact-us";
 export const metadata = {
   title: "Contact Us",
   description:
-    "Contact World Blazing Computer Institute in Hadapsar Pune for free demo classes, IT course details, fees, batch timings and career guidance.",
+    "Contact World Blazing Programming Institute in Hadapsar Pune for free demo classes, IT course details, fees, batch timings and career guidance.",
 };
 
 export default function ContactUs() {

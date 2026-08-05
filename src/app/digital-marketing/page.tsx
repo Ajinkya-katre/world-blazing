@@ -8,7 +8,7 @@ import TrustStrip from "@/components/digital-marketing/trust-strip";
 export const metadata = {
   title: "Digital Marketing Course in Pune",
   description:
-    "Join Digital Marketing training at World Blazing Computer Institute in Pune with hands-on practice in SEO, Google Ads, social media marketing and live projects.",
+    "Join Digital Marketing training at World Blazing Programming Institute in Pune with hands-on practice in SEO, Google Ads, social media marketing and live projects.",
 };
 
 

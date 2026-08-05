@@ -10,7 +10,7 @@ export type Review = {
 export const studentReviews: Review[] = [
   {
     quote:
-      "World Blazing Computer Solution helped me transform from a beginner into a confident coder. The teaching style is simple, practical, and very student-friendly.",
+      "World Blazing Programming Solution helped me transform from a beginner into a confident coder. The teaching style is simple, practical, and very student-friendly.",
     name: "Rahul Patil",
     title: "Full Stack Student",
     avatar: "/reviews/rahul.jpg", 

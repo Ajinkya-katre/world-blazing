@@ -5,11 +5,11 @@ export const HERO_SECTION_CONTENT = {
     text: 'Welcome to the Future',
   },
   heading: {
-    main: 'World Blazing Computer Institute',
+    main: 'World Blazing Programming Institute',
     sub: 'Interactive Classroom Training for IT Careers',
   },
   description:
-    `World Blazing Computer Institute is a trusted IT training center in Hadapsar, Pune.
+    `World Blazing Programming Institute is a trusted IT training center in Hadapsar, Pune.
      We provide hands-on classroom training in Full Stack Development, Python, Software Testing,
     Data Analytics and Digital Marketing with real projects, expert trainers and placement guidance.`,
   buttons: {
@@ -21,7 +21,7 @@ export const HERO_SECTION_CONTENT = {
     secondary: {
       text: 'Learn More',
       href: '/about-us',
-      ariaLabel: 'Learn more about World Blazing Computer Institute',
+      ariaLabel: 'Learn more about World Blazing Programming Institute',
     },
   },
   stats: [

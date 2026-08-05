@@ -12,8 +12,8 @@ export interface BlogPost {
 export const BLOG_POSTS: BlogPost[] = [
   {
     id: '1',
-    title: 'Best IT Courses in Hadapsar Pune | World Blazing Computer Institute 🎓',
-    description: 'Best IT Courses in Hadapsar Pune | World Blazing Computer Institute',
+    title: 'Best IT Courses in Hadapsar Pune | World Blazing Programming Institute 🎓',
+    description: 'Best IT Courses in Hadapsar Pune | World Blazing Programming Institute',
     image: '/images/logical.png',
     author: 'Monika Waikar',
     date: '17 December 2025',
@@ -34,7 +34,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   <p class="text-base md:text-lg text-neutral-700 dark:text-neutral-300 leading-relaxed mb-8">
     At <span class="font-semibold text-indigo-600 dark:text-indigo-400">
-      World Blazing Computer Institute
+      World Blazing Programming Institute
     </span>,
     we help students build practical skills that align with real industry requirements.
   </p>
@@ -131,7 +131,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   <!-- Why Choose -->
   <h3 class="text-2xl font-semibold text-neutral-900 dark:text-neutral-100 mt-12 mb-4">
-    Why Choose World Blazing Computer Institute in Hadapsar? 🤔
+    Why Choose World Blazing Programming Institute in Hadapsar? 🤔
   </h3>
 
   <ul class="grid sm:grid-cols-2 gap-3 text-neutral-700 dark:text-neutral-300">
@@ -149,7 +149,7 @@ export const BLOG_POSTS: BlogPost[] = [
       Book a Free Demo Class 📅
     </h3>
     <p class="text-sm md:text-base mb-4 opacity-90">
-      Searching for the best computer institute in Hadapsar Pune?
+      Searching for the best programming institute in Hadapsar Pune?
       Visit our campus or book a free demo today.
     </p>
 
@@ -240,7 +240,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
   <p class="font-medium text-neutral-900 dark:text-neutral-100 mb-3">
     At <span class="text-indigo-600 dark:text-indigo-400">
-      World Blazing Computer Institute, Hadapsar
+      World Blazing Programming Institute, Hadapsar
     </span>, we focus on:
   </p>
 
@@ -547,7 +547,7 @@ Book Free Demo →
 
   <p class="font-medium text-neutral-900 dark:text-neutral-100 mb-3">
     At <span class="text-indigo-600 dark:text-indigo-400">
-      World Blazing Computer Institute, Hadapsar
+      World Blazing Programming Institute, Hadapsar
     </span>, we focus on:
   </p>
 
