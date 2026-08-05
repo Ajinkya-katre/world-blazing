@@ -137,16 +137,6 @@ export default function ContactUsPage({ scriptUrl, linkType }: ContactUsPageProp
     });
   };
 
-  const handleClick = () => {
-    const values = form.getValues();
-
-    trackEvent({
-      event: "contact_form_click",
-      category: "conversion",
-      label: values.course || "contact_form",
-    });
-  };
-
   return (
     <section className="w-full py-10 px-4 sm:px-6 lg:px-8 bg-transparent dark:bg-transparent">
 
@@ -399,7 +389,6 @@ export default function ContactUsPage({ scriptUrl, linkType }: ContactUsPageProp
                 <Button
                   type="submit"
                   disabled={loading}
-                  onClick={handleClick}
                   className="w-full"
                 >
                   {loading ? "Submitting..." : "Get Call Back"}
