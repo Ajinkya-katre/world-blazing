@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { MessageCircle } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
+import { pushWhatsappClick } from "@/utils/dataLayer";
 
 export default function WhatsAppFloat() {
   const phoneNumber = "918459816185"; // your number
@@ -19,6 +20,13 @@ export default function WhatsAppFloat() {
       category: "lead",
       label: "floating_whatsapp",
     });
+    try {
+      pushWhatsappClick({
+        clickLocation: "floating_whatsapp",
+      });
+    } catch (err) {
+      console.warn("pushDataLayer failed", err);
+    }
   };
 
   return (

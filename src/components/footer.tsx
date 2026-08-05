@@ -1,9 +1,19 @@
+"use client";
 
 import Link from "next/link";
 import { Instagram, Mail, Phone } from "lucide-react";
+import { pushContactClick } from "@/utils/dataLayer";
 import Image from "next/image";
 
 export default function Footer() {
+  const handleFooterPhoneClick = () => {
+    pushContactClick({
+      contactMethod: "phone_call",
+      clickLocation: "footer",
+      phoneNumber: "+918459816185",
+    });
+  };
+
   return (
     <footer className="w-full border-t border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-950 pt-10 pb-6 mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,7 +54,15 @@ export default function Footer() {
               Contact
             </h3>
             <ul className="space-y-2 text-base text-neutral-600 dark:text-neutral-400">
-              <li className="flex items-center gap-2"><a href="tel:+918459816185" className="flex gap-2 items-center"><Phone size={14}/> +91 8459816185</a></li>
+              <li className="flex items-center gap-2">
+                <a
+                  href="tel:+918459816185"
+                  className="flex gap-2 items-center"
+                  onClick={handleFooterPhoneClick}
+                >
+                  <Phone size={14} /> +91 8459816185
+                </a>
+              </li>
               <li className="flex items-center gap-2">
                 <a href="mailto:worldblazinginstitute@gmail.com" className="flex items-center gap-2">
                   <Mail size={14}/> worldblazinginstitute@gmail.com

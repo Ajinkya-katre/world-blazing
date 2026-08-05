@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { pushCourseSelection } from "@/utils/dataLayer";
 import { cn } from "@/lib/utils";
 import coursesData from "@/constants/courses.json";
 import type { Course } from "@/lib/interface/courses";
@@ -12,6 +15,14 @@ export default function CoursesSection({
   courses = coursesData as Course[],
   className,
 }: CoursesSectionProps) {
+  const handleCourseCardClick = (course: Course) => {
+    pushCourseSelection({
+      courseName: course.title,
+      courseCategory: course.category,
+      buttonLocation: "course_card",
+    });
+  };
+
   return (
     <section
       className={cn(
@@ -56,6 +67,7 @@ export default function CoursesSection({
             aria-label="move to courses"
             key={course.slug}
             href={`/courses/${course.slug}`}
+            onClick={() => handleCourseCardClick(course)}
             className="group relative rounded-2xl border border-neutral-200 dark:border-neutral-800 bg-white dark:bg-neutral-900 p-5 flex flex-col justify-between transition-all hover:-translate-y-2 hover:shadow-xl"
           >
             {/* Glow effect */}
