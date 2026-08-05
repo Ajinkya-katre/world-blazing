@@ -20,31 +20,49 @@ const lato = Lato({
 export const metadata = {
   metadataBase: new URL("https://www.worldblazing.com"),
 
-  title: "World Blazing Programming Institute | Best IT Courses in Hadapsar",
+  title: "World Blazing Programming Institute | Best IT Courses in Hadapsar, Pune",
   description:
-    "World Blazing Programming Institute offers job-oriented IT courses in Hadapsar . Full Stack, Python, Software Testing, Data Analytics, Digital Marketing with placements.",
+    "World Blazing Programming Institute offers job-oriented IT training in Hadapsar, Pune. Full Stack, Python, Software Testing, Data Analytics and Digital Marketing courses with placement and career support.",
 
   keywords: [
     "World Blazing Programming Institute",
-    "IT courses in Hadapsar",
-    "IT institute in Hadapsar",
-    "Full Stack Development course Hadapsar",
-    "Python training Hadapsar",
-    "Software Testing classes Hadapsar",
-    "Data Analytics course Hadapsar",
-    "Digital Marketing course Hadapsar",
-    "Programming classes in Hadapsar",
-    "Job oriented IT courses Hadapsar",
+    "Best IT courses in Hadapsar",
+    "Best IT institute in Hadapsar",
+    "Best Full Stack Development course Hadapsar",
+    "Best Python training Hadapsar",
+    "Best Software Testing classes Hadapsar",
+    "Best Data Analytics course Hadapsar",
+    "Best Digital Marketing course Hadapsar",
+    "Best Programming classes in Hadapsar",
+    "Best job oriented IT courses Hadapsar",
+  ],
+
+  applicationName: "World Blazing Programming Institute",
+  authors: [
+    {
+      name: "World Blazing Programming Institute",
+      url: "https://www.worldblazing.com",
+    },
+  ],
+  creator: "World Blazing Programming Institute",
+  publisher: "World Blazing Programming Institute",
+  category: "Education",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#111827" },
   ],
 
   alternates: {
     canonical: "https://www.worldblazing.com",
+    languages: {
+      "en-IN": "https://www.worldblazing.com",
+    },
   },
 
   openGraph: {
     title: "World Blazing Programming Institute",
     description:
-      "World Blazing Programming Institute in Hadapsar Pune offers job-oriented IT courses including Full Stack Development, Python, Software Testing, Data Analytics & Digital Marketing with placement assistance.",
+      "World Blazing Programming Institute in Hadapsar, Pune offers job-oriented IT courses including Full Stack Development, Python, Software Testing, Data Analytics & Digital Marketing with placement support.",
     url: "https://www.worldblazing.com",
     siteName: "World Blazing Programming Institute",
     images: [
@@ -63,8 +81,9 @@ export const metadata = {
     card: "summary_large_image",
     title: "World Blazing Programming Institute",
     description:
-      "Job-oriented IT courses in Pune with real classroom training.",
+      "Job-oriented IT courses in Pune with real classroom training and placement support.",
     images: ["/og-image.png"],
+    creator: "World Blazing Programming Institute",
   },
 
   robots: {
@@ -82,6 +101,13 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
+  },
+
+  other: {
+    "geo.region": "IN-MH",
+    "geo.placename": "Hadapsar, Pune",
+    "geo.position": "18.5204;73.8567",
+    ICBM: "18.5204, 73.8567",
   },
 };
 
@@ -110,6 +136,8 @@ export default function RootLayout({
               name: "World Blazing Programming Institute",
               url: "https://www.worldblazing.com",
               logo: "https://www.worldblazing.com/logo.png",
+              telephone: "+918459816185",
+              email: "worldblazinginstitute@gmail.com",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Aru Palace Building, Malwadi Rd",
@@ -118,7 +146,86 @@ export default function RootLayout({
                 postalCode: "411028",
                 addressCountry: "IN",
               },
-              telephone: "+918237978163",
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: 18.5204,
+                longitude: 73.8567,
+              },
+              openingHoursSpecification: [
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                  ],
+                  opens: "09:30",
+                  closes: "21:00",
+                },
+                {
+                  "@type": "OpeningHoursSpecification",
+                  dayOfWeek: ["Saturday"],
+                  opens: "09:00",
+                  closes: "19:00",
+                },
+              ],
+              areaServed: "Hadapsar, Pune",
+            }),
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: [
+                {
+                  "@type": "Question",
+                  name: "Which IT courses are best for beginners in Hadapsar?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "World Blazing Programming Institute offers beginner-friendly IT courses in Full Stack Development, Python, Software Testing, Data Analytics and Digital Marketing with placement guidance.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "Does World Blazing provide placement support in Pune?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Yes, World Blazing provides placement support, interview preparation, and job-ready training for students in Pune.",
+                  },
+                },
+                {
+                  "@type": "Question",
+                  name: "How can I book a demo class at World Blazing?",
+                  acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "You can book a free demo class through our Contact Us page or the Book Demo section on the website.",
+                  },
+                },
+              ],
+            }),
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: "https://www.worldblazing.com",
+                },
+              ],
             }),
           }}
         />
