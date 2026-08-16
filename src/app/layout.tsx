@@ -8,6 +8,7 @@ import Footer from "@/components/footer";
 import ThemeToggleClient from "@/components/theme-toggle.client";
 import { Suspense } from "react";
 import WhatsAppFloat from "@/components/whatsapp-float";
+import { NavbarUi } from "@/components/ui/navbar-ui";
 
 /* ---------------- FONT ---------------- */
 const lato = Lato({
@@ -280,23 +281,24 @@ export default function RootLayout({
           />
         </noscript>
         <ThemeProvider>
-          <Suspense fallback={null}>
+          {/* <Suspense fallback={null}>
             <ThemeToggleClient />
-          </Suspense>
-
+          </Suspense> */}
+          
+          <NavbarUi />
           {/* Mobile Dock */}
-          <div className="block md:hidden fixed top-2 right-4 z-50">
+          {/* <div className="block md:hidden fixed top-2 right-4 z-50">
             <Suspense fallback={null}>
               <FloatingDockDemo />
             </Suspense>
-          </div>
+          </div> */}
 
           {/* Desktop Dock */}
-          <div className="hidden md:fixed md:bottom-0 md:left-0 md:right-0 md:flex md:justify-center md:pb-4 md:z-50">
+          {/* <div className="hidden md:fixed md:bottom-0 md:left-0 md:right-0 md:flex md:justify-center md:pb-4 md:z-50">
             <Suspense fallback={null}>
               <FloatingDockDemo />
             </Suspense>
-          </div>
+          </div> */}
 
           {children}
         </ThemeProvider>
